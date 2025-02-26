@@ -20,6 +20,7 @@ class Vertex {
    * @param id Уникальный идентификатор вершины.
    */
   explicit Vertex(int id) : id(id) {}
+  // explicit не дает компилятору делать неявные преобразования 
 };
 
 /**
@@ -119,7 +120,7 @@ class Graph {
    * @param id Идентификатор вершины.
    * @return true, если вершина существует, иначе false.
    */
-  bool hasVertex(int id) const;
+  virtual bool hasVertex(int id) const;
 
   /**
    * @brief Проверяет наличие ребра в графе.
@@ -127,7 +128,7 @@ class Graph {
    * @param target Идентификатор целевой вершины.
    * @return true, если ребро существует, иначе false.
    */
-  bool hasEdge(int source, int target) const;
+  virtual bool hasEdge(int source, int target) const;
 };
 
 }  // namespace graph
