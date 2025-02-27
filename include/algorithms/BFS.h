@@ -20,29 +20,24 @@ void BFS(const Graph<VertexType, EdgeType>& graph, int startVertex, BFSVisitor<V
         int currentVertex = queue.front();
         queue.pop();
 
-        // Посещаем вершину
         visitor.visitVertex(graph.getVertex(currentVertex));
 
-        // Обходим соседей
         auto neighbors = graph.getNeighborsIterator(currentVertex);
         while (neighbors != graph.getNeighborsIterator(currentVertex + 1)) {  // Условный конец итератора
             int neighbor = *neighbors;
 
-            // Обнаружение ребра
             visitor.examineEdge(EdgeType(currentVertex, neighbor));
 
             if (visited.find(neighbor) == visited.end()) {
                 visited.insert(neighbor);
                 queue.push(neighbor);
 
-                // Ребро дерева
                 visitor.treeEdge(EdgeType(currentVertex, neighbor));
             }
 
             ++neighbors;
         }
 
-        // Завершение обработки вершины
         visitor.finishVertex(graph.getVertex(currentVertex));
     }
 }
