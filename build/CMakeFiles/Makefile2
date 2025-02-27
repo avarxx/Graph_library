@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = /home/anxx/prog/project_of_algoritms/Graph_library/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/Graph.dir/all
 all: CMakeFiles/AdjacencyListGraph.dir/all
 all: CMakeFiles/AdjacencyMatrixGraph.dir/all
 all: CMakeFiles/EdgeListGraph.dir/all
@@ -77,6 +78,7 @@ preinstall: tests/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/Graph.dir/clean
 clean: CMakeFiles/AdjacencyListGraph.dir/clean
 clean: CMakeFiles/AdjacencyMatrixGraph.dir/clean
 clean: CMakeFiles/EdgeListGraph.dir/clean
@@ -165,10 +167,36 @@ tests/clean: _deps/googletest-build/clean
 .PHONY : tests/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/Graph.dir
+
+# All Build rule for target.
+CMakeFiles/Graph.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=9,10 "Built target Graph"
+.PHONY : CMakeFiles/Graph.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Graph.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Graph.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 0
+.PHONY : CMakeFiles/Graph.dir/rule
+
+# Convenience name for target.
+Graph: CMakeFiles/Graph.dir/rule
+.PHONY : Graph
+
+# clean rule for target.
+CMakeFiles/Graph.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/clean
+.PHONY : CMakeFiles/Graph.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/AdjacencyListGraph.dir
 
 # All Build rule for target.
-CMakeFiles/AdjacencyListGraph.dir/all:
+CMakeFiles/AdjacencyListGraph.dir/all: CMakeFiles/Graph.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdjacencyListGraph.dir/build.make CMakeFiles/AdjacencyListGraph.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdjacencyListGraph.dir/build.make CMakeFiles/AdjacencyListGraph.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=1,2 "Built target AdjacencyListGraph"
@@ -176,7 +204,7 @@ CMakeFiles/AdjacencyListGraph.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/AdjacencyListGraph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/AdjacencyListGraph.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 0
 .PHONY : CMakeFiles/AdjacencyListGraph.dir/rule
@@ -194,7 +222,7 @@ CMakeFiles/AdjacencyListGraph.dir/clean:
 # Target rules for target CMakeFiles/AdjacencyMatrixGraph.dir
 
 # All Build rule for target.
-CMakeFiles/AdjacencyMatrixGraph.dir/all:
+CMakeFiles/AdjacencyMatrixGraph.dir/all: CMakeFiles/Graph.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdjacencyMatrixGraph.dir/build.make CMakeFiles/AdjacencyMatrixGraph.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdjacencyMatrixGraph.dir/build.make CMakeFiles/AdjacencyMatrixGraph.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=3,4 "Built target AdjacencyMatrixGraph"
@@ -202,7 +230,7 @@ CMakeFiles/AdjacencyMatrixGraph.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/AdjacencyMatrixGraph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/AdjacencyMatrixGraph.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 0
 .PHONY : CMakeFiles/AdjacencyMatrixGraph.dir/rule
@@ -220,7 +248,7 @@ CMakeFiles/AdjacencyMatrixGraph.dir/clean:
 # Target rules for target CMakeFiles/EdgeListGraph.dir
 
 # All Build rule for target.
-CMakeFiles/EdgeListGraph.dir/all:
+CMakeFiles/EdgeListGraph.dir/all: CMakeFiles/Graph.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EdgeListGraph.dir/build.make CMakeFiles/EdgeListGraph.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EdgeListGraph.dir/build.make CMakeFiles/EdgeListGraph.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=7,8 "Built target EdgeListGraph"
@@ -228,7 +256,7 @@ CMakeFiles/EdgeListGraph.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/EdgeListGraph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/EdgeListGraph.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 0
 .PHONY : CMakeFiles/EdgeListGraph.dir/rule
@@ -246,7 +274,7 @@ CMakeFiles/EdgeListGraph.dir/clean:
 # Target rules for target CMakeFiles/DirectedGraph.dir
 
 # All Build rule for target.
-CMakeFiles/DirectedGraph.dir/all:
+CMakeFiles/DirectedGraph.dir/all: CMakeFiles/Graph.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectedGraph.dir/build.make CMakeFiles/DirectedGraph.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DirectedGraph.dir/build.make CMakeFiles/DirectedGraph.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=5,6 "Built target DirectedGraph"
@@ -254,7 +282,7 @@ CMakeFiles/DirectedGraph.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DirectedGraph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DirectedGraph.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 0
 .PHONY : CMakeFiles/DirectedGraph.dir/rule
@@ -272,15 +300,15 @@ CMakeFiles/DirectedGraph.dir/clean:
 # Target rules for target CMakeFiles/UndirectedGraph.dir
 
 # All Build rule for target.
-CMakeFiles/UndirectedGraph.dir/all:
+CMakeFiles/UndirectedGraph.dir/all: CMakeFiles/Graph.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/UndirectedGraph.dir/build.make CMakeFiles/UndirectedGraph.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/UndirectedGraph.dir/build.make CMakeFiles/UndirectedGraph.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=9,10 "Built target UndirectedGraph"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=11,12 "Built target UndirectedGraph"
 .PHONY : CMakeFiles/UndirectedGraph.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/UndirectedGraph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/UndirectedGraph.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 0
 .PHONY : CMakeFiles/UndirectedGraph.dir/rule
@@ -298,15 +326,15 @@ CMakeFiles/UndirectedGraph.dir/clean:
 # Target rules for target CMakeFiles/WeightedGraph.dir
 
 # All Build rule for target.
-CMakeFiles/WeightedGraph.dir/all:
+CMakeFiles/WeightedGraph.dir/all: CMakeFiles/Graph.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WeightedGraph.dir/build.make CMakeFiles/WeightedGraph.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WeightedGraph.dir/build.make CMakeFiles/WeightedGraph.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=11,12 "Built target WeightedGraph"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=13,14 "Built target WeightedGraph"
 .PHONY : CMakeFiles/WeightedGraph.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/WeightedGraph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/WeightedGraph.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 0
 .PHONY : CMakeFiles/WeightedGraph.dir/rule
@@ -324,17 +352,18 @@ CMakeFiles/WeightedGraph.dir/clean:
 # Target rules for target tests/CMakeFiles/test_adjacency_list_graph.dir
 
 # All Build rule for target.
+tests/CMakeFiles/test_adjacency_list_graph.dir/all: CMakeFiles/Graph.dir/all
 tests/CMakeFiles/test_adjacency_list_graph.dir/all: CMakeFiles/AdjacencyListGraph.dir/all
 tests/CMakeFiles/test_adjacency_list_graph.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 tests/CMakeFiles/test_adjacency_list_graph.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_adjacency_list_graph.dir/build.make tests/CMakeFiles/test_adjacency_list_graph.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_adjacency_list_graph.dir/build.make tests/CMakeFiles/test_adjacency_list_graph.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=21,22 "Built target test_adjacency_list_graph"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=23,24 "Built target test_adjacency_list_graph"
 .PHONY : tests/CMakeFiles/test_adjacency_list_graph.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test_adjacency_list_graph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_adjacency_list_graph.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/test_adjacency_list_graph.dir/rule
@@ -352,17 +381,18 @@ tests/CMakeFiles/test_adjacency_list_graph.dir/clean:
 # Target rules for target tests/CMakeFiles/test_adjacency_matrix_graph.dir
 
 # All Build rule for target.
+tests/CMakeFiles/test_adjacency_matrix_graph.dir/all: CMakeFiles/Graph.dir/all
 tests/CMakeFiles/test_adjacency_matrix_graph.dir/all: CMakeFiles/AdjacencyMatrixGraph.dir/all
 tests/CMakeFiles/test_adjacency_matrix_graph.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 tests/CMakeFiles/test_adjacency_matrix_graph.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_adjacency_matrix_graph.dir/build.make tests/CMakeFiles/test_adjacency_matrix_graph.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_adjacency_matrix_graph.dir/build.make tests/CMakeFiles/test_adjacency_matrix_graph.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=23,24 "Built target test_adjacency_matrix_graph"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=25,26 "Built target test_adjacency_matrix_graph"
 .PHONY : tests/CMakeFiles/test_adjacency_matrix_graph.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test_adjacency_matrix_graph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_adjacency_matrix_graph.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/test_adjacency_matrix_graph.dir/rule
@@ -380,17 +410,18 @@ tests/CMakeFiles/test_adjacency_matrix_graph.dir/clean:
 # Target rules for target tests/CMakeFiles/test_edge_list_graph.dir
 
 # All Build rule for target.
+tests/CMakeFiles/test_edge_list_graph.dir/all: CMakeFiles/Graph.dir/all
 tests/CMakeFiles/test_edge_list_graph.dir/all: CMakeFiles/EdgeListGraph.dir/all
 tests/CMakeFiles/test_edge_list_graph.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 tests/CMakeFiles/test_edge_list_graph.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_edge_list_graph.dir/build.make tests/CMakeFiles/test_edge_list_graph.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_edge_list_graph.dir/build.make tests/CMakeFiles/test_edge_list_graph.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=27,28 "Built target test_edge_list_graph"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=29,30 "Built target test_edge_list_graph"
 .PHONY : tests/CMakeFiles/test_edge_list_graph.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test_edge_list_graph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_edge_list_graph.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/test_edge_list_graph.dir/rule
@@ -408,17 +439,18 @@ tests/CMakeFiles/test_edge_list_graph.dir/clean:
 # Target rules for target tests/CMakeFiles/test_directed_graph.dir
 
 # All Build rule for target.
+tests/CMakeFiles/test_directed_graph.dir/all: CMakeFiles/Graph.dir/all
 tests/CMakeFiles/test_directed_graph.dir/all: CMakeFiles/DirectedGraph.dir/all
 tests/CMakeFiles/test_directed_graph.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 tests/CMakeFiles/test_directed_graph.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_directed_graph.dir/build.make tests/CMakeFiles/test_directed_graph.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_directed_graph.dir/build.make tests/CMakeFiles/test_directed_graph.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=25,26 "Built target test_directed_graph"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=27,28 "Built target test_directed_graph"
 .PHONY : tests/CMakeFiles/test_directed_graph.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test_directed_graph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_directed_graph.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/test_directed_graph.dir/rule
@@ -436,17 +468,18 @@ tests/CMakeFiles/test_directed_graph.dir/clean:
 # Target rules for target tests/CMakeFiles/test_undirected_graph.dir
 
 # All Build rule for target.
+tests/CMakeFiles/test_undirected_graph.dir/all: CMakeFiles/Graph.dir/all
 tests/CMakeFiles/test_undirected_graph.dir/all: CMakeFiles/UndirectedGraph.dir/all
 tests/CMakeFiles/test_undirected_graph.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 tests/CMakeFiles/test_undirected_graph.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_undirected_graph.dir/build.make tests/CMakeFiles/test_undirected_graph.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_undirected_graph.dir/build.make tests/CMakeFiles/test_undirected_graph.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=29,30 "Built target test_undirected_graph"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=31,32 "Built target test_undirected_graph"
 .PHONY : tests/CMakeFiles/test_undirected_graph.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test_undirected_graph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_undirected_graph.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/test_undirected_graph.dir/rule
@@ -464,17 +497,18 @@ tests/CMakeFiles/test_undirected_graph.dir/clean:
 # Target rules for target tests/CMakeFiles/test_weighted_graph.dir
 
 # All Build rule for target.
+tests/CMakeFiles/test_weighted_graph.dir/all: CMakeFiles/Graph.dir/all
 tests/CMakeFiles/test_weighted_graph.dir/all: CMakeFiles/WeightedGraph.dir/all
 tests/CMakeFiles/test_weighted_graph.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 tests/CMakeFiles/test_weighted_graph.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_weighted_graph.dir/build.make tests/CMakeFiles/test_weighted_graph.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_weighted_graph.dir/build.make tests/CMakeFiles/test_weighted_graph.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=31,32 "Built target test_weighted_graph"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=33,34 "Built target test_weighted_graph"
 .PHONY : tests/CMakeFiles/test_weighted_graph.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test_weighted_graph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_weighted_graph.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/test_weighted_graph.dir/rule
@@ -495,7 +529,7 @@ tests/CMakeFiles/test_weighted_graph.dir/clean:
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=13,14 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=15,16 "Built target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -522,7 +556,7 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletes
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=15,16 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=17,18 "Built target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -548,7 +582,7 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=17,18 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=19,20 "Built target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -574,7 +608,7 @@ _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=19,20 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=21,22 "Built target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.

@@ -95,6 +95,7 @@ tests/test_adjacency_matrix_graph: tests/CMakeFiles/test_adjacency_matrix_graph.
 tests/test_adjacency_matrix_graph: libAdjacencyMatrixGraph.a
 tests/test_adjacency_matrix_graph: lib/libgtest.a
 tests/test_adjacency_matrix_graph: lib/libgtest_main.a
+tests/test_adjacency_matrix_graph: libGraph.a
 tests/test_adjacency_matrix_graph: lib/libgtest.a
 tests/test_adjacency_matrix_graph: tests/CMakeFiles/test_adjacency_matrix_graph.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_adjacency_matrix_graph"

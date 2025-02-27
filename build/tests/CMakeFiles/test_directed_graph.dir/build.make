@@ -95,6 +95,7 @@ tests/test_directed_graph: tests/CMakeFiles/test_directed_graph.dir/build.make
 tests/test_directed_graph: libDirectedGraph.a
 tests/test_directed_graph: lib/libgtest.a
 tests/test_directed_graph: lib/libgtest_main.a
+tests/test_directed_graph: libGraph.a
 tests/test_directed_graph: lib/libgtest.a
 tests/test_directed_graph: tests/CMakeFiles/test_directed_graph.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_directed_graph"

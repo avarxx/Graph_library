@@ -162,6 +162,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Graph
+
+# Build rule for target.
+Graph: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Graph
+.PHONY : Graph
+
+# fast build rule for target.
+Graph/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/build
+.PHONY : Graph/fast
+
+#=============================================================================
 # Target rules for targets named AdjacencyListGraph
 
 # Build rule for target.
@@ -465,6 +478,30 @@ src/graph/EdgeListGraph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EdgeListGraph.dir/build.make CMakeFiles/EdgeListGraph.dir/src/graph/EdgeListGraph.cpp.s
 .PHONY : src/graph/EdgeListGraph.cpp.s
 
+src/graph/Graph.o: src/graph/Graph.cpp.o
+.PHONY : src/graph/Graph.o
+
+# target to build an object file
+src/graph/Graph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/src/graph/Graph.cpp.o
+.PHONY : src/graph/Graph.cpp.o
+
+src/graph/Graph.i: src/graph/Graph.cpp.i
+.PHONY : src/graph/Graph.i
+
+# target to preprocess a source file
+src/graph/Graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/src/graph/Graph.cpp.i
+.PHONY : src/graph/Graph.cpp.i
+
+src/graph/Graph.s: src/graph/Graph.cpp.s
+.PHONY : src/graph/Graph.s
+
+# target to generate assembly for a file
+src/graph/Graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/src/graph/Graph.cpp.s
+.PHONY : src/graph/Graph.cpp.s
+
 src/graph/UndirectedGraph.o: src/graph/UndirectedGraph.cpp.o
 .PHONY : src/graph/UndirectedGraph.o
 
@@ -529,6 +566,7 @@ help:
 	@echo "... AdjacencyMatrixGraph"
 	@echo "... DirectedGraph"
 	@echo "... EdgeListGraph"
+	@echo "... Graph"
 	@echo "... UndirectedGraph"
 	@echo "... WeightedGraph"
 	@echo "... gmock"
@@ -553,6 +591,9 @@ help:
 	@echo "... src/graph/EdgeListGraph.o"
 	@echo "... src/graph/EdgeListGraph.i"
 	@echo "... src/graph/EdgeListGraph.s"
+	@echo "... src/graph/Graph.o"
+	@echo "... src/graph/Graph.i"
+	@echo "... src/graph/Graph.s"
 	@echo "... src/graph/UndirectedGraph.o"
 	@echo "... src/graph/UndirectedGraph.i"
 	@echo "... src/graph/UndirectedGraph.s"

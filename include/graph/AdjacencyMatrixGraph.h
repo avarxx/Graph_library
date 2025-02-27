@@ -19,24 +19,18 @@ class AdjacencyMatrixGraph : public Graph<VertexType, EdgeType> {
 
   AdjacencyMatrixGraph() = default;
 
-
   void addVertex(int id) override;
-
 
   void removeVertex(int id) override;
 
   void addEdge(int source, int target) override;
 
-
   void removeEdge(int source, int target) override;
-
 
   std::vector<int>::iterator getNeighborsIterator(int vertexId) override;
 
-
   std::vector<int>::iterator getFilteredNeighborsIterator(
       int vertexId, bool (*filter)(int)) override;
-
 
   bool hasVertex(int id) const override;
 

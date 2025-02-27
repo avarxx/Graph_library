@@ -8,12 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/anxx/prog/project_of_algoritms/Graph_library/src/graph/UndirectedGraph.cpp" "CMakeFiles/UndirectedGraph.dir/src/graph/UndirectedGraph.cpp.o" "gcc" "CMakeFiles/UndirectedGraph.dir/src/graph/UndirectedGraph.cpp.o.d"
+  "/home/anxx/prog/project_of_algoritms/Graph_library/src/graph/Graph.cpp" "CMakeFiles/Graph.dir/src/graph/Graph.cpp.o" "gcc" "CMakeFiles/Graph.dir/src/graph/Graph.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/anxx/prog/project_of_algoritms/Graph_library/build/CMakeFiles/Graph.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
