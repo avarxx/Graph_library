@@ -1,5 +1,33 @@
-add_executable(test_graph test_graph.cpp)
+# Добавляем Google Test
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/refs/heads/main.zip
+)
+FetchContent_MakeAvailable(googletest)
 
-target_link_libraries(test_graph GraphLibrary gtest gtest_main)
+add_executable(test_adjacency_list_graph test_adjacency_list_graph.cpp)
+target_link_libraries(test_adjacency_list_graph AdjacencyListGraph gtest gtest_main)
 
-add_test(NAME test_graph COMMAND test_graph)
+add_executable(test_adjacency_matrix_graph test_adjacency_matrix_graph.cpp)
+target_link_libraries(test_adjacency_matrix_graph AdjacencyMatrixGraph gtest gtest_main)
+
+add_executable(test_edge_list_graph test_edge_list_graph.cpp)
+target_link_libraries(test_edge_list_graph EdgeListGraph gtest gtest_main)
+
+add_executable(test_directed_graph test_directed_graph.cpp)
+target_link_libraries(test_directed_graph DirectedGraph gtest gtest_main)
+
+add_executable(test_undirected_graph test_undirected_graph.cpp)
+target_link_libraries(test_undirected_graph UndirectedGraph gtest gtest_main)
+
+add_executable(test_weighted_graph test_weighted_graph.cpp)
+target_link_libraries(test_weighted_graph WeightedGraph gtest gtest_main)
+
+enable_testing()
+add_test(NAME test_adjacency_list_graph COMMAND test_adjacency_list_graph)
+add_test(NAME test_adjacency_matrix_graph COMMAND test_adjacency_matrix_graph)
+add_test(NAME test_edge_list_graph COMMAND test_edge_list_graph)
+add_test(NAME test_directed_graph COMMAND test_directed_graph)
+add_test(NAME test_undirected_graph COMMAND test_undirected_graph)
+add_test(NAME test_weighted_graph COMMAND test_weighted_graph)

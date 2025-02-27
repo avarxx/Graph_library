@@ -1,0 +1,2 @@
+/usr/bin/ar qc libDirectedGraph.a CMakeFiles/DirectedGraph.dir/src/graph/DirectedGraph.cpp.o
+/usr/bin/ranlib libDirectedGraph.a

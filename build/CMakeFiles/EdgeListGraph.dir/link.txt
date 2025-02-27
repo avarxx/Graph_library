@@ -1,0 +1,2 @@
+/usr/bin/ar qc libEdgeListGraph.a CMakeFiles/EdgeListGraph.dir/src/graph/EdgeListGraph.cpp.o
+/usr/bin/ranlib libEdgeListGraph.a

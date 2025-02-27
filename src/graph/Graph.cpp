@@ -15,6 +15,8 @@ namespace graph
   template <typename VertexType, typename EdgeType>
   void Graph<VertexType, EdgeType>::removeVertex(int id)
   {
+    if(!hasVertex(id))
+      return;
     vertices.erase(
         std::remove_if(vertices.begin(), vertices.end(), [id](const VertexType &v)
                        { return v.id == id; }),

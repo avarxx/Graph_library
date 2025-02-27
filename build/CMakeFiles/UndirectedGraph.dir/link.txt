@@ -1,0 +1,2 @@
+/usr/bin/ar qc libUndirectedGraph.a CMakeFiles/UndirectedGraph.dir/src/graph/UndirectedGraph.cpp.o
+/usr/bin/ranlib libUndirectedGraph.a

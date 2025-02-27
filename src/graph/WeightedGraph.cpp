@@ -40,4 +40,29 @@ void WeightedGraph<VertexType, WeightType>::setEdgeWeight(int source, int target
   }
 }
 
+template <typename VertexType, typename WeightType>
+std::vector<int>::iterator WeightedGraph<VertexType, WeightType>::getNeighborsIterator(int vertexId) {
+  static std::vector<int> neighbors;
+  neighbors.clear();
+  for (const auto& edge : this->edges) {
+    if (edge.source == vertexId) {
+      neighbors.push_back(edge.target);
+    }
+  }
+  return neighbors.begin();
+}
+
+template <typename VertexType, typename WeightType>
+std::vector<int>::iterator WeightedGraph<VertexType, WeightType>::getFilteredNeighborsIterator(
+    int vertexId, bool (*filter)(int)) {
+  static std::vector<int> filteredNeighbors;
+  filteredNeighbors.clear();
+  for (const auto& edge : this->edges) {
+    if (edge.source == vertexId && filter(edge.target)) {
+      filteredNeighbors.push_back(edge.target);
+    }
+  }
+  return filteredNeighbors.begin();
+}
+
 }  // namespace graph

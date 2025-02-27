@@ -1,26 +1,43 @@
 cmake_minimum_required(VERSION 3.14)
 project(GraphLibrary)
 
-# Устанавливаем стандарт C++ (C++17)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Подключение Google Test
-include(FetchContent)
-FetchContent_Declare(
-  googletest
-  URL https://github.com/google/googletest/archive/refs/heads/main.zip
+add_library(AdjacencyListGraph
+    src/graph/AdjacencyListGraph.cpp
+    include/graph/AdjacencyListGraph.h
 )
-FetchContent_MakeAvailable(googletest)
+target_include_directories(AdjacencyListGraph PUBLIC include)
 
-# Добавляем исходные файлы проекта
-add_library(GraphLibrary
-  src/graph/Graph.cpp
-  src/graph/AdjacencyListGraph.cpp
+add_library(AdjacencyMatrixGraph
+    src/graph/AdjacencyMatrixGraph.cpp
+    include/graph/AdjacencyMatrixGraph.h
 )
+target_include_directories(AdjacencyMatrixGraph PUBLIC include)
 
-# Указываем, где искать заголовочные файлы
-target_include_directories(GraphLibrary PUBLIC include)
+add_library(EdgeListGraph
+    src/graph/EdgeListGraph.cpp
+    include/graph/EdgeListGraph.h
+)
+target_include_directories(EdgeListGraph PUBLIC include)
 
-# Добавляем поддиректорию с тестами
+add_library(DirectedGraph
+    src/graph/DirectedGraph.cpp
+    include/graph/DirectedGraph.h
+)
+target_include_directories(DirectedGraph PUBLIC include)
+
+add_library(UndirectedGraph
+    src/graph/UndirectedGraph.cpp
+    include/graph/UndirectedGraph.h
+)
+target_include_directories(UndirectedGraph PUBLIC include)
+
+add_library(WeightedGraph
+    src/graph/WeightedGraph.cpp
+    include/graph/WeightedGraph.h
+)
+target_include_directories(WeightedGraph PUBLIC include)
+
 add_subdirectory(tests)

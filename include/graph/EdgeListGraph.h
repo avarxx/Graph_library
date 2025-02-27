@@ -7,11 +7,12 @@
 #include "Graph.h"
 
 namespace graph {
+  
 template <typename VernexType = Vertex, typename EdgeType = Edge>
 class EdgeListGraph : public Graph<VernexType, EdgeType> 
 {
   private:
-    std::unordered_set<int> verticesSes;
+    std::unordered_set<int> verticesSet;
   public:
   EdgeListGraph()  = default;
 
