@@ -10,31 +10,31 @@ template <typename VertexType = Vertex, typename EdgeType = Edge>
 class AdjacencyMatrixGraph : public Graph<VertexType, EdgeType> {
  private:
   std::vector<std::vector<bool>> adjacencyMatrix;  // Матрица смежности
-  std::unordered_map<int, size_t> vertexToIndex;   // Соответствие ID вершины и индекса в матрице
-  std::unordered_map<size_t, int> indexToVertex;   // Соответствие индекса в матрице и ID вершины
+  std::unordered_map<Vertex, size_t> vertexToIndex;   // Соответствие ID вершины и индекса в матрице
+  std::unordered_map<size_t, Vertex> indexToVertex;   // Соответствие индекса в матрице и ID вершины
 
-  size_t getVertexIndex(int id) const;
+  size_t getVertexIndex(const Vertex& id) const;
 
  public:
 
   AdjacencyMatrixGraph() = default;
 
-  void addVertex(int id) override;
+  void addVertex(const Vertex& id) override;
 
-  void removeVertex(int id) override;
+  void removeVertex(const Vertex& id) override;
 
-  void addEdge(int source, int target) override;
+  void addEdge(const Vertex& source, const Vertex& target) override;
 
-  void removeEdge(int source, int target) override;
+  void removeEdge(const Vertex& source, const Vertex& target) override;
 
-  std::vector<int>::iterator getNeighborsIterator(int vertexId) override;
+  typename std::vector<VertexType>::iterator getNeighborsIterator(const Vertex& vertexId) override;
 
-  std::vector<int>::iterator getFilteredNeighborsIterator(
-      int vertexId, bool (*filter)(int)) override;
+  typename std::vector<VertexType>::iterator getFilteredNeighborsIterator(
+    const Vertex& vertexId, bool (*filter)(Vertex)) override;
 
-  bool hasVertex(int id) const override;
+  bool hasVertex(const Vertex& id) const override;
 
-  bool hasEdge(int source, int target) const override;
+  bool hasEdge(const Vertex& source, const Vertex& target) const override;
 };
 
 }  // namespace graph

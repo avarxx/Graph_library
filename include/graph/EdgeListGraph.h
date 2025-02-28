@@ -8,29 +8,29 @@
 
 namespace graph {
   
-template <typename VernexType = Vertex, typename EdgeType = Edge>
-class EdgeListGraph : public Graph<VernexType, EdgeType> 
+template <typename VertexType = Vertex, typename EdgeType = Edge>
+class EdgeListGraph : public Graph<VertexType, EdgeType> 
 {
   private:
-    std::unordered_set<int> verticesSet;
+    std::unordered_set<VertexType> verticesSet;
   public:
   EdgeListGraph()  = default;
 
-  void addVertex(int id) override;
+  void addVertex(const Vertex& id) override;
 
-  void removeVertex(int id) override;
+  void removeVertex(const Vertex& id) override;
 
-  void addEdge(int source, int target) override;
+  void addEdge(const Vertex& source, const Vertex& target) override;
 
-  void removeEdge(int source, int target) override;
+  void removeEdge(const Vertex& source, const Vertex& target) override;
 
-  std::vector<int>::iterator getNeighborsIterator(int vertexId) override;
+  typename std::vector<Vertex>::iterator getNeighborsIterator(const Vertex& vertexId) override;
 
-  std::vector<int>::iterator getFilteredNeighborsIterator(int VertexId, bool (*filter)(int)) override;
+  typename std::vector<Vertex>::iterator getFilteredNeighborsIterator(const Vertex& VertexId, bool (*filter)(Vertex)) override;
 
-  bool hasVertex(int id) const override;
+  bool hasVertex(const Vertex& id) const override;
 
-  bool hasEdge(int source, int target) const override;
+  bool hasEdge(const Vertex& source, const Vertex& target) const override;
 
 };
 }  // namespace graph

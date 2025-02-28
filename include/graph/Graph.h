@@ -5,6 +5,7 @@
 #include <iterator>
 #include <memory>
 #include <vector>
+#include <functional>
 
 namespace graph {
 
@@ -19,24 +20,39 @@ class Vertex {
    * @brief Конструктор вершины.
    * @param id Уникальный идентификатор вершины.
    */
-  explicit Vertex(int id) : id(id) {}
+  explicit Vertex(int id) : id(id) {};
   // explicit не дает компилятору делать неявные преобразования 
+
+  Vertex() : id(0) {};
 };
+
+inline bool operator==(const Vertex& left, const Vertex& right) {
+  return left.id == right.id;
+}
 
 /**
  * @brief Класс, представляющий ребро графа.
  */
 class Edge {
  public:
-  int source;  ///< Идентификатор исходной вершины.
-  int target;  ///< Идентификатор целевой вершины.
+  Vertex source;  ///< Идентификатор исходной вершины.
+  Vertex target;  ///< Идентификатор целевой вершины.
 
   /**
    * @brief Конструктор ребра.
    * @param source Идентификатор исходной вершины.
    * @param target Идентификатор целевой вершины.
    */
-  Edge(int source, int target) : source(source), target(target) {}
+  Edge(const Vertex& source, const Vertex& target) : source(source), target(target) {};
+  Edge() : source(0), target(0) {};
+  Edge& operator=(const Edge& right) {
+    if (this == &right) {
+      return *this;
+    }
+    this->source = right.source;
+    this->target = right.target;
+    return *this;
+  }
 };
 
 /**
@@ -65,27 +81,27 @@ class Graph {
    * @brief Добавляет вершину в граф.
    * @param id Уникальный идентификатор вершины.
    */
-  virtual void addVertex(int id);
+  virtual void addVertex(const Vertex& vertex);
 
   /**
    * @brief Удаляет вершину из графа.
    * @param id Уникальный идентификатор вершины.
    */
-  virtual void removeVertex(int id);
+  virtual void removeVertex(const Vertex& vertex);
 
   /**
    * @brief Добавляет ребро в граф.
    * @param source Идентификатор исходной вершины.
    * @param target Идентификатор целевой вершины.
    */
-  virtual void addEdge(int source, int target);
+  virtual void addEdge(const Vertex& source, const Vertex& target);
 
   /**
    * @brief Удаляет ребро из графа.
    * @param source Идентификатор исходной вершины.
    * @param target Идентификатор целевой вершины.
    */
-  virtual void removeEdge(int source, int target);
+  virtual void removeEdge(const Vertex& source, const Vertex& target);
 
   /**
    * @brief Возвращает список вершин.
@@ -104,7 +120,7 @@ class Graph {
    * @param vertexId Идентификатор вершины.
    * @return Итератор по соседям вершины.
    */
-  virtual std::vector<int>::iterator getNeighborsIterator(int vertexId);
+  virtual typename std::vector<VertexType>::iterator getNeighborsIterator(const Vertex& vertexId);
 
   /**
    * @brief Возвращает итератор с фильтром по соседям вершины.
@@ -112,15 +128,15 @@ class Graph {
    * @param filter Функция-фильтр.
    * @return Итератор по соседям вершины, удовлетворяющим фильтру.
    */
-  virtual std::vector<int>::iterator getFilteredNeighborsIterator(
-      int vertexId, bool (*filter)(int));
+  virtual typename std::vector<VertexType>::iterator getFilteredNeighborsIterator(
+      const Vertex& vertexId, bool (*filter)(Vertex));
 
   /**
    * @brief Проверяет наличие вершины в графе.
    * @param id Идентификатор вершины.
    * @return true, если вершина существует, иначе false.
    */
-  virtual bool hasVertex(int id) const;
+  virtual bool hasVertex(const Vertex& id) const;
 
   /**
    * @brief Проверяет наличие ребра в графе.
@@ -128,9 +144,18 @@ class Graph {
    * @param target Идентификатор целевой вершины.
    * @return true, если ребро существует, иначе false.
    */
-  virtual bool hasEdge(int source, int target) const;
+  virtual bool hasEdge(const Vertex& source, const Vertex& target) const;
 };
 
 }  // namespace graph
+
+namespace std {
+  template <>
+  struct hash<graph::Vertex> {
+      std::size_t operator()(const graph::Vertex& v) const noexcept {
+          return std::hash<int>{}(v.id);
+      }
+  };
+}
 
 #endif  // GRAPH_H

@@ -3,7 +3,7 @@
 namespace graph {
 
 template <typename VertexType, typename EdgeType>
-void UndirectedGraph<VertexType, EdgeType>::addEdge(int source, int target) {
+void UndirectedGraph<VertexType, EdgeType>::addEdge(const Vertex& source, const Vertex& target) {
   if (this->hasVertex(source) && this->hasVertex(target) &&
       !this->hasEdge(source, target)) {
     // Добавляем два ребра для неориентированного графа
@@ -13,7 +13,7 @@ void UndirectedGraph<VertexType, EdgeType>::addEdge(int source, int target) {
 }
 
 template <typename VertexType, typename EdgeType>
-void UndirectedGraph<VertexType, EdgeType>::removeEdge(int source, int target) {
+void UndirectedGraph<VertexType, EdgeType>::removeEdge(const Vertex& source, const Vertex& target) {
   // Удаляем оба направления ребра
   this->edges.erase(
       std::remove_if(this->edges.begin(), this->edges.end(),
@@ -25,8 +25,8 @@ void UndirectedGraph<VertexType, EdgeType>::removeEdge(int source, int target) {
 }
 
 template <typename VertexType, typename EdgeType>
-bool UndirectedGraph<VertexType, EdgeType>::hasEdge(int source,
-                                                    int target) const {
+bool UndirectedGraph<VertexType, EdgeType>::hasEdge(const Vertex& source,
+  const Vertex& target) const {
   return std::any_of(this->edges.begin(), this->edges.end(),
                      [source, target](const EdgeType& e) {
                        return (e.source == source && e.target == target) ||
@@ -35,9 +35,9 @@ bool UndirectedGraph<VertexType, EdgeType>::hasEdge(int source,
 }
 
 template <typename VertexType, typename EdgeType>
-std::vector<int>::iterator
-UndirectedGraph<VertexType, EdgeType>::getNeighborsIterator(int vertexId) {
-  static std::vector<int> neighbors;
+typename std::vector<Vertex>::iterator
+UndirectedGraph<VertexType, EdgeType>::getNeighborsIterator(const Vertex& vertexId) {
+  std::vector<Vertex> neighbors;
   neighbors.clear();
   if (this->hasVertex(vertexId)) {
     for (const auto& edge : this->edges) {
@@ -50,10 +50,10 @@ UndirectedGraph<VertexType, EdgeType>::getNeighborsIterator(int vertexId) {
 }
 
 template <typename VertexType, typename EdgeType>
-std::vector<int>::iterator
+typename std::vector<Vertex>::iterator
 UndirectedGraph<VertexType, EdgeType>::getFilteredNeighborsIterator(
-    int vertexId, bool (*filter)(int)) {
-  static std::vector<int> filteredNeighbors;
+  const Vertex& vertexId, bool (*filter)(Vertex)) {
+  std::vector<Vertex> filteredNeighbors;
   filteredNeighbors.clear();
   if (this->hasVertex(vertexId)) {
     for (const auto& edge : this->edges) {
@@ -66,3 +66,6 @@ UndirectedGraph<VertexType, EdgeType>::getFilteredNeighborsIterator(
 }
 
 }  // namespace graph
+
+template class graph::UndirectedGraph<graph::Vertex, graph::Edge>;
+// template class graph::UndirectedGraph<int, graph::Edge>;

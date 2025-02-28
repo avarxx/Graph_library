@@ -1,2 +1,0 @@
-/usr/bin/ar qc libAdjacencyMatrixGraph.a CMakeFiles/AdjacencyMatrixGraph.dir/src/graph/AdjacencyMatrixGraph.cpp.o
-/usr/bin/ranlib libAdjacencyMatrixGraph.a

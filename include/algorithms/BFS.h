@@ -23,7 +23,7 @@ void BFS(const Graph<VertexType, EdgeType>& graph, int startVertex, BFSVisitor<V
         visitor.visitVertex(graph.getVertex(currentVertex));
 
         auto neighbors = graph.getNeighborsIterator(currentVertex);
-        while (neighbors != graph.getNeighborsIterator(currentVertex + 1)) {  // Условный конец итератора
+        while (neighbors != graph.getNeighborsIterator(currentVertex + 1)) {  
             int neighbor = *neighbors;
 
             visitor.examineEdge(EdgeType(currentVertex, neighbor));

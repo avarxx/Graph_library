@@ -9,31 +9,31 @@
 namespace graph
 {
   template<typename VertexType = Vertex, typename EdgeType = Edge>
-  class AdjacencyListGraph : public Graph<VertexType, EdgeType>
+  class AdjacencyListGraph : public Graph<Vertex, Edge>
   {
-  private:
-    std::unordered_map<int, std::vector<int>> adjacencyList;
   public:
-    AdjacencyListGraph()  = default;
+    std::unordered_map<Vertex, std::vector<Vertex>> adjacencyList;
+  public:
+    AdjacencyListGraph() : Graph<Vertex, Edge>() {};
     ~AdjacencyListGraph() = default;
 
-    void addVertex(int id) override;
+    void addVertex(const Vertex& id) override;
 
-    void removeVertex(int id) override;
+    void removeVertex(const Vertex& id) override;
 
-    void addEdge(int source, int target) override; 
+    void addEdge(const Vertex& source, const Vertex& target) override; 
 
-    void removeEdge(int source, int target) override;
+    void removeEdge(const Vertex& source, const Vertex& target) override;
 
-    std::vector<int>::iterator getNeighborsIterator(int vertexid) override;
+    typename std::vector<VertexType>::iterator getNeighborsIterator(const Vertex& vertexid) override;
     
-    std::vector<int>::iterator getFilteredNeighborsIterator(int vertexid, bool (*filter)(int)) override;
+    typename std::vector<VertexType>::iterator getFilteredNeighborsIterator(const Vertex& vertexid, bool (*filter)(Vertex)) override;
     
-    const std::unordered_map<int, std::vector<int>>& getAdjacencyList() const;
+    const std::unordered_map<Vertex, std::vector<Vertex>>& getAdjacencyList() const;
 
-    bool hasVertex(int id) const override;
+    bool hasVertex(const Vertex& id) const override;
 
-    bool hasEdge(int source, int target) const override;
+    bool hasEdge(const Vertex& source, const Vertex& target) const override;
   };
   
 } //namespace graph
@@ -42,7 +42,7 @@ namespace graph
 #endif // ADJACENCY_LIST_GRAPH_H
 
 
-// версия с дксигеном ее не возможно читать, ноль читабельности кода
+// версия с дксигеном ее невозможно читать, ноль читабельности кода
 
 // namespace graph {
 

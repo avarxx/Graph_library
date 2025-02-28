@@ -1,0 +1,61 @@
+cmake_minimum_required(VERSION 3.14)
+project(GraphLibrary)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Добавляем Graph.cpp в сборку
+add_library(Graph
+    src/graph/Graph.cpp
+    include/graph/Graph.h
+)
+target_include_directories(Graph PUBLIC include)
+
+# Остальные библиотеки
+add_library(AdjacencyListGraph
+    src/graph/AdjacencyListGraph.cpp
+    include/graph/AdjacencyListGraph.h
+)
+target_include_directories(AdjacencyListGraph PUBLIC include)
+target_link_libraries(AdjacencyListGraph Graph)  # Линкуем с Graph
+
+add_library(AdjacencyMatrixGraph
+    src/graph/AdjacencyMatrixGraph.cpp
+    include/graph/AdjacencyMatrixGraph.h
+)
+target_include_directories(AdjacencyMatrixGraph PUBLIC include)
+target_link_libraries(AdjacencyMatrixGraph Graph)  # Линкуем с Graph
+
+add_library(EdgeListGraph
+    src/graph/EdgeListGraph.cpp
+    include/graph/EdgeListGraph.h
+)
+target_include_directories(EdgeListGraph PUBLIC include)
+target_link_libraries(EdgeListGraph Graph)  # Линкуем с Graph
+
+add_library(DirectedGraph
+    src/graph/DirectedGraph.cpp
+    include/graph/DirectedGraph.h
+)
+target_include_directories(DirectedGraph PUBLIC include)
+target_link_libraries(DirectedGraph Graph)  # Линкуем с Graph
+
+add_library(UndirectedGraph
+    src/graph/UndirectedGraph.cpp
+    include/graph/UndirectedGraph.h
+)
+target_include_directories(UndirectedGraph PUBLIC include)
+target_link_libraries(UndirectedGraph Graph)  # Линкуем с Graph
+
+add_library(WeightedGraph
+    src/graph/WeightedGraph.cpp
+    include/graph/WeightedGraph.h
+)
+target_include_directories(WeightedGraph PUBLIC include)
+target_link_libraries(WeightedGraph Graph)  # Линкуем с Graph
+
+
+add_subdirectory(tests)
+include_directories(tests)
+link_directories(tests)
+#target_link_directories(GraphLibrary tests)

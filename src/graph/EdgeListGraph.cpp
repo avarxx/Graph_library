@@ -3,7 +3,7 @@
 namespace graph {
 
 template <typename VertexType, typename EdgeType>
-void EdgeListGraph<VertexType, EdgeType>::addVertex(int id) {
+void EdgeListGraph<VertexType, EdgeType>::addVertex(const Vertex& id) {
   if (!hasVertex(id)) {
     this->vertices.emplace_back(id);
     verticesSet.insert(id);
@@ -11,12 +11,12 @@ void EdgeListGraph<VertexType, EdgeType>::addVertex(int id) {
 }
 
 template <typename VertexType, typename EdgeType>
-void EdgeListGraph<VertexType, EdgeType>::removeVertex(int id) {
+void EdgeListGraph<VertexType, EdgeType>::removeVertex(const Vertex& id) {
   if (hasVertex(id)) {
     // Удаляем вершину из списка вершин
     this->vertices.erase(
         std::remove_if(this->vertices.begin(), this->vertices.end(),
-                       [id](const VertexType& v) { return v.id == id; }),
+                       [id](const VertexType& v) { return v.id == id.id; }),
         this->vertices.end());
 
     // Удаляем вершину из множества
@@ -32,14 +32,14 @@ void EdgeListGraph<VertexType, EdgeType>::removeVertex(int id) {
 }
 
 template <typename VertexType, typename EdgeType>
-void EdgeListGraph<VertexType, EdgeType>::addEdge(int source, int target) {
+void EdgeListGraph<VertexType, EdgeType>::addEdge(const Vertex& source, const Vertex& target) {
   if (hasVertex(source) && hasVertex(target) && !hasEdge(source, target)) {
     this->edges.emplace_back(source, target);
   }
 }
 
 template <typename VertexType, typename EdgeType>
-void EdgeListGraph<VertexType, EdgeType>::removeEdge(int source, int target) {
+void EdgeListGraph<VertexType, EdgeType>::removeEdge(const Vertex& source, const Vertex& target) {
   this->edges.erase(std::remove_if(this->edges.begin(), this->edges.end(),
                                    [source, target](const EdgeType& e) {
                                      return e.source == source &&
@@ -49,9 +49,9 @@ void EdgeListGraph<VertexType, EdgeType>::removeEdge(int source, int target) {
 }
 
 template <typename VertexType, typename EdgeType>
-std::vector<int>::iterator
-EdgeListGraph<VertexType, EdgeType>::getNeighborsIterator(int vertexId) {
-  static std::vector<int> neighbors;
+typename std::vector<Vertex>::iterator
+EdgeListGraph<VertexType, EdgeType>::getNeighborsIterator(const Vertex& vertexId) {
+  std::vector<VertexType> neighbors;
   neighbors.clear();
   if (hasVertex(vertexId)) {
     for (const auto& edge : this->edges) {
@@ -64,10 +64,10 @@ EdgeListGraph<VertexType, EdgeType>::getNeighborsIterator(int vertexId) {
 }
 
 template <typename VertexType, typename EdgeType>
-std::vector<int>::iterator
+typename std::vector<Vertex>::iterator
 EdgeListGraph<VertexType, EdgeType>::getFilteredNeighborsIterator(
-    int vertexId, bool (*filter)(int)) {
-  static std::vector<int> filteredNeighbors;
+  const Vertex& vertexId, bool (*filter)(Vertex)) {
+  std::vector<VertexType> filteredNeighbors;
   filteredNeighbors.clear();
   if (hasVertex(vertexId)) {
     for (const auto& edge : this->edges) {
@@ -80,13 +80,13 @@ EdgeListGraph<VertexType, EdgeType>::getFilteredNeighborsIterator(
 }
 
 template <typename VertexType, typename EdgeType>
-bool EdgeListGraph<VertexType, EdgeType>::hasVertex(int id) const {
+bool EdgeListGraph<VertexType, EdgeType>::hasVertex(const Vertex& id) const {
   return verticesSet.find(id) != verticesSet.end();
 }
 
 template <typename VertexType, typename EdgeType>
-bool EdgeListGraph<VertexType, EdgeType>::hasEdge(int source,
-                                                  int target) const {
+bool EdgeListGraph<VertexType, EdgeType>::hasEdge(const Vertex& source,
+  const Vertex& target) const {
   return std::any_of(this->edges.begin(), this->edges.end(),
                      [source, target](const EdgeType& e) {
                        return e.source == source && e.target == target;
@@ -94,3 +94,6 @@ bool EdgeListGraph<VertexType, EdgeType>::hasEdge(int source,
 }
 
 }  // namespace graph
+
+template class graph::EdgeListGraph<graph::Vertex, graph::Edge>;
+// template class graph::EdgeListGraph<int, graph::Edge>;

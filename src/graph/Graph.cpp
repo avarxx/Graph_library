@@ -4,7 +4,7 @@ namespace graph
 {
 
   template <typename VertexType, typename EdgeType>
-  void Graph<VertexType, EdgeType>::addVertex(int id)
+  void Graph<VertexType, EdgeType>::addVertex(const Vertex& id)
   {
     if (!hasVertex(id))
     {
@@ -13,13 +13,13 @@ namespace graph
   }
 
   template <typename VertexType, typename EdgeType>
-  void Graph<VertexType, EdgeType>::removeVertex(int id)
+  void Graph<VertexType, EdgeType>::removeVertex(const Vertex& id)
   {
     if(!hasVertex(id))
       return;
     vertices.erase(
         std::remove_if(vertices.begin(), vertices.end(), [id](const VertexType &v)
-                       { return v.id == id; }),
+                       { return v.id == id.id; }),
         vertices.end());
     // remove_if перемещает все нужные вершины в конец вектора и
     // потом erase удаляет все элементы в этом диапозоне
@@ -31,7 +31,7 @@ namespace graph
   }
 
   template <typename VertexType, typename EdgeType>
-  void Graph<VertexType, EdgeType>::addEdge(int source, int target)
+  void Graph<VertexType, EdgeType>::addEdge(const Vertex& source, const Vertex& target)
   {
     if (hasVertex(source) && hasVertex(target) && !hasEdge(source, target))
     {
@@ -40,7 +40,7 @@ namespace graph
   }
 
   template <typename VertexType, typename EdgeType>
-  void Graph<VertexType, EdgeType>::removeEdge(int source, int target)
+  void Graph<VertexType, EdgeType>::removeEdge(const Vertex& source, const Vertex& target)
   {
     edges.erase(std::remove_if(edges.begin(), edges.end(), [source, target](const EdgeType &e)
                                { return e.source == source && e.target == target; }),
@@ -60,10 +60,10 @@ namespace graph
   }
 
   template <typename VertexType, typename EdgeType>
-  std::vector<int>::iterator Graph<VertexType, EdgeType>::getNeighborsIterator(
-      int vertexId)
+  typename std::vector<VertexType>::iterator Graph<VertexType, EdgeType>::getNeighborsIterator(
+    const Vertex& vertexId)
   {
-    static std::vector<int> neighbors;
+    std::vector<Vertex> neighbors;
     neighbors.clear();
     for (const auto &edge : edges)
     {
@@ -76,11 +76,11 @@ namespace graph
   }
 
   template <typename VertexType, typename EdgeType>
-  std::vector<int>::iterator
-  Graph<VertexType, EdgeType>::getFilteredNeighborsIterator(int vertexId,
-                                                            bool (*filter)(int))
+  typename std::vector<VertexType>::iterator
+  Graph<VertexType, EdgeType>::getFilteredNeighborsIterator(const Vertex& vertexId,
+                                                            bool (*filter)(Vertex))
   {
-    static std::vector<int> filteredNeighbors;
+    std::vector<Vertex> filteredNeighbors;
     filteredNeighbors.clear();
     for (const auto &edge : edges)
     {
@@ -93,15 +93,15 @@ namespace graph
   }
 
   template <typename VertexType, typename EdgeType>
-  bool Graph<VertexType, EdgeType>::hasVertex(int id) const
+  bool Graph<VertexType, EdgeType>::hasVertex(const Vertex& id) const
   {
     return std::any_of(vertices.begin(), vertices.end(),
                        [id](const VertexType &v)
-                       { return v.id == id; });
+                       { return v.id == id.id; });
   }
 
   template <typename VertexType, typename EdgeType>
-  bool Graph<VertexType, EdgeType>::hasEdge(int source, int target) const
+  bool Graph<VertexType, EdgeType>::hasEdge(const Vertex& source, const Vertex& target) const
   {
     return std::any_of(edges.begin(), edges.end(),
                        [source, target](const EdgeType &e)
@@ -111,3 +111,6 @@ namespace graph
   }
 
 } // namespace graph
+
+template class graph::Graph<graph::Vertex, graph::Edge>;
+// template class graph::Graph<int, graph::Edge>;

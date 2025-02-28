@@ -1,2 +1,0 @@
-/usr/bin/ar qc libWeightedGraph.a CMakeFiles/WeightedGraph.dir/src/graph/WeightedGraph.cpp.o
-/usr/bin/ranlib libWeightedGraph.a

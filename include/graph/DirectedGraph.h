@@ -9,12 +9,17 @@ template <typename VertexType = Vertex, typename EdgeType = Edge>
 class DirectedGraph : public Graph<VertexType, EdgeType> {
  public:
   DirectedGraph() = default;
-  void addEdge(int source, int target) override;
-  void removeEdge(int source, int target) override;
-  bool hasEdge(int source, int target) const override;
-  std::vector<int>::iterator getNeighborsIterator(int vertexId) override;
-  std::vector<int>::iterator getFilteredNeighborsIterator(
-      int vertexId, bool (*filter)(int)) override;
+  
+  void addEdge(const Vertex& source, const Vertex& target) override;
+  
+  void removeEdge(const Vertex& source, const Vertex& target) override;
+  
+  bool hasEdge(const Vertex& source, const Vertex& target) const override;
+  
+  typename std::vector<VertexType>::iterator getNeighborsIterator(const Vertex& vertexId) override;
+  
+  typename std::vector<VertexType>::iterator getFilteredNeighborsIterator(
+    const Vertex& vertexId, bool (*filter)(Vertex)) override;
 };
 }  // namespace graph
 

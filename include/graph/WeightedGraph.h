@@ -10,8 +10,8 @@ class WeightedEdge : public Edge {
  public:
   WeightType weight;
 
-  WeightedEdge(int source, int target, WeightType weight)
-      : Edge(source, target), weight(weight) {}
+  WeightedEdge(const Vertex& source, const Vertex& target, WeightType weight)
+      : Edge(source, target), weight(weight) {};
 };
 
 template <typename VertexType = Vertex, typename WeightType = int>
@@ -19,16 +19,16 @@ class WeightedGraph : public Graph<VertexType, WeightedEdge<WeightType>> {
  public:
   WeightedGraph() = default;
 
-  void addEdge(int source, int target, WeightType weight);
+  void addEdge(const Vertex& source, const Vertex& target, WeightType weight);
 
-  WeightType getEdgeWeight(int source, int target) const;
+  WeightType getEdgeWeight(const Vertex& source, const Vertex& target) const;
 
-  void setEdgeWeight(int source, int target, WeightType weight);
+  void setEdgeWeight(const Vertex& source, const Vertex& target, WeightType weight);
 
-  std::vector<int>::iterator getNeighborsIterator(int vertexId);
+  typename std::vector<Vertex>::iterator getNeighborsIterator(const Vertex& vertexId);
 
-  std::vector<int>::iterator getFilteredNeighborsIterator(
-      int vertexId, bool (*filter)(int));
+  typename std::vector<Vertex>::iterator getFilteredNeighborsIterator(
+    const Vertex& vertexId, bool (*filter)(Vertex));
 };
 
 }  // namespace graph

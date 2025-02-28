@@ -3,7 +3,7 @@
 namespace graph {
 
 template <typename VertexType, typename WeightType>
-void WeightedGraph<VertexType, WeightType>::addEdge(int source, int target,
+void WeightedGraph<VertexType, WeightType>::addEdge(const Vertex& source, const Vertex& target,
                                                     WeightType weight) {
   if (this->hasVertex(source) && this->hasVertex(target) &&
       !this->hasEdge(source, target)) {
@@ -12,8 +12,8 @@ void WeightedGraph<VertexType, WeightType>::addEdge(int source, int target,
 }
 
 template <typename VertexType, typename WeightType>
-WeightType WeightedGraph<VertexType, WeightType>::getEdgeWeight(int source,
-                                                                int target) const {
+WeightType WeightedGraph<VertexType, WeightType>::getEdgeWeight(const Vertex& source,
+  const Vertex& target) const {
   auto it = std::find_if(
       this->edges.begin(), this->edges.end(), [source, target](const auto& edge) {
         return edge.source == source && edge.target == target;
@@ -26,7 +26,7 @@ WeightType WeightedGraph<VertexType, WeightType>::getEdgeWeight(int source,
 }
 
 template <typename VertexType, typename WeightType>
-void WeightedGraph<VertexType, WeightType>::setEdgeWeight(int source, int target,
+void WeightedGraph<VertexType, WeightType>::setEdgeWeight(const Vertex& source, const Vertex& target,
                                                           WeightType weight) {
   auto it = std::find_if(
       this->edges.begin(), this->edges.end(), [source, target](const auto& edge) {
@@ -41,8 +41,8 @@ void WeightedGraph<VertexType, WeightType>::setEdgeWeight(int source, int target
 }
 
 template <typename VertexType, typename WeightType>
-std::vector<int>::iterator WeightedGraph<VertexType, WeightType>::getNeighborsIterator(int vertexId) {
-  static std::vector<int> neighbors;
+typename std::vector<Vertex>::iterator WeightedGraph<VertexType, WeightType>::getNeighborsIterator(const Vertex& vertexId) {
+  std::vector<Vertex> neighbors;
   neighbors.clear();
   for (const auto& edge : this->edges) {
     if (edge.source == vertexId) {
@@ -53,9 +53,9 @@ std::vector<int>::iterator WeightedGraph<VertexType, WeightType>::getNeighborsIt
 }
 
 template <typename VertexType, typename WeightType>
-std::vector<int>::iterator WeightedGraph<VertexType, WeightType>::getFilteredNeighborsIterator(
-    int vertexId, bool (*filter)(int)) {
-  static std::vector<int> filteredNeighbors;
+typename std::vector<Vertex>::iterator WeightedGraph<VertexType, WeightType>::getFilteredNeighborsIterator(
+  const Vertex& vertexId, bool (*filter)(Vertex)) {
+  std::vector<Vertex> filteredNeighbors;
   filteredNeighbors.clear();
   for (const auto& edge : this->edges) {
     if (edge.source == vertexId && filter(edge.target)) {
@@ -66,3 +66,6 @@ std::vector<int>::iterator WeightedGraph<VertexType, WeightType>::getFilteredNei
 }
 
 }  // namespace graph
+
+template class graph::WeightedGraph<graph::Vertex, graph::Edge>;
+// template class graph::WeightedGraph<int, graph::Edge>;

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libAdjacencyListGraph.a CMakeFiles/AdjacencyListGraph.dir/src/graph/AdjacencyListGraph.cpp.o
-/usr/bin/ranlib libAdjacencyListGraph.a

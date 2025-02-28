@@ -3,7 +3,7 @@
 namespace graph {
 
 template <typename VertexType, typename EdgeType>
-size_t AdjacencyMatrixGraph<VertexType, EdgeType>::getVertexIndex(int id) const {
+size_t AdjacencyMatrixGraph<VertexType, EdgeType>::getVertexIndex(const Vertex& id) const {
   auto it = vertexToIndex.find(id);
   if (it != vertexToIndex.end()) {
     return it->second;
@@ -12,7 +12,7 @@ size_t AdjacencyMatrixGraph<VertexType, EdgeType>::getVertexIndex(int id) const 
 }
 
 template <typename VertexType, typename EdgeType>
-void AdjacencyMatrixGraph<VertexType, EdgeType>::addVertex(int id) {
+void AdjacencyMatrixGraph<VertexType, EdgeType>::addVertex(const Vertex& id) {
   if (!hasVertex(id)) {
     this->vertices.emplace_back(id);
 
@@ -30,14 +30,14 @@ void AdjacencyMatrixGraph<VertexType, EdgeType>::addVertex(int id) {
 }
 
 template <typename VertexType, typename EdgeType>
-void AdjacencyMatrixGraph<VertexType, EdgeType>::removeVertex(int id) {
+void AdjacencyMatrixGraph<VertexType, EdgeType>::removeVertex(const Vertex& id) {
   if (hasVertex(id)) {
     size_t index = getVertexIndex(id);
-
+      
     // Удаляем вершину из списка вершин
     this->vertices.erase(
         std::remove_if(this->vertices.begin(), this->vertices.end(),
-                       [id](const VertexType& v) { return v.id == id; }),
+                       [id](const VertexType& v) { return v.id == id.id; }),
         this->vertices.end());
 
     // Удаляем строку и столбец из матрицы смежности
@@ -57,7 +57,7 @@ void AdjacencyMatrixGraph<VertexType, EdgeType>::removeVertex(int id) {
 }
 
 template <typename VertexType, typename EdgeType>
-void AdjacencyMatrixGraph<VertexType, EdgeType>::addEdge(int source, int target) {
+void AdjacencyMatrixGraph<VertexType, EdgeType>::addEdge(const Vertex& source, const Vertex& target) {
   if (hasVertex(source) && hasVertex(target) && !hasEdge(source, target)) {
     this->edges.emplace_back(source, target);
     size_t sourceIndex = getVertexIndex(source);
@@ -67,7 +67,7 @@ void AdjacencyMatrixGraph<VertexType, EdgeType>::addEdge(int source, int target)
 }
 
 template <typename VertexType, typename EdgeType>
-void AdjacencyMatrixGraph<VertexType, EdgeType>::removeEdge(int source, int target) {
+void AdjacencyMatrixGraph<VertexType, EdgeType>::removeEdge(const Vertex& source, const Vertex& target) {
   if (hasEdge(source, target)) {
     this->edges.erase(
         std::remove_if(this->edges.begin(), this->edges.end(),
@@ -83,9 +83,9 @@ void AdjacencyMatrixGraph<VertexType, EdgeType>::removeEdge(int source, int targ
 }
 
 template <typename VertexType, typename EdgeType>
-std::vector<int>::iterator
-AdjacencyMatrixGraph<VertexType, EdgeType>::getNeighborsIterator(int vertexId) {
-  static std::vector<int> neighbors;
+typename std::vector<VertexType>::iterator
+AdjacencyMatrixGraph<VertexType, EdgeType>::getNeighborsIterator(const Vertex& vertexId) {
+  std::vector<Vertex> neighbors;
   neighbors.clear();
   if (hasVertex(vertexId)) {
     size_t index = getVertexIndex(vertexId);
@@ -99,10 +99,10 @@ AdjacencyMatrixGraph<VertexType, EdgeType>::getNeighborsIterator(int vertexId) {
 }
 
 template <typename VertexType, typename EdgeType>
-std::vector<int>::iterator
+typename std::vector<VertexType>::iterator
 AdjacencyMatrixGraph<VertexType, EdgeType>::getFilteredNeighborsIterator(
-    int vertexId, bool (*filter)(int)) {
-  static std::vector<int> filteredNeighbors;
+  const Vertex& vertexId, bool (*filter)(Vertex)) {
+  static std::vector<Vertex> filteredNeighbors;
   filteredNeighbors.clear();
   if (hasVertex(vertexId)) {
     size_t index = getVertexIndex(vertexId);
@@ -116,12 +116,12 @@ AdjacencyMatrixGraph<VertexType, EdgeType>::getFilteredNeighborsIterator(
 }
 
 template <typename VertexType, typename EdgeType>
-bool AdjacencyMatrixGraph<VertexType, EdgeType>::hasVertex(int id) const {
+bool AdjacencyMatrixGraph<VertexType, EdgeType>::hasVertex(const Vertex& id) const {
   return vertexToIndex.find(id) != vertexToIndex.end();
 }
 
 template <typename VertexType, typename EdgeType>
-bool AdjacencyMatrixGraph<VertexType, EdgeType>::hasEdge(int source, int target) const {
+bool AdjacencyMatrixGraph<VertexType, EdgeType>::hasEdge(const Vertex& source, const Vertex& target) const {
   if (!hasVertex(source) || !hasVertex(target)) return false;
   size_t sourceIndex = getVertexIndex(source);
   size_t targetIndex = getVertexIndex(target);
@@ -129,3 +129,6 @@ bool AdjacencyMatrixGraph<VertexType, EdgeType>::hasEdge(int source, int target)
 }
 
 }  // namespace graph
+
+template class graph::AdjacencyMatrixGraph<graph::Vertex, graph::Edge>;
+// template class graph::AdjacencyMatrixGraph<int, graph::Edge>;

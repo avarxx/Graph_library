@@ -1,3 +1,0 @@
-/home/anxx/prog/project_of_algoritms/Graph_library/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
-/home/anxx/prog/project_of_algoritms/Graph_library/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
-/home/anxx/prog/project_of_algoritms/Graph_library/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir
