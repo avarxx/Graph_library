@@ -5,79 +5,68 @@
 
 namespace graph {
 
+/**
+ * @brief Класс, реализующий ориентированный граф.
+ * @tparam VertexType Тип вершины (по умолчанию Vertex).
+ * @tparam EdgeType Тип ребра (по умолчанию Edge).
+ */
 template <typename VertexType = Vertex, typename EdgeType = Edge>
 class DirectedGraph : public Graph<VertexType, EdgeType> {
  public:
+  /**
+   * @brief Конструктор по умолчанию.
+   */
   DirectedGraph() = default;
-  
-  void addEdge(const Vertex& source, const Vertex& target) override;
-  
-  void removeEdge(const Vertex& source, const Vertex& target) override;
-  
-  bool hasEdge(const Vertex& source, const Vertex& target) const override;
-  
-  typename std::vector<VertexType>::iterator getNeighborsIterator(const Vertex& vertexId) override;
-  
+
+  /**
+   * @brief Добавляет ориентированное ребро в граф.
+   * @param source Исходная вершина ребра.
+   * @param target Целевая вершина ребра.
+   */
+  void addEdge(const VertexType& source, const VertexType& target) override;
+
+  /**
+   * @brief Удаляет ориентированное ребро из графа.
+   * @param source Исходная вершина ребра.
+   * @param target Целевая вершина ребра.
+   */
+  void removeEdge(const VertexType& source, const VertexType& target) override;
+
+  /**
+   * @brief Проверяет наличие ориентированного ребра в графе.
+   * @param source Исходная вершина ребра.
+   * @param target Целевая вершина ребра.
+   * @return true, если ребро существует, иначе false.
+   */
+  bool hasEdge(const VertexType& source,
+               const VertexType& target) const override;
+
+  /**
+   * @brief Возвращает итератор по соседям вершины.
+   * @param vertexId Идентификатор вершины.
+   * @return Итератор по соседям вершины.
+   */
+  typename std::vector<VertexType>::iterator getNeighborsIterator(
+      const VertexType& vertexId) override;
+
+  /**
+   * @brief Возвращает итератор по соседям вершины с фильтром.
+   * @param vertexId Идентификатор вершины.
+   * @param filter Функция-фильтр для соседей.
+   * @return Итератор по соседям вершины, удовлетворяющим фильтру.
+   */
   typename std::vector<VertexType>::iterator getFilteredNeighborsIterator(
-    const Vertex& vertexId, bool (*filter)(Vertex)) override;
+      const VertexType& vertexId, bool (*filter)(VertexType)) override;
+
+  /**
+   * @brief Возвращает список смежных вершин.
+   * @param vertex Вершина, для которой ищутся смежные вершины.
+   * @return Вектор смежных вершин.
+   */
+  std::vector<VertexType> getAdjacencyVertices(
+      const VertexType& vertex) override;
 };
+
 }  // namespace graph
-
-// namespace graph {
-
-// /**
-//  * @brief Класс ориентированного графа.
-//  * @tparam VertexType Тип вершины (по умолчанию Vertex).
-//  * @tparam EdgeType Тип ребра (по умолчанию Edge).
-//  */
-// template <typename VertexType = Vertex, typename EdgeType = Edge>
-// class DirectedGraph : public Graph<VertexType, EdgeType> {
-//  public:
-//   /**
-//    * @brief Конструктор по умолчанию.
-//    */
-//   DirectedGraph() = default;
-
-//   /**
-//    * @brief Добавляет ориентированное ребро в граф.
-//    * @param source Идентификатор исходной вершины.
-//    * @param target Идентификатор целевой вершины.
-//    */
-//   void addEdge(int source, int target) override;
-
-//   /**
-//    * @brief Удаляет ориентированное ребро из графа.
-//    * @param source Идентификатор исходной вершины.
-//    * @param target Идентификатор целевой вершины.
-//    */
-//   void removeEdge(int source, int target) override;
-
-//   /**
-//    * @brief Проверяет наличие ориентированного ребра в графе.
-//    * @param source Идентификатор исходной вершины.
-//    * @param target Идентификатор целевой вершины.
-//    * @return true, если ребро существует, иначе false.
-//    */
-//   bool hasEdge(int source, int target) const override;
-
-//   /**
-//    * @brief Возвращает итератор по соседям вершины (только исходящие рёбра).
-//    * @param vertexId Идентификатор вершины.
-//    * @return Итератор по соседям вершины.
-//    */
-//   std::vector<int>::iterator getNeighborsIterator(int vertexId) override;
-
-//   /**
-//    * @brief Возвращает итератор с фильтром по соседям вершины (только
-//    исходящие рёбра).
-//    * @param vertexId Идентификатор вершины.
-//    * @param filter Функция-фильтр.
-//    * @return Итератор по соседям вершины, удовлетворяющим фильтру.
-//    */
-//   std::vector<int>::iterator getFilteredNeighborsIterator(
-//       int vertexId, bool (*filter)(int)) override;
-// };
-
-// }  // namespace graph
 
 #endif  // DIRECTED_GRAPH_H

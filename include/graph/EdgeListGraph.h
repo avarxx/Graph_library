@@ -7,112 +7,92 @@
 #include "Graph.h"
 
 namespace graph {
-  
+
+/**
+ * @brief Класс, реализующий граф на основе списка рёбер.
+ * @tparam VertexType Тип вершины (по умолчанию Vertex).
+ * @tparam EdgeType Тип ребра (по умолчанию Edge).
+ */
 template <typename VertexType = Vertex, typename EdgeType = Edge>
-class EdgeListGraph : public Graph<VertexType, EdgeType> 
-{
-  private:
-    std::unordered_set<VertexType> verticesSet;
-  public:
-  EdgeListGraph()  = default;
+class EdgeListGraph : public Graph<VertexType, EdgeType> {
+ private:
+  std::unordered_set<VertexType>
+      verticesSet;  ///< Множество вершин для быстрой проверки их наличия.
 
-  void addVertex(const Vertex& id) override;
+ public:
+  /**
+   * @brief Конструктор по умолчанию.
+   */
+  EdgeListGraph() = default;
 
-  void removeVertex(const Vertex& id) override;
+  /**
+   * @brief Добавляет вершину в граф.
+   * @param id Вершина для добавления.
+   */
+  void addVertex(const VertexType& id) override;
 
-  void addEdge(const Vertex& source, const Vertex& target) override;
+  /**
+   * @brief Удаляет вершину из графа.
+   * @param id Вершина для удаления.
+   */
+  void removeVertex(const VertexType& id) override;
 
-  void removeEdge(const Vertex& source, const Vertex& target) override;
+  /**
+   * @brief Добавляет ребро в граф.
+   * @param source Исходная вершина ребра.
+   * @param target Целевая вершина ребра.
+   */
+  void addEdge(const VertexType& source, const VertexType& target) override;
 
-  typename std::vector<Vertex>::iterator getNeighborsIterator(const Vertex& vertexId) override;
+  /**
+   * @brief Удаляет ребро из графа.
+   * @param source Исходная вершина ребра.
+   * @param target Целевая вершина ребра.
+   */
+  void removeEdge(const VertexType& source, const VertexType& target) override;
 
-  typename std::vector<Vertex>::iterator getFilteredNeighborsIterator(const Vertex& VertexId, bool (*filter)(Vertex)) override;
+  /**
+   * @brief Возвращает итератор по соседям вершины.
+   * @param vertexId Идентификатор вершины.
+   * @return Итератор по соседям вершины.
+   */
+  typename std::vector<VertexType>::iterator getNeighborsIterator(
+      const VertexType& vertexId) override;
 
-  bool hasVertex(const Vertex& id) const override;
+  /**
+   * @brief Возвращает итератор по соседям вершины с фильтром.
+   * @param VertexId Идентификатор вершины.
+   * @param filter Функция-фильтр для соседей.
+   * @return Итератор по соседям вершины, удовлетворяющим фильтру.
+   */
+  typename std::vector<VertexType>::iterator getFilteredNeighborsIterator(
+      const VertexType& VertexId, bool (*filter)(VertexType)) override;
 
-  bool hasEdge(const Vertex& source, const Vertex& target) const override;
+  /**
+   * @brief Проверяет наличие вершины в графе.
+   * @param id Идентификатор вершины.
+   * @return true, если вершина существует, иначе false.
+   */
+  bool hasVertex(const VertexType& id) const override;
 
+  /**
+   * @brief Проверяет наличие ребра в графе.
+   * @param source Исходная вершина ребра.
+   * @param target Целевая вершина ребра.
+   * @return true, если ребро существует, иначе false.
+   */
+  bool hasEdge(const VertexType& source,
+               const VertexType& target) const override;
+
+  /**
+   * @brief Возвращает список смежных вершин.
+   * @param vertex Вершина, для которой ищутся смежные вершины.
+   * @return Вектор смежных вершин.
+   */
+  std::vector<VertexType> getAdjacencyVertices(
+      const VertexType& vertex) override;
 };
+
 }  // namespace graph
-
-
-// namespace graph {
-
-// /**
-//  * @brief Класс графа, реализованный на основе списка рёбер.
-//  * @tparam VertexType Тип вершины (по умолчанию Vertex).
-//  * @tparam EdgeType Тип ребра (по умолчанию Edge).
-//  */
-// template <typename VertexType = Vertex, typename EdgeType = Edge>
-// class EdgeListGraph : public Graph<VertexType, EdgeType> {
-//  private:
-//   std::unordered_set<int> verticesSet;  // Множество вершин для быстрого
-//   поиска
-
-//  public:
-//   /**
-//    * @brief Конструктор по умолчанию.
-//    */
-//   EdgeListGraph() = default;
-
-//   /**
-//    * @brief Добавляет вершину в граф.
-//    * @param id Уникальный идентификатор вершины.
-//    */
-//   void addVertex(int id) override;
-
-//   /**
-//    * @brief Удаляет вершину из графа.
-//    * @param id Уникальный идентификатор вершины.
-//    */
-//   void removeVertex(int id) override;
-
-//   /**
-//    * @brief Добавляет ребро в граф.
-//    * @param source Идентификатор исходной вершины.
-//    * @param target Идентификатор целевой вершины.
-//    */
-//   void addEdge(int source, int target) override;
-
-//   /**
-//    * @brief Удаляет ребро из графа.
-//    * @param source Идентификатор исходной вершины.
-//    * @param target Идентификатор целевой вершины.
-//    */
-//   void removeEdge(int source, int target) override;
-
-//   /**
-//    * @brief Возвращает итератор по соседям вершины.
-//    * @param vertexId Идентификатор вершины.
-//    * @return Итератор по соседям вершины.
-//    */
-//   std::vector<int>::iterator getNeighborsIterator(int vertexId) override;
-
-//   /**
-//    * @brief Возвращает итератор с фильтром по соседям вершины.
-//    * @param vertexId Идентификатор вершины.
-//    * @param filter Функция-фильтр.
-//    * @return Итератор по соседям вершины, удовлетворяющим фильтру.
-//    */
-//   std::vector<int>::iterator getFilteredNeighborsIterator(
-//       int vertexId, bool (*filter)(int)) override;
-
-//   /**
-//    * @brief Проверяет наличие вершины в графе.
-//    * @param id Идентификатор вершины.
-//    * @return true, если вершина существует, иначе false.
-//    */
-//   bool hasVertex(int id) const override;
-
-//   /**
-//    * @brief Проверяет наличие ребра в графе.
-//    * @param source Идентификатор исходной вершины.
-//    * @param target Идентификатор целевой вершины.
-//    * @return true, если ребро существует, иначе false.
-//    */
-//   bool hasEdge(int source, int target) const override;
-// };
-
-// }  // namespace graph
 
 #endif  // EDGE_LIST_GRAPH_H

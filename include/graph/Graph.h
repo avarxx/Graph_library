@@ -2,10 +2,10 @@
 #define GRAPH_H
 
 #include <algorithm>
+#include <functional>
 #include <iterator>
 #include <memory>
 #include <vector>
-#include <functional>
 
 namespace graph {
 
@@ -20,12 +20,21 @@ class Vertex {
    * @brief Конструктор вершины.
    * @param id Уникальный идентификатор вершины.
    */
-  explicit Vertex(int id) : id(id) {};
-  // explicit не дает компилятору делать неявные преобразования 
+  explicit Vertex(int id) : id(id){};
+  // explicit не дает компилятору делать неявные преобразования
 
-  Vertex() : id(0) {};
+  /**
+   * @brief Конструктор по умолчанию.
+   */
+  Vertex() : id(0){};
 };
 
+/**
+ * @brief Оператор сравнения вершин.
+ * @param left Левая вершина для сравнения.
+ * @param right Правая вершина для сравнения.
+ * @return true, если идентификаторы вершин равны, иначе false.
+ */
 inline bool operator==(const Vertex& left, const Vertex& right) {
   return left.id == right.id;
 }
@@ -43,8 +52,19 @@ class Edge {
    * @param source Идентификатор исходной вершины.
    * @param target Идентификатор целевой вершины.
    */
-  Edge(const Vertex& source, const Vertex& target) : source(source), target(target) {};
-  Edge() : source(0), target(0) {};
+  Edge(const Vertex& source, const Vertex& target)
+      : source(source), target(target){};
+
+  /**
+   * @brief Конструктор по умолчанию.
+   */
+  Edge() : source(0), target(0){};
+
+  /**
+   * @brief Оператор присваивания.
+   * @param right Ребро, из которого копируются данные.
+   * @return Ссылка на текущее ребро.
+   */
   Edge& operator=(const Edge& right) {
     if (this == &right) {
       return *this;
@@ -53,6 +73,43 @@ class Edge {
     this->target = right.target;
     return *this;
   }
+};
+
+/**
+ * @brief Оператор сравнения рёбер.
+ * @param left Левое ребро для сравнения.
+ * @param right Правое ребро для сравнения.
+ * @return true, если исходные и целевые вершины рёбер равны, иначе false.
+ */
+inline bool operator==(const Edge& left, const Edge& right) {
+  return left.source == right.source && left.target == right.target;
+}
+
+/**
+ * @brief Класс, представляющий взвешенное ребро графа.
+ * @tparam WeightType Тип веса ребра.
+ */
+template <typename WeightType>
+class WeightedEdge : public Edge {
+ public:
+  WeightType weight;  ///< Вес ребра.
+
+  /**
+   * @brief Конструктор взвешенного ребра.
+   * @param source Идентификатор исходной вершины.
+   * @param target Идентификатор целевой вершины.
+   * @param weight Вес ребра.
+   */
+  WeightedEdge(const Vertex& source, const Vertex& target, WeightType weight)
+      : Edge(source, target), weight(weight){};
+
+  /**
+   * @brief Конструктор взвешенного ребра с весом по умолчанию.
+   * @param source Идентификатор исходной вершины.
+   * @param target Идентификатор целевой вершины.
+   */
+  WeightedEdge(const Vertex& source, const Vertex& target)
+      : Edge(source, target), weight(0){};
 };
 
 /**
@@ -79,29 +136,29 @@ class Graph {
 
   /**
    * @brief Добавляет вершину в граф.
-   * @param id Уникальный идентификатор вершины.
+   * @param vertex Вершина для добавления.
    */
-  virtual void addVertex(const Vertex& vertex);
+  virtual void addVertex(const VertexType& vertex);
 
   /**
    * @brief Удаляет вершину из графа.
-   * @param id Уникальный идентификатор вершины.
+   * @param vertex Вершина для удаления.
    */
-  virtual void removeVertex(const Vertex& vertex);
+  virtual void removeVertex(const VertexType& vertex);
 
   /**
    * @brief Добавляет ребро в граф.
    * @param source Идентификатор исходной вершины.
    * @param target Идентификатор целевой вершины.
    */
-  virtual void addEdge(const Vertex& source, const Vertex& target);
+  virtual void addEdge(const VertexType& source, const VertexType& target);
 
   /**
    * @brief Удаляет ребро из графа.
    * @param source Идентификатор исходной вершины.
    * @param target Идентификатор целевой вершины.
    */
-  virtual void removeEdge(const Vertex& source, const Vertex& target);
+  virtual void removeEdge(const VertexType& source, const VertexType& target);
 
   /**
    * @brief Возвращает список вершин.
@@ -120,7 +177,8 @@ class Graph {
    * @param vertexId Идентификатор вершины.
    * @return Итератор по соседям вершины.
    */
-  virtual typename std::vector<VertexType>::iterator getNeighborsIterator(const Vertex& vertexId);
+  virtual typename std::vector<VertexType>::iterator getNeighborsIterator(
+      const VertexType& vertexId);
 
   /**
    * @brief Возвращает итератор с фильтром по соседям вершины.
@@ -128,15 +186,16 @@ class Graph {
    * @param filter Функция-фильтр.
    * @return Итератор по соседям вершины, удовлетворяющим фильтру.
    */
-  virtual typename std::vector<VertexType>::iterator getFilteredNeighborsIterator(
-      const Vertex& vertexId, bool (*filter)(Vertex));
+  virtual typename std::vector<VertexType>::iterator
+  getFilteredNeighborsIterator(const VertexType& vertexId,
+                               bool (*filter)(VertexType));
 
   /**
    * @brief Проверяет наличие вершины в графе.
    * @param id Идентификатор вершины.
    * @return true, если вершина существует, иначе false.
    */
-  virtual bool hasVertex(const Vertex& id) const;
+  virtual bool hasVertex(const VertexType& id) const;
 
   /**
    * @brief Проверяет наличие ребра в графе.
@@ -144,18 +203,35 @@ class Graph {
    * @param target Идентификатор целевой вершины.
    * @return true, если ребро существует, иначе false.
    */
-  virtual bool hasEdge(const Vertex& source, const Vertex& target) const;
+  virtual bool hasEdge(const VertexType& source,
+                       const VertexType& target) const;
+
+  /**
+   * @brief Возвращает список смежных вершин.
+   * @param vertex Вершина, для которой ищутся смежные вершины.
+   * @return Вектор смежных вершин.
+   */
+  virtual std::vector<VertexType> getAdjacencyVertices(
+      const VertexType& vertex);
 };
 
 }  // namespace graph
 
 namespace std {
-  template <>
-  struct hash<graph::Vertex> {
-      std::size_t operator()(const graph::Vertex& v) const noexcept {
-          return std::hash<int>{}(v.id);
-      }
-  };
-}
+/**
+ * @brief Специализация хэш-функции для класса Vertex.
+ */
+template <>
+struct hash<graph::Vertex> {
+  /**
+   * @brief Оператор вычисления хэша.
+   * @param v Вершина, для которой вычисляется хэш.
+   * @return Хэш-значение вершины.
+   */
+  std::size_t operator()(const graph::Vertex& v) const noexcept {
+    return std::hash<int>{}(v.id);
+  }
+};
+}  // namespace std
 
 #endif  // GRAPH_H

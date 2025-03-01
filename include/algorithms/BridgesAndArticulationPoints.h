@@ -1,99 +1,154 @@
 #ifndef BRIDGES_AND_ARTICULATION_POINTS_H
 #define BRIDGES_AND_ARTICULATION_POINTS_H
 
-#include "Graph.h"
-#include <vector>
 #include <unordered_map>
+#include <vector>
+
+#include "Graph.h"
 
 namespace graph {
 
+/**
+ * @brief Класс для поиска мостов и точек сочленения в графе.
+ * @tparam VertexType Тип вершины.
+ * @tparam EdgeType Тип ребра.
+ */
 template <typename VertexType, typename EdgeType>
 class BridgesAndArticulationPoints {
-public:
-    BridgesAndArticulationPoints(const Graph<VertexType, EdgeType>& graph)
-        : graph(graph), time(0) {}
+ public:
+  /**
+   * @brief Конструктор класса.
+   * @param graph Граф, в котором ищутся мосты и точки сочленения.
+   */
+  BridgesAndArticulationPoints(Graph<VertexType, EdgeType> graph)
+      : graph(graph), time(0) {}
 
-    // Поиск мостов
-    std::vector<EdgeType> findBridges() {
-        std::vector<EdgeType> bridges;
-        std::unordered_map<int, int> discoveryTime;
-        std::unordered_map<int, int> low;
-        std::unordered_map<int, int> parent;
+  /**
+   * @brief Поиск всех мостов в графе.
+   * @return Вектор рёбер, являющихся мостами.
+   */
+  std::vector<EdgeType> findBridges() {
+    std::vector<EdgeType> bridges;  // Вектор для хранения мостов.
+    std::unordered_map<int, int> discoveryTime;  // Время обнаружения вершин.
+    std::unordered_map<int, int> low;  // Минимальное время достижимости.
+    std::unordered_map<int, int> parent;  // Родительские вершины.
 
-        for (const auto& vertex : graph.getVertices()) {
-            if (discoveryTime.find(vertex.id) == discoveryTime.end()) {
-                dfsBridges(vertex.id, discoveryTime, low, parent, bridges);
-            }
-        }
-
-        return bridges;
+    // Обход всех вершин графа.
+    for (const auto& vertex : graph.getVertices()) {
+      if (discoveryTime.find(vertex.id) == discoveryTime.end()) {
+        dfsBridges(vertex, discoveryTime, low, parent, bridges);
+      }
     }
 
-    // Поиск точек сочленения
-    std::vector<int> findArticulationPoints() {
-        std::vector<int> articulationPoints;
-        std::unordered_map<int, int> discoveryTime;
-        std::unordered_map<int, int> low;
-        std::unordered_map<int, int> parent;
+    return bridges;
+  }
 
-        for (const auto& vertex : graph.getVertices()) {
-            if (discoveryTime.find(vertex.id) == discoveryTime.end()) {
-                dfsArticulationPoints(vertex.id, discoveryTime, low, parent, articulationPoints);
-            }
-        }
+  /**
+   * @brief Поиск всех точек сочленения в графе.
+   * @return Вектор идентификаторов вершин, являющихся точками сочленения.
+   */
+  std::vector<int> findArticulationPoints() {
+    std::vector<int>
+        articulationPoints;  // Вектор для хранения точек сочленения.
+    std::unordered_map<int, int> discoveryTime;  // Время обнаружения вершин.
+    std::unordered_map<int, int> low;  // Минимальное время достижимости.
+    std::unordered_map<int, int> parent;  // Родительские вершины.
 
-        return articulationPoints;
+    // Обход всех вершин графа.
+    for (const auto& vertex : graph.getVertices()) {
+      if (discoveryTime.find(vertex.id) == discoveryTime.end()) {
+        dfsArticulationPoints(vertex, discoveryTime, low, parent,
+                              articulationPoints);
+      }
     }
 
-private:
-    const Graph<VertexType, EdgeType>& graph;
-    int time;
+    return articulationPoints;
+  }
 
-    void dfsBridges(int u, std::unordered_map<int, int>& discoveryTime, std::unordered_map<int, int>& low,
-                    std::unordered_map<int, int>& parent, std::vector<EdgeType>& bridges) {
-        discoveryTime[u] = low[u] = ++time;
+ private:
+  Graph<VertexType, EdgeType> graph;  ///< Граф для анализа.
+  int time;  ///< Время обнаружения вершин (используется в DFS).
 
-        for (int v : graph.getNeighbors(u)) {
-            if (discoveryTime.find(v) == discoveryTime.end()) {
-                parent[v] = u;
-                dfsBridges(v, discoveryTime, low, parent, bridges);
+  /**
+   * @brief Вспомогательная функция для поиска мостов с использованием DFS.
+   * @param u Текущая вершина.
+   * @param discoveryTime Время обнаружения вершин.
+   * @param low Минимальное время достижимости.
+   * @param parent Родительские вершины.
+   * @param bridges Вектор для хранения найденных мостов.
+   */
+  void dfsBridges(const Vertex& u, std::unordered_map<int, int>& discoveryTime,
+                  std::unordered_map<int, int>& low,
+                  std::unordered_map<int, int>& parent,
+                  std::vector<EdgeType>& bridges) {
+    discoveryTime[u.id] = low[u.id] = ++time;
 
-                low[u] = std::min(low[u], low[v]);
+    // Обход всех соседей текущей вершины.
+    for (auto& v : graph.getAdjacencyVertices(u)) {
+      if (discoveryTime.find(v.id) == discoveryTime.end()) {
+        parent[v.id] = u.id;
+        dfsBridges(v, discoveryTime, low, parent, bridges);
 
-                if (low[v] > discoveryTime[u]) {
-                    bridges.push_back(EdgeType(u, v));нет
-                }
-            } else if (v != parent[u]) {
-                low[u] = std::min(low[u], discoveryTime[v]);
-            }
+        // Обновляем минимальное время достижимости.
+        low[u.id] = std::min(low[u.id], low[v.id]);
+
+        // Если условие для моста выполнено, добавляем ребро в список мостов.
+        if (low[v.id] > discoveryTime[u.id]) {
+          bridges.push_back(EdgeType(u, v));
         }
+      } else if (v.id != parent[u.id]) {
+        // Обновляем минимальное время достижимости.
+        low[u.id] = std::min(low[u.id], discoveryTime[v.id]);
+      }
     }
+  }
 
-    void dfsArticulationPoints(int u, std::unordered_map<int, int>& discoveryTime, std::unordered_map<int, int>& low,
-                               std::unordered_map<int, int>& parent, std::vector<int>& articulationPoints) {
-        discoveryTime[u] = low[u] = ++time;
-        int children = 0;
+  /**
+   * @brief Вспомогательная функция для поиска точек сочленения с использованием
+   * DFS.
+   * @param u Текущая вершина.
+   * @param discoveryTime Время обнаружения вершин.
+   * @param low Минимальное время достижимости.
+   * @param parent Родительские вершины.
+   * @param articulationPoints Вектор для хранения найденных точек сочленения.
+   */
+  void dfsArticulationPoints(const Vertex& u,
+                             std::unordered_map<int, int>& discoveryTime,
+                             std::unordered_map<int, int>& low,
+                             std::unordered_map<int, int>& parent,
+                             std::vector<int>& articulationPoints) {
+    discoveryTime[u.id] = low[u.id] = ++time;
+    int children = 0;  // Количество потомков в DFS-дереве.
 
-        for (int v : graph.getNeighbors(u)) {
-            if (discoveryTime.find(v) == discoveryTime.end()) {
-                children++;
-                parent[v] = u;
-                dfsArticulationPoints(v, discoveryTime, low, parent, articulationPoints);
+    // Обход всех соседей текущей вершины.
+    for (auto& v : graph.getAdjacencyVertices(u)) {
+      if (discoveryTime.find(v.id) == discoveryTime.end()) {
+        children++;
+        parent[v.id] = u.id;
+        dfsArticulationPoints(v, discoveryTime, low, parent,
+                              articulationPoints);
 
-                low[u] = std::min(low[u], low[v]);
+        // Обновляем минимальное время достижимости.
+        low[u.id] = std::min(low[u.id], low[v.id]);
 
-                if (parent.find(u) == parent.end() && children > 1) {
-                    articulationPoints.push_back(u);
-                }
-
-                if (parent.find(u) != parent.end() && low[v] >= discoveryTime[u]) {
-                    articulationPoints.push_back(u);
-                }
-            } else if (v != parent[u]) {
-                low[u] = std::min(low[u], discoveryTime[v]);
-            }
+        // Если вершина является корнем и имеет более одного потомка, это точка
+        // сочленения.
+        if (parent.find(u.id) == parent.end() && children > 1) {
+          articulationPoints.push_back(u.id);
         }
+
+        // Если вершина не является корнем и имеет потомка с low[v.id] >=
+        // discoveryTime[u.id], это точка сочленения.
+        if (parent.find(u.id) != parent.end() &&
+            low[v.id] >= discoveryTime[u.id]) {
+          articulationPoints.push_back(u.id);
+        }
+      } else if (v.id != parent[u.id]) {
+        // Обновляем минимальное время достижимости.
+        low[u.id] = std::min(low[u.id], discoveryTime[v.id]);
+      }
     }
+  }
 };
 
 }  // namespace graph

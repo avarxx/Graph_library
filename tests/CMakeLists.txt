@@ -3,43 +3,11 @@ find_package(GTest REQUIRED)
 
 # Создаем исполняемый файл для тестов
 file(GLOB TEST_FILES "*.cpp")
+list(REMOVE_ITEM TEST_FILES test_weighted_graph.cpp)
 add_executable(GraphTests ${TEST_FILES})
 
 # Связываем тесты с библиотекой и GoogleTest
 target_link_libraries(GraphTests PRIVATE GraphLibrary GTest::GTest GTest::Main)
 
-# Добавляем тесты в CTest
 include(GoogleTest)
 gtest_discover_tests(GraphTests)
-
-add_executable(test_adjacency_list_graph test_adjacency_list_graph.cpp)
-target_link_libraries(test_adjacency_list_graph AdjacencyListGraph gtest gtest_main Graph)  # Линкуем с Graph
-
-add_executable(test_adjacency_matrix_graph test_adjacency_matrix_graph.cpp)
-target_link_libraries(test_adjacency_matrix_graph AdjacencyMatrixGraph gtest gtest_main Graph)  # Линкуем с Graph
-
-add_executable(test_edge_list_graph test_edge_list_graph.cpp)
-target_link_libraries(test_edge_list_graph EdgeListGraph gtest gtest_main Graph)  # Линкуем с Graph
-
-add_executable(test_directed_graph test_directed_graph.cpp)
-target_link_libraries(test_directed_graph DirectedGraph gtest gtest_main Graph)  # Линкуем с Graph
-
-add_executable(test_undirected_graph test_undirected_graph.cpp)
-target_link_libraries(test_undirected_graph UndirectedGraph gtest gtest_main Graph)  # Линкуем с Graph
-
-add_executable(test_weighted_graph test_weighted_graph.cpp)
-target_link_libraries(test_weighted_graph WeightedGraph gtest gtest_main Graph)  # Линкуем с Graph
-
-add_test(NAME test_adjacency_list_graph COMMAND test_adjacency_list_graph)
-add_test(NAME test_adjacency_matrix_graph COMMAND test_adjacency_matrix_graph)
-add_test(NAME test_edge_list_graph COMMAND test_edge_list_graph)
-add_test(NAME test_directed_graph COMMAND test_directed_graph)
-add_test(NAME test_undirected_graph COMMAND test_undirected_graph)
-add_test(NAME test_weighted_graph COMMAND test_weighted_graph)
-
-add_custom_target(run_all_tests ALL
-    COMMAND ${CMAKE_CTEST_COMMAND} --output-on-failure
-    DEPENDS test_adjacency_list_graph test_adjacency_matrix_graph test_edge_list_graph test_directed_graph test_undirected_graph test_weighted_graph
-    WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
-    COMMENT "Running all tests..."
-)

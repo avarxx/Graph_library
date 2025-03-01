@@ -3,7 +3,8 @@
 namespace graph {
 
 template <typename VertexType, typename EdgeType>
-void DirectedGraph<VertexType, EdgeType>::addEdge(const Vertex& source, const Vertex& target) {
+void DirectedGraph<VertexType, EdgeType>::addEdge(const VertexType& source,
+                                                  const VertexType& target) {
   if (this->hasVertex(source) && this->hasVertex(target) &&
       !this->hasEdge(source, target)) {
     this->edges.emplace_back(source, target);
@@ -11,17 +12,19 @@ void DirectedGraph<VertexType, EdgeType>::addEdge(const Vertex& source, const Ve
 }
 
 template <typename VertexType, typename EdgeType>
-void DirectedGraph<VertexType, EdgeType>::removeEdge(const Vertex& source, const Vertex& target) {
-  this->edges.erase(
-      std::remove_if(this->edges.begin(), this->edges.end(),
-                     [source, target](const EdgeType& e) {
-                       return e.source == source && e.target == target;
-                     }),
-      this->edges.end());
+void DirectedGraph<VertexType, EdgeType>::removeEdge(const VertexType& source,
+                                                     const VertexType& target) {
+  this->edges.erase(std::remove_if(this->edges.begin(), this->edges.end(),
+                                   [source, target](const EdgeType& e) {
+                                     return e.source == source &&
+                                            e.target == target;
+                                   }),
+                    this->edges.end());
 }
 
 template <typename VertexType, typename EdgeType>
-bool DirectedGraph<VertexType, EdgeType>::hasEdge(const Vertex& source, const Vertex& target) const {
+bool DirectedGraph<VertexType, EdgeType>::hasEdge(
+    const VertexType& source, const VertexType& target) const {
   return std::any_of(this->edges.begin(), this->edges.end(),
                      [source, target](const EdgeType& e) {
                        return e.source == source && e.target == target;
@@ -30,7 +33,8 @@ bool DirectedGraph<VertexType, EdgeType>::hasEdge(const Vertex& source, const Ve
 
 template <typename VertexType, typename EdgeType>
 typename std::vector<VertexType>::iterator
-DirectedGraph<VertexType, EdgeType>::getNeighborsIterator(const Vertex& vertexId) {
+DirectedGraph<VertexType, EdgeType>::getNeighborsIterator(
+    const VertexType& vertexId) {
   std::vector<VertexType> neighbors;
   neighbors.clear();
   if (this->hasVertex(vertexId)) {
@@ -46,7 +50,7 @@ DirectedGraph<VertexType, EdgeType>::getNeighborsIterator(const Vertex& vertexId
 template <typename VertexType, typename EdgeType>
 typename std::vector<VertexType>::iterator
 DirectedGraph<VertexType, EdgeType>::getFilteredNeighborsIterator(
-  const Vertex& vertexId, bool (*filter)(Vertex)) {
+    const VertexType& vertexId, bool (*filter)(VertexType)) {
   std::vector<VertexType> filteredNeighbors;
   filteredNeighbors.clear();
   if (this->hasVertex(vertexId)) {
@@ -59,7 +63,19 @@ DirectedGraph<VertexType, EdgeType>::getFilteredNeighborsIterator(
   return filteredNeighbors.begin();
 }
 
+template <typename VertexType, typename EdgeType>
+std::vector<VertexType>
+DirectedGraph<VertexType, EdgeType>::getAdjacencyVertices(
+    const VertexType& vertex) {
+  std::vector<VertexType> neighbors;
+  for (const auto& edge : this->edges) {
+    if (edge.source == vertex) {
+      neighbors.push_back(edge.target);
+    }
+  }
+  return neighbors;
+}
+
 }  // namespace graph
 
 template class graph::DirectedGraph<graph::Vertex, graph::Edge>;
-// template class graph::DirectedGraph<int, graph::Edge>;
