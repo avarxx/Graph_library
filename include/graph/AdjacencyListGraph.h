@@ -15,8 +15,7 @@ namespace graph {
 template <typename VertexType = Vertex, typename EdgeType = Edge>
 class AdjacencyListGraph : public Graph<VertexType, EdgeType> {
  public:
-  std::unordered_map<VertexType, std::vector<VertexType>>
-      adjacencyList;  ///< Список смежности.
+  std::unordered_map<VertexType, std::vector<VertexType>> adjacencyList;  ///< Список смежности.
 
  public:
   /**
@@ -77,7 +76,7 @@ class AdjacencyListGraph : public Graph<VertexType, EdgeType> {
    * @return Константная ссылка на список смежности.
    */
   const std::unordered_map<VertexType, std::vector<VertexType>>&
-  getAdjacencyList() const;
+  getAdjacencyList() ;
 
   /**
    * @brief Проверяет наличие вершины в графе.

@@ -82,7 +82,7 @@ AdjacencyListGraph<VertexType, EdgeType>::getFilteredNeighborsIterator(
 
 template <typename VertexType, typename EdgeType>
 const std::unordered_map<VertexType, std::vector<VertexType>>&
-AdjacencyListGraph<VertexType, EdgeType>::getAdjacencyList() const {
+AdjacencyListGraph<VertexType, EdgeType>::getAdjacencyList()  {
   return adjacencyList;
 }
 
@@ -103,7 +103,7 @@ bool AdjacencyListGraph<VertexType, EdgeType>::hasEdge(
 template <typename VertexType, typename EdgeType>
 std::vector<VertexType>
 AdjacencyListGraph<VertexType, EdgeType>::getAdjacencyVertices(
-    const VertexType& vertex) {
+    const VertexType& vertex)  {
   return adjacencyList[vertex];
 }
 }  // namespace graph

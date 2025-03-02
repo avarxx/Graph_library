@@ -22,10 +22,9 @@ template <typename VertexType, typename EdgeType>
 std::unordered_set<Vertex> DFS(Graph<VertexType, EdgeType>& graph,
                                const Vertex& startVertex,
                                Visitor<VertexType, EdgeType>& visitor) {
-  std::stack<Vertex> stack;  // Стек для DFS.
-  std::unordered_set<Vertex> visited;  // Множество посещённых вершин.
+  std::stack<Vertex> stack;  
+  std::unordered_set<Vertex> visited;  
 
-  // Начинаем с начальной вершины.
   stack.push(startVertex);
   visited.insert(startVertex);
 
@@ -33,30 +32,23 @@ std::unordered_set<Vertex> DFS(Graph<VertexType, EdgeType>& graph,
     Vertex currentVertex = stack.top();
     stack.pop();
 
-    // Обрабатываем текущую вершину.
     visitor.visitVertex(currentVertex);
 
-    // Получаем соседей текущей вершины.
     auto neighbors = graph.getAdjacencyVertices(currentVertex);
     for (auto& vertex : neighbors) {
-      // Исследуем ребро между текущей вершиной и соседом.
       visitor.examineEdge(EdgeType(currentVertex, vertex));
 
-      // Если соседняя вершина ещё не посещена, добавляем её в стек.
       if (visited.find(vertex) == visited.end()) {
         visited.insert(vertex);
         stack.push(vertex);
 
-        // Обрабатываем ребро, добавленное в дерево поиска.
         visitor.treeEdge(EdgeType(currentVertex, vertex));
       }
     }
 
-    // Завершаем обработку текущей вершины.
     visitor.finishVertex(currentVertex);
   }
 
-  // Возвращаем множество посещённых вершин.
   return visited;
 }
 

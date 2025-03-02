@@ -75,7 +75,7 @@ class WeightedGraph : public Graph<VertexType, WeightedEdge<WeightType>> {
    * @return Вектор смежных вершин.
    */
   std::vector<VertexType> getAdjacencyVertices(
-      const VertexType& vertex) override;
+      const VertexType& vertex)  override;
 
   /**
    * @brief Добавляет вершину в граф.

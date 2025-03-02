@@ -49,10 +49,10 @@ class BridgesAndArticulationPoints {
    */
   std::vector<int> findArticulationPoints() {
     std::vector<int>
-        articulationPoints;  // Вектор для хранения точек сочленения.
-    std::unordered_map<int, int> discoveryTime;  // Время обнаружения вершин.
-    std::unordered_map<int, int> low;  // Минимальное время достижимости.
-    std::unordered_map<int, int> parent;  // Родительские вершины.
+        articulationPoints;  
+    std::unordered_map<int, int> discoveryTime;  
+    std::unordered_map<int, int> low; 
+    std::unordered_map<int, int> parent; 
 
     // Обход всех вершин графа.
     for (const auto& vertex : graph.getVertices()) {
