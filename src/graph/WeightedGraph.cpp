@@ -12,14 +12,15 @@ void WeightedGraph<VertexType, WeightType>::addEdge(const VertexType& source,
   }
 }
 
-template <typename VertexType, typename WeightType>
-void WeightedGraph<VertexType, WeightType>::addEdge(const VertexType& source,
-                                                    const VertexType& target) {
-  if (this->hasVertex(source) && this->hasVertex(target) &&
-      !this->hasEdge(source, target)) {
-    this->edges.emplace_back(source, target, 1);
-  }
-}
+// template <typename VertexType, typename WeightType>
+// void WeightedGraph<VertexType, WeightType>::addEdge(const VertexType& source,
+//                                                     const VertexType& target,
+//                                                     int capacity) {
+//   if (this->hasVertex(source) && this->hasVertex(target) &&
+//       !this->hasEdge(source, target)) {
+//     this->edges.emplace_back(source, target, 1);
+//   }
+// }
 
 template <typename VertexType, typename WeightType>
 WeightType WeightedGraph<VertexType, WeightType>::getEdgeWeight(

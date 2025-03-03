@@ -22,8 +22,8 @@ template <typename VertexType, typename EdgeType>
 std::unordered_set<Vertex> DFS(Graph<VertexType, EdgeType>& graph,
                                const Vertex& startVertex,
                                Visitor<VertexType, EdgeType>& visitor) {
-  std::stack<Vertex> stack;  
-  std::unordered_set<Vertex> visited;  
+  std::stack<Vertex> stack;
+  std::unordered_set<Vertex> visited;
 
   stack.push(startVertex);
   visited.insert(startVertex);

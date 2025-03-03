@@ -21,7 +21,6 @@ class Vertex {
    * @param id Уникальный идентификатор вершины.
    */
   explicit Vertex(int id) : id(id){};
-  // explicit не дает компилятору делать неявные преобразования
 
   /**
    * @brief Конструктор по умолчанию.
@@ -39,6 +38,9 @@ inline bool operator==(const Vertex& left, const Vertex& right) {
   return left.id == right.id;
 }
 
+bool operator!=(const Vertex& left, const Vertex& right) {
+  return !(left == right);
+}
 /**
  * @brief Класс, представляющий ребро графа.
  */
@@ -46,19 +48,22 @@ class Edge {
  public:
   Vertex source;  ///< Идентификатор исходной вершины.
   Vertex target;  ///< Идентификатор целевой вершины.
+  int capacity;  ///< Пропускная способность ребра (для алгоритмов потока)
+  int flow;  ///< Текущий поток через ребро (для алгоритмов потока)
 
   /**
-   * @brief Конструктор ребра.
+   * @brief Конструктор ребра с параметром пропускной способности.
    * @param source Идентификатор исходной вершины.
    * @param target Идентификатор целевой вершины.
+   * @param capacity Пропускная способность ребра (по умолчанию 0).
    */
-  Edge(const Vertex& source, const Vertex& target)
-      : source(source), target(target){};
+  Edge(const Vertex& source, const Vertex& target, int capacity = 0)
+      : source(source), target(target), capacity(capacity), flow(0){};
 
   /**
    * @brief Конструктор по умолчанию.
    */
-  Edge() : source(0), target(0){};
+  Edge() : source(0), target(0), capacity(0), flow(0){};
 
   /**
    * @brief Оператор присваивания.
@@ -71,8 +76,16 @@ class Edge {
     }
     this->source = right.source;
     this->target = right.target;
+    this->capacity = right.capacity;
+    this->flow = right.flow;
     return *this;
   }
+
+  /**
+   * @brief Вычисляет остаточную пропускную способность.
+   * @return Разница между пропускной способностью и текущим потоком.
+   */
+  int residual() const { return capacity - flow; }
 };
 
 /**
@@ -95,13 +108,15 @@ class WeightedEdge : public Edge {
   WeightType weight;  ///< Вес ребра.
 
   /**
-   * @brief Конструктор взвешенного ребра.
+   * @brief Конструктор взвешенного ребра с параметром пропускной способности.
    * @param source Идентификатор исходной вершины.
    * @param target Идентификатор целевой вершины.
-   * @param weight Вес ребра.
+   * @param weight Вес ребра (по умолчанию 0).
+   * @param capacity Пропускная способность (по умолчанию 0).
    */
-  WeightedEdge(const Vertex& source, const Vertex& target, WeightType weight)
-      : Edge(source, target), weight(weight){};
+  WeightedEdge(const Vertex& source, const Vertex& target,
+               WeightType weight = 0, int capacity = 0)
+      : Edge(source, target, capacity), weight(weight){};
 
   /**
    * @brief Конструктор взвешенного ребра с весом по умолчанию.
@@ -109,7 +124,7 @@ class WeightedEdge : public Edge {
    * @param target Идентификатор целевой вершины.
    */
   WeightedEdge(const Vertex& source, const Vertex& target)
-      : Edge(source, target), weight(0){};
+      : Edge(source, target, 0), weight(0){};
 };
 
 /**
@@ -147,11 +162,13 @@ class Graph {
   virtual void removeVertex(const VertexType& vertex);
 
   /**
-   * @brief Добавляет ребро в граф.
+   * @brief Добавляет ребро с указанием пропускной способности.
    * @param source Идентификатор исходной вершины.
    * @param target Идентификатор целевой вершины.
+   * @param capacity Пропускная способность ребра (по умолчанию 0).
    */
-  virtual void addEdge(const VertexType& source, const VertexType& target);
+  virtual void addEdge(const VertexType& source, const VertexType& target,
+                       int capacity = 0);
 
   /**
    * @brief Удаляет ребро из графа.

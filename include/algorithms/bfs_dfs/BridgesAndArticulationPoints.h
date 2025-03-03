@@ -48,11 +48,10 @@ class BridgesAndArticulationPoints {
    * @return Вектор идентификаторов вершин, являющихся точками сочленения.
    */
   std::vector<int> findArticulationPoints() {
-    std::vector<int>
-        articulationPoints;  
-    std::unordered_map<int, int> discoveryTime;  
-    std::unordered_map<int, int> low; 
-    std::unordered_map<int, int> parent; 
+    std::vector<int> articulationPoints;
+    std::unordered_map<int, int> discoveryTime;
+    std::unordered_map<int, int> low;
+    std::unordered_map<int, int> parent;
 
     // Обход всех вершин графа.
     for (const auto& vertex : graph.getVertices()) {

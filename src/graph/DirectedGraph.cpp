@@ -4,7 +4,8 @@ namespace graph {
 
 template <typename VertexType, typename EdgeType>
 void DirectedGraph<VertexType, EdgeType>::addEdge(const VertexType& source,
-                                                  const VertexType& target) {
+                                                  const VertexType& target,
+                                                  int capacity) {
   if (this->hasVertex(source) && this->hasVertex(target) &&
       !this->hasEdge(source, target)) {
     this->edges.emplace_back(source, target);

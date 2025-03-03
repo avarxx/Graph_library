@@ -29,9 +29,10 @@ void Graph<VertexType, EdgeType>::removeVertex(const VertexType& id) {
 
 template <typename VertexType, typename EdgeType>
 void Graph<VertexType, EdgeType>::addEdge(const VertexType& source,
-                                          const VertexType& target) {
+                                          const VertexType& target,
+                                          int capacity) {
   if (hasVertex(source) && hasVertex(target) && !hasEdge(source, target)) {
-    edges.emplace_back(source, target);
+    edges.emplace_back(source, target, capacity);
   }
 }
 

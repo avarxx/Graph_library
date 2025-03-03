@@ -1,4 +1,4 @@
-#include "../include/algorithms/BFS.h"
+#include "../include/algorithms/bfs_dfs/BFS.h"
 #include "../include/graph/AdjacencyListGraph.h"
 #include "../include/graph/AdjacencyMatrixGraph.h"
 #include "../include/graph/DirectedGraph.h"

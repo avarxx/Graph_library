@@ -45,7 +45,7 @@ class AdjacencyListGraph : public Graph<VertexType, EdgeType> {
    * @param source Исходная вершина ребра.
    * @param target Целевая вершина ребра.
    */
-  void addEdge(const VertexType& source, const VertexType& target) override;
+  void addEdge(const VertexType& source, const VertexType& target, int capacity = 0) override;
 
   /**
    * @brief Удаляет ребро из графа.

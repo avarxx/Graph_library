@@ -1,8 +1,6 @@
-#include "../include/algorithms/FloydWarshall.h"
+#include "../include/algorithms/find_distance/FloydWarshall.h"
 #include "../include/graph/WeightedGraph.h"
 #include "gtest/gtest.h"
-
-
 
 TEST(FloydWarshallTest, SingleNodeGraph) {
   graph::WeightedGraph<graph::Vertex, int> graph;
@@ -31,23 +29,23 @@ TEST(FloydWarshallTest, ZeroWeightEdges) {
 TEST(FloydWarshallTest, LargeGraph) {
   graph::WeightedGraph<graph::Vertex, int> graph;
   for (int i = 0; i < 10; ++i) {
-      graph.addVertex(graph::Vertex(i));
+    graph.addVertex(graph::Vertex(i));
   }
   for (int i = 0; i < 9; ++i) {
-      graph.addEdge(graph::Vertex(i), graph::Vertex(i + 1), 1);
+    graph.addEdge(graph::Vertex(i), graph::Vertex(i + 1), 1);
   }
 
   auto distances = graph::FloydWarshall(graph);
   for (int i = 0; i < 10; ++i) {
-      for (int j = 0; j < 10; ++j) {
-          if (i == j) {
-              EXPECT_EQ(distances[i][j], 0);
-          } else if (j > i) {
-              EXPECT_EQ(distances[i][j], j - i);
-          } else {
-              EXPECT_EQ(distances[i][j], std::numeric_limits<int>::max());
-          }
+    for (int j = 0; j < 10; ++j) {
+      if (i == j) {
+        EXPECT_EQ(distances[i][j], 0);
+      } else if (j > i) {
+        EXPECT_EQ(distances[i][j], j - i);
+      } else {
+        EXPECT_EQ(distances[i][j], std::numeric_limits<int>::max());
       }
+    }
   }
 }
 
@@ -70,18 +68,18 @@ TEST(FloydWarshallTest, NegativeWeightsNoCycle) {
 TEST(FloydWarshallTest, AllPairsDisconnected) {
   graph::WeightedGraph<graph::Vertex, int> graph;
   for (int i = 0; i < 5; ++i) {
-      graph.addVertex(graph::Vertex(i));
+    graph.addVertex(graph::Vertex(i));
   }
 
   auto distances = graph::FloydWarshall(graph);
   for (int i = 0; i < 5; ++i) {
-      for (int j = 0; j < 5; ++j) {
-          if (i == j) {
-              EXPECT_EQ(distances[i][j], 0);
-          } else {
-              EXPECT_EQ(distances[i][j], std::numeric_limits<int>::max());
-          }
+    for (int j = 0; j < 5; ++j) {
+      if (i == j) {
+        EXPECT_EQ(distances[i][j], 0);
+      } else {
+        EXPECT_EQ(distances[i][j], std::numeric_limits<int>::max());
       }
+    }
   }
 }
 
@@ -97,7 +95,7 @@ TEST(FloydWarshallTest, MixedWeights) {
   auto distances = graph::FloydWarshall(graph);
   EXPECT_EQ(distances[0][0], 0);
   EXPECT_EQ(distances[0][1], 1);
-  EXPECT_EQ(distances[0][2], 0);  
+  EXPECT_EQ(distances[0][2], 0);
   EXPECT_EQ(distances[1][2], -1);
 }
 
@@ -113,7 +111,7 @@ TEST(FloydWarshallTest, LargeNegativeWeights) {
   auto distances = graph::FloydWarshall(graph);
   EXPECT_EQ(distances[0][0], 0);
   EXPECT_EQ(distances[0][1], -100);
-  EXPECT_EQ(distances[0][2], -300);  
+  EXPECT_EQ(distances[0][2], -300);
   EXPECT_EQ(distances[1][2], -200);
 }
 
@@ -130,7 +128,7 @@ TEST(FloydWarshallTest, MultiplePaths) {
   auto distances = graph::FloydWarshall(graph);
   EXPECT_EQ(distances[0][0], 0);
   EXPECT_EQ(distances[0][1], 1);
-  EXPECT_EQ(distances[0][2], 3);  
+  EXPECT_EQ(distances[0][2], 3);
   EXPECT_EQ(distances[1][2], 2);
   EXPECT_EQ(distances[1][0], 1);
 }
@@ -151,23 +149,23 @@ TEST(FloydWarshallTest, NoEdges) {
 TEST(FloydWarshallTest, LargeGraphWithNegativeWeights) {
   graph::WeightedGraph<graph::Vertex, int> graph;
   for (int i = 0; i < 10; ++i) {
-      graph.addVertex(graph::Vertex(i));
+    graph.addVertex(graph::Vertex(i));
   }
   for (int i = 0; i < 9; ++i) {
-      graph.addEdge(graph::Vertex(i), graph::Vertex(i + 1), -1);
+    graph.addEdge(graph::Vertex(i), graph::Vertex(i + 1), -1);
   }
 
   auto distances = graph::FloydWarshall(graph);
   for (int i = 0; i < 10; ++i) {
-      for (int j = 0; j < 10; ++j) {
-          if (i == j) {
-              EXPECT_EQ(distances[i][j], 0);
-          } else if (j > i) {
-              EXPECT_EQ(distances[i][j], -(j - i));
-          } else {
-              EXPECT_EQ(distances[i][j], std::numeric_limits<int>::max());
-          }
+    for (int j = 0; j < 10; ++j) {
+      if (i == j) {
+        EXPECT_EQ(distances[i][j], 0);
+      } else if (j > i) {
+        EXPECT_EQ(distances[i][j], -(j - i));
+      } else {
+        EXPECT_EQ(distances[i][j], std::numeric_limits<int>::max());
       }
+    }
   }
 }
 
@@ -186,6 +184,6 @@ TEST(FloydWarshallTest, ComplexGraph) {
   EXPECT_EQ(distances[0][0], 0);
   EXPECT_EQ(distances[0][1], 1);
   EXPECT_EQ(distances[0][2], 3);
-  EXPECT_EQ(distances[0][3], 6); 
+  EXPECT_EQ(distances[0][3], 6);
   EXPECT_EQ(distances[1][3], 5);
 }

@@ -1,4 +1,4 @@
-#include "../include/algorithms/BridgesAndArticulationPoints.h"
+#include "../include/algorithms/bfs_dfs/BridgesAndArticulationPoints.h"
 #include "../include/graph/AdjacencyListGraph.h"
 #include "../include/graph/AdjacencyMatrixGraph.h"
 #include "../include/graph/DirectedGraph.h"

@@ -33,7 +33,8 @@ void EdgeListGraph<VertexType, EdgeType>::removeVertex(const VertexType& id) {
 
 template <typename VertexType, typename EdgeType>
 void EdgeListGraph<VertexType, EdgeType>::addEdge(const VertexType& source,
-                                                  const VertexType& target) {
+                                                  const VertexType& target,
+                                                  int capacity) {
   if (hasVertex(source) && hasVertex(target) && !hasEdge(source, target)) {
     this->edges.emplace_back(source, target);
   }

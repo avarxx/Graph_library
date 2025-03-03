@@ -34,8 +34,9 @@ void AdjacencyListGraph<VertexType, EdgeType>::removeVertex(
 }
 
 template <typename VertexType, typename EdgeType>
-void AdjacencyListGraph<VertexType, EdgeType>::addEdge(
-    const VertexType& source, const VertexType& target) {
+void AdjacencyListGraph<VertexType, EdgeType>::addEdge(const VertexType& source,
+                                                       const VertexType& target,
+                                                       int capacity) {
   if (this->hasVertex(source) && this->hasVertex(target) &&
       !this->hasEdge(source, target)) {
     this->edges.emplace_back(Edge(Vertex(source.id), Vertex(target.id)));
@@ -82,7 +83,7 @@ AdjacencyListGraph<VertexType, EdgeType>::getFilteredNeighborsIterator(
 
 template <typename VertexType, typename EdgeType>
 const std::unordered_map<VertexType, std::vector<VertexType>>&
-AdjacencyListGraph<VertexType, EdgeType>::getAdjacencyList()  {
+AdjacencyListGraph<VertexType, EdgeType>::getAdjacencyList() {
   return adjacencyList;
 }
 
@@ -103,7 +104,7 @@ bool AdjacencyListGraph<VertexType, EdgeType>::hasEdge(
 template <typename VertexType, typename EdgeType>
 std::vector<VertexType>
 AdjacencyListGraph<VertexType, EdgeType>::getAdjacencyVertices(
-    const VertexType& vertex)  {
+    const VertexType& vertex) {
   return adjacencyList[vertex];
 }
 }  // namespace graph

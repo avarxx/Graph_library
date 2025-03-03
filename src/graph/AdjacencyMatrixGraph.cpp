@@ -62,7 +62,7 @@ void AdjacencyMatrixGraph<VertexType, EdgeType>::removeVertex(
 
 template <typename VertexType, typename EdgeType>
 void AdjacencyMatrixGraph<VertexType, EdgeType>::addEdge(
-    const VertexType& source, const VertexType& target) {
+    const VertexType& source, const VertexType& target, int capacity) {
   if (hasVertex(source) && hasVertex(target) && !hasEdge(source, target)) {
     this->edges.emplace_back(source, target);
     size_t sourceIndex = getVertexIndex(source);
