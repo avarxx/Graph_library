@@ -38,9 +38,9 @@ inline bool operator==(const Vertex& left, const Vertex& right) {
   return left.id == right.id;
 }
 
-bool operator!=(const Vertex& left, const Vertex& right) {
-  return !(left == right);
-}
+// bool operator!=(const Vertex& left, const Vertex& right) {
+//   return !(left == right);
+// }
 /**
  * @brief Класс, представляющий ребро графа.
  */

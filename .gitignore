@@ -36,3 +36,5 @@ docs/
 Doxyfile
 LCA/
 .vscode/
+html/
+latex/
