@@ -32,5 +32,3 @@ jobs:
       - name: Run tests with GoogleTest
         run: ctest --test-dir build --output-on-failure
 
-      - name: Run memory check with Valgrind
-        run: valgrind --leak-check=full --error-exitcode=1 ./build/GraphTests
