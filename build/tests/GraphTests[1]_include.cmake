@@ -1,0 +1,5 @@
+if(EXISTS "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests[1]_tests.cmake")
+  include("/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests[1]_tests.cmake")
+else()
+  add_test(GraphTests_NOT_BUILT GraphTests_NOT_BUILT)
+endif()

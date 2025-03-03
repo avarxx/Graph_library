@@ -1,0 +1,2 @@
+/usr/bin/ar qc libGraphLibrary.a CMakeFiles/GraphLibrary.dir/graph/AdjacencyListGraph.cpp.o CMakeFiles/GraphLibrary.dir/graph/AdjacencyMatrixGraph.cpp.o CMakeFiles/GraphLibrary.dir/graph/DirectedGraph.cpp.o CMakeFiles/GraphLibrary.dir/graph/EdgeListGraph.cpp.o CMakeFiles/GraphLibrary.dir/graph/Graph.cpp.o CMakeFiles/GraphLibrary.dir/graph/UndirectedGraph.cpp.o CMakeFiles/GraphLibrary.dir/graph/WeightedGraph.cpp.o
+/usr/bin/ranlib libGraphLibrary.a

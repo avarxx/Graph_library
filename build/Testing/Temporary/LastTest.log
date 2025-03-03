@@ -1,0 +1,3631 @@
+Start testing: Mar 03 06:13 MSK
+----------------------------------------------------------
+1/126 Testing: AdjacencyListGraphTest.AddVertex
+1/126 Test: AdjacencyListGraphTest.AddVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyListGraphTest.AddVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyListGraphTest.AddVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyListGraphTest.AddVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyListGraphTest
+[ RUN      ] AdjacencyListGraphTest.AddVertex
+[       OK ] AdjacencyListGraphTest.AddVertex (0 ms)
+[----------] 1 test from AdjacencyListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyListGraphTest.AddVertex" end time: Mar 03 06:13 MSK
+"AdjacencyListGraphTest.AddVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/126 Testing: AdjacencyListGraphTest.RemoveVertex
+2/126 Test: AdjacencyListGraphTest.RemoveVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyListGraphTest.RemoveVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyListGraphTest.RemoveVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyListGraphTest.RemoveVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyListGraphTest
+[ RUN      ] AdjacencyListGraphTest.RemoveVertex
+[       OK ] AdjacencyListGraphTest.RemoveVertex (0 ms)
+[----------] 1 test from AdjacencyListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyListGraphTest.RemoveVertex" end time: Mar 03 06:13 MSK
+"AdjacencyListGraphTest.RemoveVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/126 Testing: AdjacencyListGraphTest.AddEdge
+3/126 Test: AdjacencyListGraphTest.AddEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyListGraphTest.AddEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyListGraphTest.AddEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyListGraphTest.AddEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyListGraphTest
+[ RUN      ] AdjacencyListGraphTest.AddEdge
+[       OK ] AdjacencyListGraphTest.AddEdge (0 ms)
+[----------] 1 test from AdjacencyListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyListGraphTest.AddEdge" end time: Mar 03 06:13 MSK
+"AdjacencyListGraphTest.AddEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/126 Testing: AdjacencyListGraphTest.RemoveEdge
+4/126 Test: AdjacencyListGraphTest.RemoveEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyListGraphTest.RemoveEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyListGraphTest.RemoveEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyListGraphTest.RemoveEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyListGraphTest
+[ RUN      ] AdjacencyListGraphTest.RemoveEdge
+[       OK ] AdjacencyListGraphTest.RemoveEdge (0 ms)
+[----------] 1 test from AdjacencyListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyListGraphTest.RemoveEdge" end time: Mar 03 06:13 MSK
+"AdjacencyListGraphTest.RemoveEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/126 Testing: AdjacencyListGraphTest.GetNeighborsIterator
+5/126 Test: AdjacencyListGraphTest.GetNeighborsIterator
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyListGraphTest.GetNeighborsIterator" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyListGraphTest.GetNeighborsIterator" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyListGraphTest.GetNeighborsIterator
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyListGraphTest
+[ RUN      ] AdjacencyListGraphTest.GetNeighborsIterator
+[       OK ] AdjacencyListGraphTest.GetNeighborsIterator (0 ms)
+[----------] 1 test from AdjacencyListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyListGraphTest.GetNeighborsIterator" end time: Mar 03 06:13 MSK
+"AdjacencyListGraphTest.GetNeighborsIterator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/126 Testing: AdjacencyListGraphTest.HasVertex
+6/126 Test: AdjacencyListGraphTest.HasVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyListGraphTest.HasVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyListGraphTest.HasVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyListGraphTest.HasVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyListGraphTest
+[ RUN      ] AdjacencyListGraphTest.HasVertex
+[       OK ] AdjacencyListGraphTest.HasVertex (0 ms)
+[----------] 1 test from AdjacencyListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyListGraphTest.HasVertex" end time: Mar 03 06:13 MSK
+"AdjacencyListGraphTest.HasVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/126 Testing: AdjacencyListGraphTest.HasEdge
+7/126 Test: AdjacencyListGraphTest.HasEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyListGraphTest.HasEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyListGraphTest.HasEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyListGraphTest.HasEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyListGraphTest
+[ RUN      ] AdjacencyListGraphTest.HasEdge
+[       OK ] AdjacencyListGraphTest.HasEdge (0 ms)
+[----------] 1 test from AdjacencyListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyListGraphTest.HasEdge" end time: Mar 03 06:13 MSK
+"AdjacencyListGraphTest.HasEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/126 Testing: AdjacencyListGraphTest.RemoveNonexistentVertex
+8/126 Test: AdjacencyListGraphTest.RemoveNonexistentVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyListGraphTest.RemoveNonexistentVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyListGraphTest.RemoveNonexistentVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyListGraphTest.RemoveNonexistentVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyListGraphTest
+[ RUN      ] AdjacencyListGraphTest.RemoveNonexistentVertex
+[       OK ] AdjacencyListGraphTest.RemoveNonexistentVertex (0 ms)
+[----------] 1 test from AdjacencyListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyListGraphTest.RemoveNonexistentVertex" end time: Mar 03 06:13 MSK
+"AdjacencyListGraphTest.RemoveNonexistentVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/126 Testing: AdjacencyListGraphTest.RemoveNonexistentEdge
+9/126 Test: AdjacencyListGraphTest.RemoveNonexistentEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyListGraphTest.RemoveNonexistentEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyListGraphTest.RemoveNonexistentEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyListGraphTest.RemoveNonexistentEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyListGraphTest
+[ RUN      ] AdjacencyListGraphTest.RemoveNonexistentEdge
+[       OK ] AdjacencyListGraphTest.RemoveNonexistentEdge (0 ms)
+[----------] 1 test from AdjacencyListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyListGraphTest.RemoveNonexistentEdge" end time: Mar 03 06:13 MSK
+"AdjacencyListGraphTest.RemoveNonexistentEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/126 Testing: AdjacencyListGraphTest.AddDuplicateVertex
+10/126 Test: AdjacencyListGraphTest.AddDuplicateVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyListGraphTest.AddDuplicateVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyListGraphTest.AddDuplicateVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyListGraphTest.AddDuplicateVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyListGraphTest
+[ RUN      ] AdjacencyListGraphTest.AddDuplicateVertex
+[       OK ] AdjacencyListGraphTest.AddDuplicateVertex (0 ms)
+[----------] 1 test from AdjacencyListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyListGraphTest.AddDuplicateVertex" end time: Mar 03 06:13 MSK
+"AdjacencyListGraphTest.AddDuplicateVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/126 Testing: AdjacencyListGraphTest.AddDuplicateEdge
+11/126 Test: AdjacencyListGraphTest.AddDuplicateEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyListGraphTest.AddDuplicateEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyListGraphTest.AddDuplicateEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyListGraphTest.AddDuplicateEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyListGraphTest
+[ RUN      ] AdjacencyListGraphTest.AddDuplicateEdge
+[       OK ] AdjacencyListGraphTest.AddDuplicateEdge (0 ms)
+[----------] 1 test from AdjacencyListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyListGraphTest.AddDuplicateEdge" end time: Mar 03 06:13 MSK
+"AdjacencyListGraphTest.AddDuplicateEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/126 Testing: AdjacencyListGraphTest.GetNeighborsOfNonexistentVertex
+12/126 Test: AdjacencyListGraphTest.GetNeighborsOfNonexistentVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyListGraphTest.GetNeighborsOfNonexistentVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyListGraphTest.GetNeighborsOfNonexistentVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyListGraphTest.GetNeighborsOfNonexistentVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyListGraphTest
+[ RUN      ] AdjacencyListGraphTest.GetNeighborsOfNonexistentVertex
+[       OK ] AdjacencyListGraphTest.GetNeighborsOfNonexistentVertex (0 ms)
+[----------] 1 test from AdjacencyListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyListGraphTest.GetNeighborsOfNonexistentVertex" end time: Mar 03 06:13 MSK
+"AdjacencyListGraphTest.GetNeighborsOfNonexistentVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/126 Testing: AdjacencyListGraphTest.LargeGraph
+13/126 Test: AdjacencyListGraphTest.LargeGraph
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyListGraphTest.LargeGraph" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyListGraphTest.LargeGraph" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyListGraphTest.LargeGraph
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyListGraphTest
+[ RUN      ] AdjacencyListGraphTest.LargeGraph
+[       OK ] AdjacencyListGraphTest.LargeGraph (7 ms)
+[----------] 1 test from AdjacencyListGraphTest (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (8 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyListGraphTest.LargeGraph" end time: Mar 03 06:13 MSK
+"AdjacencyListGraphTest.LargeGraph" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/126 Testing: AdjacencyMatrixGraphTest.AddVertex
+14/126 Test: AdjacencyMatrixGraphTest.AddVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyMatrixGraphTest.AddVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyMatrixGraphTest.AddVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyMatrixGraphTest.AddVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyMatrixGraphTest
+[ RUN      ] AdjacencyMatrixGraphTest.AddVertex
+[       OK ] AdjacencyMatrixGraphTest.AddVertex (0 ms)
+[----------] 1 test from AdjacencyMatrixGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyMatrixGraphTest.AddVertex" end time: Mar 03 06:13 MSK
+"AdjacencyMatrixGraphTest.AddVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/126 Testing: AdjacencyMatrixGraphTest.RemoveVertex
+15/126 Test: AdjacencyMatrixGraphTest.RemoveVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyMatrixGraphTest.RemoveVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyMatrixGraphTest.RemoveVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyMatrixGraphTest.RemoveVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyMatrixGraphTest
+[ RUN      ] AdjacencyMatrixGraphTest.RemoveVertex
+[       OK ] AdjacencyMatrixGraphTest.RemoveVertex (0 ms)
+[----------] 1 test from AdjacencyMatrixGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyMatrixGraphTest.RemoveVertex" end time: Mar 03 06:13 MSK
+"AdjacencyMatrixGraphTest.RemoveVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/126 Testing: AdjacencyMatrixGraphTest.AddEdge
+16/126 Test: AdjacencyMatrixGraphTest.AddEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyMatrixGraphTest.AddEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyMatrixGraphTest.AddEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyMatrixGraphTest.AddEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyMatrixGraphTest
+[ RUN      ] AdjacencyMatrixGraphTest.AddEdge
+[       OK ] AdjacencyMatrixGraphTest.AddEdge (0 ms)
+[----------] 1 test from AdjacencyMatrixGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyMatrixGraphTest.AddEdge" end time: Mar 03 06:13 MSK
+"AdjacencyMatrixGraphTest.AddEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/126 Testing: AdjacencyMatrixGraphTest.RemoveEdge
+17/126 Test: AdjacencyMatrixGraphTest.RemoveEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyMatrixGraphTest.RemoveEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyMatrixGraphTest.RemoveEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyMatrixGraphTest.RemoveEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyMatrixGraphTest
+[ RUN      ] AdjacencyMatrixGraphTest.RemoveEdge
+[       OK ] AdjacencyMatrixGraphTest.RemoveEdge (0 ms)
+[----------] 1 test from AdjacencyMatrixGraphTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyMatrixGraphTest.RemoveEdge" end time: Mar 03 06:13 MSK
+"AdjacencyMatrixGraphTest.RemoveEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/126 Testing: AdjacencyMatrixGraphTest.HasVertex
+18/126 Test: AdjacencyMatrixGraphTest.HasVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyMatrixGraphTest.HasVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyMatrixGraphTest.HasVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyMatrixGraphTest.HasVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyMatrixGraphTest
+[ RUN      ] AdjacencyMatrixGraphTest.HasVertex
+[       OK ] AdjacencyMatrixGraphTest.HasVertex (0 ms)
+[----------] 1 test from AdjacencyMatrixGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyMatrixGraphTest.HasVertex" end time: Mar 03 06:13 MSK
+"AdjacencyMatrixGraphTest.HasVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/126 Testing: AdjacencyMatrixGraphTest.HasEdge
+19/126 Test: AdjacencyMatrixGraphTest.HasEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyMatrixGraphTest.HasEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyMatrixGraphTest.HasEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyMatrixGraphTest.HasEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyMatrixGraphTest
+[ RUN      ] AdjacencyMatrixGraphTest.HasEdge
+[       OK ] AdjacencyMatrixGraphTest.HasEdge (0 ms)
+[----------] 1 test from AdjacencyMatrixGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyMatrixGraphTest.HasEdge" end time: Mar 03 06:13 MSK
+"AdjacencyMatrixGraphTest.HasEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/126 Testing: AdjacencyMatrixGraphTest.RemoveNonexistentVertex
+20/126 Test: AdjacencyMatrixGraphTest.RemoveNonexistentVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyMatrixGraphTest.RemoveNonexistentVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyMatrixGraphTest.RemoveNonexistentVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyMatrixGraphTest.RemoveNonexistentVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyMatrixGraphTest
+[ RUN      ] AdjacencyMatrixGraphTest.RemoveNonexistentVertex
+[       OK ] AdjacencyMatrixGraphTest.RemoveNonexistentVertex (0 ms)
+[----------] 1 test from AdjacencyMatrixGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyMatrixGraphTest.RemoveNonexistentVertex" end time: Mar 03 06:13 MSK
+"AdjacencyMatrixGraphTest.RemoveNonexistentVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/126 Testing: AdjacencyMatrixGraphTest.RemoveNonexistentEdge
+21/126 Test: AdjacencyMatrixGraphTest.RemoveNonexistentEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyMatrixGraphTest.RemoveNonexistentEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyMatrixGraphTest.RemoveNonexistentEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyMatrixGraphTest.RemoveNonexistentEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyMatrixGraphTest
+[ RUN      ] AdjacencyMatrixGraphTest.RemoveNonexistentEdge
+[       OK ] AdjacencyMatrixGraphTest.RemoveNonexistentEdge (0 ms)
+[----------] 1 test from AdjacencyMatrixGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyMatrixGraphTest.RemoveNonexistentEdge" end time: Mar 03 06:13 MSK
+"AdjacencyMatrixGraphTest.RemoveNonexistentEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/126 Testing: AdjacencyMatrixGraphTest.AddDuplicateVertex
+22/126 Test: AdjacencyMatrixGraphTest.AddDuplicateVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyMatrixGraphTest.AddDuplicateVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyMatrixGraphTest.AddDuplicateVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyMatrixGraphTest.AddDuplicateVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyMatrixGraphTest
+[ RUN      ] AdjacencyMatrixGraphTest.AddDuplicateVertex
+[       OK ] AdjacencyMatrixGraphTest.AddDuplicateVertex (0 ms)
+[----------] 1 test from AdjacencyMatrixGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyMatrixGraphTest.AddDuplicateVertex" end time: Mar 03 06:13 MSK
+"AdjacencyMatrixGraphTest.AddDuplicateVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/126 Testing: AdjacencyMatrixGraphTest.AddDuplicateEdge
+23/126 Test: AdjacencyMatrixGraphTest.AddDuplicateEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyMatrixGraphTest.AddDuplicateEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyMatrixGraphTest.AddDuplicateEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyMatrixGraphTest.AddDuplicateEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyMatrixGraphTest
+[ RUN      ] AdjacencyMatrixGraphTest.AddDuplicateEdge
+[       OK ] AdjacencyMatrixGraphTest.AddDuplicateEdge (0 ms)
+[----------] 1 test from AdjacencyMatrixGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyMatrixGraphTest.AddDuplicateEdge" end time: Mar 03 06:13 MSK
+"AdjacencyMatrixGraphTest.AddDuplicateEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/126 Testing: AdjacencyMatrixGraphTest.LargeGraph
+24/126 Test: AdjacencyMatrixGraphTest.LargeGraph
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=AdjacencyMatrixGraphTest.LargeGraph" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"AdjacencyMatrixGraphTest.LargeGraph" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AdjacencyMatrixGraphTest.LargeGraph
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdjacencyMatrixGraphTest
+[ RUN      ] AdjacencyMatrixGraphTest.LargeGraph
+[       OK ] AdjacencyMatrixGraphTest.LargeGraph (2 ms)
+[----------] 1 test from AdjacencyMatrixGraphTest (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"AdjacencyMatrixGraphTest.LargeGraph" end time: Mar 03 06:13 MSK
+"AdjacencyMatrixGraphTest.LargeGraph" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/126 Testing: BellmanFordTest.SimpleGraph
+25/126 Test: BellmanFordTest.SimpleGraph
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BellmanFordTest.SimpleGraph" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BellmanFordTest.SimpleGraph" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BellmanFordTest.SimpleGraph
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BellmanFordTest
+[ RUN      ] BellmanFordTest.SimpleGraph
+[       OK ] BellmanFordTest.SimpleGraph (0 ms)
+[----------] 1 test from BellmanFordTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BellmanFordTest.SimpleGraph" end time: Mar 03 06:13 MSK
+"BellmanFordTest.SimpleGraph" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/126 Testing: BellmanFordTest.DisconnectedGraph
+26/126 Test: BellmanFordTest.DisconnectedGraph
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BellmanFordTest.DisconnectedGraph" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BellmanFordTest.DisconnectedGraph" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BellmanFordTest.DisconnectedGraph
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BellmanFordTest
+[ RUN      ] BellmanFordTest.DisconnectedGraph
+[       OK ] BellmanFordTest.DisconnectedGraph (0 ms)
+[----------] 1 test from BellmanFordTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BellmanFordTest.DisconnectedGraph" end time: Mar 03 06:13 MSK
+"BellmanFordTest.DisconnectedGraph" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/126 Testing: BellmanFordTest.NegativeWeights
+27/126 Test: BellmanFordTest.NegativeWeights
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BellmanFordTest.NegativeWeights" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BellmanFordTest.NegativeWeights" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BellmanFordTest.NegativeWeights
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BellmanFordTest
+[ RUN      ] BellmanFordTest.NegativeWeights
+[       OK ] BellmanFordTest.NegativeWeights (0 ms)
+[----------] 1 test from BellmanFordTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BellmanFordTest.NegativeWeights" end time: Mar 03 06:13 MSK
+"BellmanFordTest.NegativeWeights" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/126 Testing: BellmanFordTest.SingleVertexGraph
+28/126 Test: BellmanFordTest.SingleVertexGraph
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BellmanFordTest.SingleVertexGraph" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BellmanFordTest.SingleVertexGraph" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BellmanFordTest.SingleVertexGraph
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BellmanFordTest
+[ RUN      ] BellmanFordTest.SingleVertexGraph
+[       OK ] BellmanFordTest.SingleVertexGraph (0 ms)
+[----------] 1 test from BellmanFordTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BellmanFordTest.SingleVertexGraph" end time: Mar 03 06:13 MSK
+"BellmanFordTest.SingleVertexGraph" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/126 Testing: BellmanFordTest.NegativeCycle
+29/126 Test: BellmanFordTest.NegativeCycle
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BellmanFordTest.NegativeCycle" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BellmanFordTest.NegativeCycle" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BellmanFordTest.NegativeCycle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BellmanFordTest
+[ RUN      ] BellmanFordTest.NegativeCycle
+[       OK ] BellmanFordTest.NegativeCycle (0 ms)
+[----------] 1 test from BellmanFordTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BellmanFordTest.NegativeCycle" end time: Mar 03 06:13 MSK
+"BellmanFordTest.NegativeCycle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/126 Testing: BellmanFordTest.LargeGraph
+30/126 Test: BellmanFordTest.LargeGraph
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BellmanFordTest.LargeGraph" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BellmanFordTest.LargeGraph" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BellmanFordTest.LargeGraph
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BellmanFordTest
+[ RUN      ] BellmanFordTest.LargeGraph
+[       OK ] BellmanFordTest.LargeGraph (0 ms)
+[----------] 1 test from BellmanFordTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BellmanFordTest.LargeGraph" end time: Mar 03 06:13 MSK
+"BellmanFordTest.LargeGraph" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/126 Testing: BellmanFordTest.MultiplePaths
+31/126 Test: BellmanFordTest.MultiplePaths
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BellmanFordTest.MultiplePaths" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BellmanFordTest.MultiplePaths" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BellmanFordTest.MultiplePaths
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BellmanFordTest
+[ RUN      ] BellmanFordTest.MultiplePaths
+[       OK ] BellmanFordTest.MultiplePaths (0 ms)
+[----------] 1 test from BellmanFordTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BellmanFordTest.MultiplePaths" end time: Mar 03 06:13 MSK
+"BellmanFordTest.MultiplePaths" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/126 Testing: BellmanFordTest.ZeroWeightEdges
+32/126 Test: BellmanFordTest.ZeroWeightEdges
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BellmanFordTest.ZeroWeightEdges" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BellmanFordTest.ZeroWeightEdges" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BellmanFordTest.ZeroWeightEdges
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BellmanFordTest
+[ RUN      ] BellmanFordTest.ZeroWeightEdges
+[       OK ] BellmanFordTest.ZeroWeightEdges (0 ms)
+[----------] 1 test from BellmanFordTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BellmanFordTest.ZeroWeightEdges" end time: Mar 03 06:13 MSK
+"BellmanFordTest.ZeroWeightEdges" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/126 Testing: BellmanFordTest.MixedWeights
+33/126 Test: BellmanFordTest.MixedWeights
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BellmanFordTest.MixedWeights" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BellmanFordTest.MixedWeights" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BellmanFordTest.MixedWeights
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BellmanFordTest
+[ RUN      ] BellmanFordTest.MixedWeights
+[       OK ] BellmanFordTest.MixedWeights (0 ms)
+[----------] 1 test from BellmanFordTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BellmanFordTest.MixedWeights" end time: Mar 03 06:13 MSK
+"BellmanFordTest.MixedWeights" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/126 Testing: BellmanFordTest.NoEdges
+34/126 Test: BellmanFordTest.NoEdges
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BellmanFordTest.NoEdges" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BellmanFordTest.NoEdges" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BellmanFordTest.NoEdges
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BellmanFordTest
+[ RUN      ] BellmanFordTest.NoEdges
+[       OK ] BellmanFordTest.NoEdges (0 ms)
+[----------] 1 test from BellmanFordTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BellmanFordTest.NoEdges" end time: Mar 03 06:13 MSK
+"BellmanFordTest.NoEdges" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/126 Testing: BellmanFordTest.SelfLoops
+35/126 Test: BellmanFordTest.SelfLoops
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BellmanFordTest.SelfLoops" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BellmanFordTest.SelfLoops" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BellmanFordTest.SelfLoops
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BellmanFordTest
+[ RUN      ] BellmanFordTest.SelfLoops
+[       OK ] BellmanFordTest.SelfLoops (0 ms)
+[----------] 1 test from BellmanFordTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BellmanFordTest.SelfLoops" end time: Mar 03 06:13 MSK
+"BellmanFordTest.SelfLoops" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/126 Testing: BellmanFordTest.MultipleNegativeEdges
+36/126 Test: BellmanFordTest.MultipleNegativeEdges
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BellmanFordTest.MultipleNegativeEdges" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BellmanFordTest.MultipleNegativeEdges" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BellmanFordTest.MultipleNegativeEdges
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BellmanFordTest
+[ RUN      ] BellmanFordTest.MultipleNegativeEdges
+[       OK ] BellmanFordTest.MultipleNegativeEdges (0 ms)
+[----------] 1 test from BellmanFordTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BellmanFordTest.MultipleNegativeEdges" end time: Mar 03 06:13 MSK
+"BellmanFordTest.MultipleNegativeEdges" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/126 Testing: BellmanFordTest.ComplexGraph
+37/126 Test: BellmanFordTest.ComplexGraph
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BellmanFordTest.ComplexGraph" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BellmanFordTest.ComplexGraph" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BellmanFordTest.ComplexGraph
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BellmanFordTest
+[ RUN      ] BellmanFordTest.ComplexGraph
+[       OK ] BellmanFordTest.ComplexGraph (0 ms)
+[----------] 1 test from BellmanFordTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BellmanFordTest.ComplexGraph" end time: Mar 03 06:13 MSK
+"BellmanFordTest.ComplexGraph" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/126 Testing: BellmanFordTest.LargeNegativeCycle
+38/126 Test: BellmanFordTest.LargeNegativeCycle
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BellmanFordTest.LargeNegativeCycle" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BellmanFordTest.LargeNegativeCycle" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BellmanFordTest.LargeNegativeCycle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BellmanFordTest
+[ RUN      ] BellmanFordTest.LargeNegativeCycle
+[       OK ] BellmanFordTest.LargeNegativeCycle (0 ms)
+[----------] 1 test from BellmanFordTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BellmanFordTest.LargeNegativeCycle" end time: Mar 03 06:13 MSK
+"BellmanFordTest.LargeNegativeCycle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/126 Testing: BFS_TEST.AdjacencyListThroughOne
+39/126 Test: BFS_TEST.AdjacencyListThroughOne
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BFS_TEST.AdjacencyListThroughOne" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BFS_TEST.AdjacencyListThroughOne" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BFS_TEST.AdjacencyListThroughOne
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BFS_TEST
+[ RUN      ] BFS_TEST.AdjacencyListThroughOne
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+discovered edge 1 3
+becoming a member of edges 1 3
+finishing vertex 1
+visiting vertex 2
+discovered edge 2 3
+finishing vertex 2
+visiting vertex 3
+finishing vertex 3
+[       OK ] BFS_TEST.AdjacencyListThroughOne (0 ms)
+[----------] 1 test from BFS_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BFS_TEST.AdjacencyListThroughOne" end time: Mar 03 06:13 MSK
+"BFS_TEST.AdjacencyListThroughOne" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/126 Testing: BFS_TEST.AdjacencyListEasy
+40/126 Test: BFS_TEST.AdjacencyListEasy
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BFS_TEST.AdjacencyListEasy" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BFS_TEST.AdjacencyListEasy" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BFS_TEST.AdjacencyListEasy
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BFS_TEST
+[ RUN      ] BFS_TEST.AdjacencyListEasy
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+finishing vertex 1
+visiting vertex 2
+discovered edge 2 3
+becoming a member of edges 2 3
+finishing vertex 2
+visiting vertex 3
+finishing vertex 3
+[       OK ] BFS_TEST.AdjacencyListEasy (0 ms)
+[----------] 1 test from BFS_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BFS_TEST.AdjacencyListEasy" end time: Mar 03 06:13 MSK
+"BFS_TEST.AdjacencyListEasy" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/126 Testing: BFS_TEST.AdjacencyMatrixThroughOne
+41/126 Test: BFS_TEST.AdjacencyMatrixThroughOne
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BFS_TEST.AdjacencyMatrixThroughOne" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BFS_TEST.AdjacencyMatrixThroughOne" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BFS_TEST.AdjacencyMatrixThroughOne
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BFS_TEST
+[ RUN      ] BFS_TEST.AdjacencyMatrixThroughOne
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+discovered edge 1 3
+becoming a member of edges 1 3
+finishing vertex 1
+visiting vertex 2
+discovered edge 2 3
+finishing vertex 2
+visiting vertex 3
+finishing vertex 3
+[       OK ] BFS_TEST.AdjacencyMatrixThroughOne (0 ms)
+[----------] 1 test from BFS_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BFS_TEST.AdjacencyMatrixThroughOne" end time: Mar 03 06:13 MSK
+"BFS_TEST.AdjacencyMatrixThroughOne" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/126 Testing: BFS_TEST.AdjacencyMatrixEasy
+42/126 Test: BFS_TEST.AdjacencyMatrixEasy
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BFS_TEST.AdjacencyMatrixEasy" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BFS_TEST.AdjacencyMatrixEasy" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BFS_TEST.AdjacencyMatrixEasy
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BFS_TEST
+[ RUN      ] BFS_TEST.AdjacencyMatrixEasy
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+finishing vertex 1
+visiting vertex 2
+discovered edge 2 3
+becoming a member of edges 2 3
+finishing vertex 2
+visiting vertex 3
+finishing vertex 3
+[       OK ] BFS_TEST.AdjacencyMatrixEasy (0 ms)
+[----------] 1 test from BFS_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BFS_TEST.AdjacencyMatrixEasy" end time: Mar 03 06:13 MSK
+"BFS_TEST.AdjacencyMatrixEasy" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/126 Testing: BFS_TEST.DirectedGraphThroughOne
+43/126 Test: BFS_TEST.DirectedGraphThroughOne
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BFS_TEST.DirectedGraphThroughOne" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BFS_TEST.DirectedGraphThroughOne" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BFS_TEST.DirectedGraphThroughOne
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BFS_TEST
+[ RUN      ] BFS_TEST.DirectedGraphThroughOne
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+discovered edge 1 3
+becoming a member of edges 1 3
+finishing vertex 1
+visiting vertex 2
+discovered edge 2 3
+finishing vertex 2
+visiting vertex 3
+finishing vertex 3
+[       OK ] BFS_TEST.DirectedGraphThroughOne (0 ms)
+[----------] 1 test from BFS_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BFS_TEST.DirectedGraphThroughOne" end time: Mar 03 06:13 MSK
+"BFS_TEST.DirectedGraphThroughOne" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/126 Testing: BFS_TEST.DirectedGraphEasy
+44/126 Test: BFS_TEST.DirectedGraphEasy
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BFS_TEST.DirectedGraphEasy" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BFS_TEST.DirectedGraphEasy" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BFS_TEST.DirectedGraphEasy
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BFS_TEST
+[ RUN      ] BFS_TEST.DirectedGraphEasy
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+finishing vertex 1
+visiting vertex 2
+discovered edge 2 3
+becoming a member of edges 2 3
+finishing vertex 2
+visiting vertex 3
+finishing vertex 3
+[       OK ] BFS_TEST.DirectedGraphEasy (1 ms)
+[----------] 1 test from BFS_TEST (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BFS_TEST.DirectedGraphEasy" end time: Mar 03 06:13 MSK
+"BFS_TEST.DirectedGraphEasy" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/126 Testing: BFS_TEST.EdgeListThroughOne
+45/126 Test: BFS_TEST.EdgeListThroughOne
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BFS_TEST.EdgeListThroughOne" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BFS_TEST.EdgeListThroughOne" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BFS_TEST.EdgeListThroughOne
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BFS_TEST
+[ RUN      ] BFS_TEST.EdgeListThroughOne
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+discovered edge 1 3
+becoming a member of edges 1 3
+finishing vertex 1
+visiting vertex 2
+discovered edge 2 3
+finishing vertex 2
+visiting vertex 3
+finishing vertex 3
+[       OK ] BFS_TEST.EdgeListThroughOne (0 ms)
+[----------] 1 test from BFS_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BFS_TEST.EdgeListThroughOne" end time: Mar 03 06:13 MSK
+"BFS_TEST.EdgeListThroughOne" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/126 Testing: BFS_TEST.EdgeListEasy
+46/126 Test: BFS_TEST.EdgeListEasy
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BFS_TEST.EdgeListEasy" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BFS_TEST.EdgeListEasy" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BFS_TEST.EdgeListEasy
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BFS_TEST
+[ RUN      ] BFS_TEST.EdgeListEasy
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+finishing vertex 1
+visiting vertex 2
+discovered edge 2 3
+becoming a member of edges 2 3
+finishing vertex 2
+visiting vertex 3
+finishing vertex 3
+[       OK ] BFS_TEST.EdgeListEasy (0 ms)
+[----------] 1 test from BFS_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BFS_TEST.EdgeListEasy" end time: Mar 03 06:13 MSK
+"BFS_TEST.EdgeListEasy" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/126 Testing: BFS_TEST.UndirectedGraphThroughOne
+47/126 Test: BFS_TEST.UndirectedGraphThroughOne
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BFS_TEST.UndirectedGraphThroughOne" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BFS_TEST.UndirectedGraphThroughOne" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BFS_TEST.UndirectedGraphThroughOne
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BFS_TEST
+[ RUN      ] BFS_TEST.UndirectedGraphThroughOne
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+discovered edge 1 3
+becoming a member of edges 1 3
+finishing vertex 1
+visiting vertex 2
+discovered edge 2 1
+discovered edge 2 3
+finishing vertex 2
+visiting vertex 3
+discovered edge 3 2
+discovered edge 3 1
+finishing vertex 3
+[       OK ] BFS_TEST.UndirectedGraphThroughOne (1 ms)
+[----------] 1 test from BFS_TEST (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BFS_TEST.UndirectedGraphThroughOne" end time: Mar 03 06:13 MSK
+"BFS_TEST.UndirectedGraphThroughOne" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/126 Testing: BFS_TEST.UndirectedGraphEasy
+48/126 Test: BFS_TEST.UndirectedGraphEasy
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BFS_TEST.UndirectedGraphEasy" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BFS_TEST.UndirectedGraphEasy" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BFS_TEST.UndirectedGraphEasy
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BFS_TEST
+[ RUN      ] BFS_TEST.UndirectedGraphEasy
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+finishing vertex 1
+visiting vertex 2
+discovered edge 2 1
+discovered edge 2 3
+becoming a member of edges 2 3
+finishing vertex 2
+visiting vertex 3
+discovered edge 3 2
+finishing vertex 3
+[       OK ] BFS_TEST.UndirectedGraphEasy (0 ms)
+[----------] 1 test from BFS_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BFS_TEST.UndirectedGraphEasy" end time: Mar 03 06:13 MSK
+"BFS_TEST.UndirectedGraphEasy" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/126 Testing: BAP_TEST.AdjacencyListContains
+49/126 Test: BAP_TEST.AdjacencyListContains
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BAP_TEST.AdjacencyListContains" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BAP_TEST.AdjacencyListContains" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BAP_TEST.AdjacencyListContains
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BAP_TEST
+[ RUN      ] BAP_TEST.AdjacencyListContains
+[       OK ] BAP_TEST.AdjacencyListContains (1 ms)
+[----------] 1 test from BAP_TEST (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BAP_TEST.AdjacencyListContains" end time: Mar 03 06:13 MSK
+"BAP_TEST.AdjacencyListContains" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/126 Testing: BAP_TEST.AdjacencyListCycle
+50/126 Test: BAP_TEST.AdjacencyListCycle
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BAP_TEST.AdjacencyListCycle" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BAP_TEST.AdjacencyListCycle" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BAP_TEST.AdjacencyListCycle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BAP_TEST
+[ RUN      ] BAP_TEST.AdjacencyListCycle
+[       OK ] BAP_TEST.AdjacencyListCycle (1 ms)
+[----------] 1 test from BAP_TEST (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BAP_TEST.AdjacencyListCycle" end time: Mar 03 06:13 MSK
+"BAP_TEST.AdjacencyListCycle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/126 Testing: BAP_TEST.AdjacencyMatrixContains
+51/126 Test: BAP_TEST.AdjacencyMatrixContains
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BAP_TEST.AdjacencyMatrixContains" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BAP_TEST.AdjacencyMatrixContains" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BAP_TEST.AdjacencyMatrixContains
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BAP_TEST
+[ RUN      ] BAP_TEST.AdjacencyMatrixContains
+[       OK ] BAP_TEST.AdjacencyMatrixContains (1 ms)
+[----------] 1 test from BAP_TEST (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BAP_TEST.AdjacencyMatrixContains" end time: Mar 03 06:13 MSK
+"BAP_TEST.AdjacencyMatrixContains" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/126 Testing: BAP_TEST.AdjacencyMatrixCycle
+52/126 Test: BAP_TEST.AdjacencyMatrixCycle
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BAP_TEST.AdjacencyMatrixCycle" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BAP_TEST.AdjacencyMatrixCycle" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BAP_TEST.AdjacencyMatrixCycle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BAP_TEST
+[ RUN      ] BAP_TEST.AdjacencyMatrixCycle
+[       OK ] BAP_TEST.AdjacencyMatrixCycle (0 ms)
+[----------] 1 test from BAP_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BAP_TEST.AdjacencyMatrixCycle" end time: Mar 03 06:13 MSK
+"BAP_TEST.AdjacencyMatrixCycle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/126 Testing: BAP_TEST.DirectedGraphContains
+53/126 Test: BAP_TEST.DirectedGraphContains
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BAP_TEST.DirectedGraphContains" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BAP_TEST.DirectedGraphContains" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BAP_TEST.DirectedGraphContains
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BAP_TEST
+[ RUN      ] BAP_TEST.DirectedGraphContains
+[       OK ] BAP_TEST.DirectedGraphContains (0 ms)
+[----------] 1 test from BAP_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"BAP_TEST.DirectedGraphContains" end time: Mar 03 06:13 MSK
+"BAP_TEST.DirectedGraphContains" time elapsed: 00:00:00
+----------------------------------------------------------
+
+54/126 Testing: BAP_TEST.DirectedGraphCycle
+54/126 Test: BAP_TEST.DirectedGraphCycle
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BAP_TEST.DirectedGraphCycle" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BAP_TEST.DirectedGraphCycle" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BAP_TEST.DirectedGraphCycle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BAP_TEST
+[ RUN      ] BAP_TEST.DirectedGraphCycle
+[       OK ] BAP_TEST.DirectedGraphCycle (0 ms)
+[----------] 1 test from BAP_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"BAP_TEST.DirectedGraphCycle" end time: Mar 03 06:13 MSK
+"BAP_TEST.DirectedGraphCycle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+55/126 Testing: BAP_TEST.EdgeListContains
+55/126 Test: BAP_TEST.EdgeListContains
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BAP_TEST.EdgeListContains" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BAP_TEST.EdgeListContains" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BAP_TEST.EdgeListContains
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BAP_TEST
+[ RUN      ] BAP_TEST.EdgeListContains
+[       OK ] BAP_TEST.EdgeListContains (1 ms)
+[----------] 1 test from BAP_TEST (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BAP_TEST.EdgeListContains" end time: Mar 03 06:13 MSK
+"BAP_TEST.EdgeListContains" time elapsed: 00:00:00
+----------------------------------------------------------
+
+56/126 Testing: BAP_TEST.EdgeListCycle
+56/126 Test: BAP_TEST.EdgeListCycle
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BAP_TEST.EdgeListCycle" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BAP_TEST.EdgeListCycle" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BAP_TEST.EdgeListCycle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BAP_TEST
+[ RUN      ] BAP_TEST.EdgeListCycle
+[       OK ] BAP_TEST.EdgeListCycle (0 ms)
+[----------] 1 test from BAP_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BAP_TEST.EdgeListCycle" end time: Mar 03 06:13 MSK
+"BAP_TEST.EdgeListCycle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+57/126 Testing: BAP_TEST.UndirectedContains
+57/126 Test: BAP_TEST.UndirectedContains
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BAP_TEST.UndirectedContains" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BAP_TEST.UndirectedContains" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BAP_TEST.UndirectedContains
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BAP_TEST
+[ RUN      ] BAP_TEST.UndirectedContains
+[       OK ] BAP_TEST.UndirectedContains (1 ms)
+[----------] 1 test from BAP_TEST (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BAP_TEST.UndirectedContains" end time: Mar 03 06:13 MSK
+"BAP_TEST.UndirectedContains" time elapsed: 00:00:00
+----------------------------------------------------------
+
+58/126 Testing: BAP_TEST.UndirectedCycle
+58/126 Test: BAP_TEST.UndirectedCycle
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=BAP_TEST.UndirectedCycle" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"BAP_TEST.UndirectedCycle" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = BAP_TEST.UndirectedCycle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BAP_TEST
+[ RUN      ] BAP_TEST.UndirectedCycle
+[       OK ] BAP_TEST.UndirectedCycle (0 ms)
+[----------] 1 test from BAP_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"BAP_TEST.UndirectedCycle" end time: Mar 03 06:13 MSK
+"BAP_TEST.UndirectedCycle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+59/126 Testing: DFS_TEST.AdjacencyListNoVertex
+59/126 Test: DFS_TEST.AdjacencyListNoVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DFS_TEST.AdjacencyListNoVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DFS_TEST.AdjacencyListNoVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DFS_TEST.AdjacencyListNoVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DFS_TEST
+[ RUN      ] DFS_TEST.AdjacencyListNoVertex
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+discovered edge 1 3
+becoming a member of edges 1 3
+finishing vertex 1
+visiting vertex 3
+finishing vertex 3
+visiting vertex 2
+discovered edge 2 3
+finishing vertex 2
+[       OK ] DFS_TEST.AdjacencyListNoVertex (0 ms)
+[----------] 1 test from DFS_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"DFS_TEST.AdjacencyListNoVertex" end time: Mar 03 06:13 MSK
+"DFS_TEST.AdjacencyListNoVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+60/126 Testing: DFS_TEST.AdjacencyListNoMultipleVertex
+60/126 Test: DFS_TEST.AdjacencyListNoMultipleVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DFS_TEST.AdjacencyListNoMultipleVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DFS_TEST.AdjacencyListNoMultipleVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DFS_TEST.AdjacencyListNoMultipleVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DFS_TEST
+[ RUN      ] DFS_TEST.AdjacencyListNoMultipleVertex
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+discovered edge 1 3
+becoming a member of edges 1 3
+finishing vertex 1
+visiting vertex 3
+finishing vertex 3
+visiting vertex 2
+discovered edge 2 3
+finishing vertex 2
+[       OK ] DFS_TEST.AdjacencyListNoMultipleVertex (0 ms)
+[----------] 1 test from DFS_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"DFS_TEST.AdjacencyListNoMultipleVertex" end time: Mar 03 06:13 MSK
+"DFS_TEST.AdjacencyListNoMultipleVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+61/126 Testing: DFS_TEST.AdjacencyMatrixNoVertex
+61/126 Test: DFS_TEST.AdjacencyMatrixNoVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DFS_TEST.AdjacencyMatrixNoVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DFS_TEST.AdjacencyMatrixNoVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DFS_TEST.AdjacencyMatrixNoVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DFS_TEST
+[ RUN      ] DFS_TEST.AdjacencyMatrixNoVertex
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+discovered edge 1 3
+becoming a member of edges 1 3
+finishing vertex 1
+visiting vertex 3
+finishing vertex 3
+visiting vertex 2
+discovered edge 2 3
+finishing vertex 2
+[       OK ] DFS_TEST.AdjacencyMatrixNoVertex (1 ms)
+[----------] 1 test from DFS_TEST (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"DFS_TEST.AdjacencyMatrixNoVertex" end time: Mar 03 06:13 MSK
+"DFS_TEST.AdjacencyMatrixNoVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+62/126 Testing: DFS_TEST.AdjacencyMatrixNoMultipleVertex
+62/126 Test: DFS_TEST.AdjacencyMatrixNoMultipleVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DFS_TEST.AdjacencyMatrixNoMultipleVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DFS_TEST.AdjacencyMatrixNoMultipleVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DFS_TEST.AdjacencyMatrixNoMultipleVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DFS_TEST
+[ RUN      ] DFS_TEST.AdjacencyMatrixNoMultipleVertex
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+discovered edge 1 3
+becoming a member of edges 1 3
+finishing vertex 1
+visiting vertex 3
+finishing vertex 3
+visiting vertex 2
+discovered edge 2 3
+finishing vertex 2
+[       OK ] DFS_TEST.AdjacencyMatrixNoMultipleVertex (0 ms)
+[----------] 1 test from DFS_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"DFS_TEST.AdjacencyMatrixNoMultipleVertex" end time: Mar 03 06:13 MSK
+"DFS_TEST.AdjacencyMatrixNoMultipleVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+63/126 Testing: DFS_TEST.DirectedNoVertex
+63/126 Test: DFS_TEST.DirectedNoVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DFS_TEST.DirectedNoVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DFS_TEST.DirectedNoVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DFS_TEST.DirectedNoVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DFS_TEST
+[ RUN      ] DFS_TEST.DirectedNoVertex
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+discovered edge 1 3
+becoming a member of edges 1 3
+finishing vertex 1
+visiting vertex 3
+finishing vertex 3
+visiting vertex 2
+discovered edge 2 3
+finishing vertex 2
+[       OK ] DFS_TEST.DirectedNoVertex (0 ms)
+[----------] 1 test from DFS_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"DFS_TEST.DirectedNoVertex" end time: Mar 03 06:13 MSK
+"DFS_TEST.DirectedNoVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+64/126 Testing: DFS_TEST.DirectedNoMultipleVertex
+64/126 Test: DFS_TEST.DirectedNoMultipleVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DFS_TEST.DirectedNoMultipleVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DFS_TEST.DirectedNoMultipleVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DFS_TEST.DirectedNoMultipleVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DFS_TEST
+[ RUN      ] DFS_TEST.DirectedNoMultipleVertex
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+discovered edge 1 3
+becoming a member of edges 1 3
+finishing vertex 1
+visiting vertex 3
+finishing vertex 3
+visiting vertex 2
+discovered edge 2 3
+finishing vertex 2
+[       OK ] DFS_TEST.DirectedNoMultipleVertex (0 ms)
+[----------] 1 test from DFS_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"DFS_TEST.DirectedNoMultipleVertex" end time: Mar 03 06:13 MSK
+"DFS_TEST.DirectedNoMultipleVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+65/126 Testing: DFS_TEST.EdgeListNoVertex
+65/126 Test: DFS_TEST.EdgeListNoVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DFS_TEST.EdgeListNoVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DFS_TEST.EdgeListNoVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DFS_TEST.EdgeListNoVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DFS_TEST
+[ RUN      ] DFS_TEST.EdgeListNoVertex
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+discovered edge 1 3
+becoming a member of edges 1 3
+finishing vertex 1
+visiting vertex 3
+finishing vertex 3
+visiting vertex 2
+discovered edge 2 3
+finishing vertex 2
+[       OK ] DFS_TEST.EdgeListNoVertex (0 ms)
+[----------] 1 test from DFS_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"DFS_TEST.EdgeListNoVertex" end time: Mar 03 06:13 MSK
+"DFS_TEST.EdgeListNoVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+66/126 Testing: DFS_TEST.EdgeListNoMultipleVertex
+66/126 Test: DFS_TEST.EdgeListNoMultipleVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DFS_TEST.EdgeListNoMultipleVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DFS_TEST.EdgeListNoMultipleVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DFS_TEST.EdgeListNoMultipleVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DFS_TEST
+[ RUN      ] DFS_TEST.EdgeListNoMultipleVertex
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+discovered edge 1 3
+becoming a member of edges 1 3
+finishing vertex 1
+visiting vertex 3
+finishing vertex 3
+visiting vertex 2
+discovered edge 2 3
+finishing vertex 2
+[       OK ] DFS_TEST.EdgeListNoMultipleVertex (0 ms)
+[----------] 1 test from DFS_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"DFS_TEST.EdgeListNoMultipleVertex" end time: Mar 03 06:13 MSK
+"DFS_TEST.EdgeListNoMultipleVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+67/126 Testing: DFS_TEST.UndirectedNoVertex
+67/126 Test: DFS_TEST.UndirectedNoVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DFS_TEST.UndirectedNoVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DFS_TEST.UndirectedNoVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DFS_TEST.UndirectedNoVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DFS_TEST
+[ RUN      ] DFS_TEST.UndirectedNoVertex
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+discovered edge 1 3
+becoming a member of edges 1 3
+finishing vertex 1
+visiting vertex 3
+discovered edge 3 2
+discovered edge 3 1
+finishing vertex 3
+visiting vertex 2
+discovered edge 2 1
+discovered edge 2 3
+finishing vertex 2
+[       OK ] DFS_TEST.UndirectedNoVertex (0 ms)
+[----------] 1 test from DFS_TEST (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"DFS_TEST.UndirectedNoVertex" end time: Mar 03 06:13 MSK
+"DFS_TEST.UndirectedNoVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+68/126 Testing: DFS_TEST.UndirectedNoMultipleVertex
+68/126 Test: DFS_TEST.UndirectedNoMultipleVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DFS_TEST.UndirectedNoMultipleVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DFS_TEST.UndirectedNoMultipleVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DFS_TEST.UndirectedNoMultipleVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DFS_TEST
+[ RUN      ] DFS_TEST.UndirectedNoMultipleVertex
+visiting vertex 1
+discovered edge 1 2
+becoming a member of edges 1 2
+discovered edge 1 3
+becoming a member of edges 1 3
+finishing vertex 1
+visiting vertex 3
+discovered edge 3 2
+discovered edge 3 1
+finishing vertex 3
+visiting vertex 2
+discovered edge 2 1
+discovered edge 2 3
+finishing vertex 2
+[       OK ] DFS_TEST.UndirectedNoMultipleVertex (0 ms)
+[----------] 1 test from DFS_TEST (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"DFS_TEST.UndirectedNoMultipleVertex" end time: Mar 03 06:13 MSK
+"DFS_TEST.UndirectedNoMultipleVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+69/126 Testing: DirectedGraphTest.AddVertex
+69/126 Test: DirectedGraphTest.AddVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DirectedGraphTest.AddVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DirectedGraphTest.AddVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DirectedGraphTest.AddVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DirectedGraphTest
+[ RUN      ] DirectedGraphTest.AddVertex
+[       OK ] DirectedGraphTest.AddVertex (0 ms)
+[----------] 1 test from DirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"DirectedGraphTest.AddVertex" end time: Mar 03 06:13 MSK
+"DirectedGraphTest.AddVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+70/126 Testing: DirectedGraphTest.RemoveVertex
+70/126 Test: DirectedGraphTest.RemoveVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DirectedGraphTest.RemoveVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DirectedGraphTest.RemoveVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DirectedGraphTest.RemoveVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DirectedGraphTest
+[ RUN      ] DirectedGraphTest.RemoveVertex
+[       OK ] DirectedGraphTest.RemoveVertex (0 ms)
+[----------] 1 test from DirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"DirectedGraphTest.RemoveVertex" end time: Mar 03 06:13 MSK
+"DirectedGraphTest.RemoveVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+71/126 Testing: DirectedGraphTest.AddEdge
+71/126 Test: DirectedGraphTest.AddEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DirectedGraphTest.AddEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DirectedGraphTest.AddEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DirectedGraphTest.AddEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DirectedGraphTest
+[ RUN      ] DirectedGraphTest.AddEdge
+[       OK ] DirectedGraphTest.AddEdge (0 ms)
+[----------] 1 test from DirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"DirectedGraphTest.AddEdge" end time: Mar 03 06:13 MSK
+"DirectedGraphTest.AddEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+72/126 Testing: DirectedGraphTest.RemoveEdge
+72/126 Test: DirectedGraphTest.RemoveEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DirectedGraphTest.RemoveEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DirectedGraphTest.RemoveEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DirectedGraphTest.RemoveEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DirectedGraphTest
+[ RUN      ] DirectedGraphTest.RemoveEdge
+[       OK ] DirectedGraphTest.RemoveEdge (0 ms)
+[----------] 1 test from DirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"DirectedGraphTest.RemoveEdge" end time: Mar 03 06:13 MSK
+"DirectedGraphTest.RemoveEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+73/126 Testing: DirectedGraphTest.HasVertex
+73/126 Test: DirectedGraphTest.HasVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DirectedGraphTest.HasVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DirectedGraphTest.HasVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DirectedGraphTest.HasVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DirectedGraphTest
+[ RUN      ] DirectedGraphTest.HasVertex
+[       OK ] DirectedGraphTest.HasVertex (0 ms)
+[----------] 1 test from DirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"DirectedGraphTest.HasVertex" end time: Mar 03 06:13 MSK
+"DirectedGraphTest.HasVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+74/126 Testing: DirectedGraphTest.HasEdge
+74/126 Test: DirectedGraphTest.HasEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DirectedGraphTest.HasEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DirectedGraphTest.HasEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DirectedGraphTest.HasEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DirectedGraphTest
+[ RUN      ] DirectedGraphTest.HasEdge
+[       OK ] DirectedGraphTest.HasEdge (0 ms)
+[----------] 1 test from DirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"DirectedGraphTest.HasEdge" end time: Mar 03 06:13 MSK
+"DirectedGraphTest.HasEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+75/126 Testing: DirectedGraphTest.RemoveNonexistentVertex
+75/126 Test: DirectedGraphTest.RemoveNonexistentVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DirectedGraphTest.RemoveNonexistentVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DirectedGraphTest.RemoveNonexistentVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DirectedGraphTest.RemoveNonexistentVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DirectedGraphTest
+[ RUN      ] DirectedGraphTest.RemoveNonexistentVertex
+[       OK ] DirectedGraphTest.RemoveNonexistentVertex (0 ms)
+[----------] 1 test from DirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"DirectedGraphTest.RemoveNonexistentVertex" end time: Mar 03 06:13 MSK
+"DirectedGraphTest.RemoveNonexistentVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+76/126 Testing: DirectedGraphTest.RemoveNonexistentEdge
+76/126 Test: DirectedGraphTest.RemoveNonexistentEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DirectedGraphTest.RemoveNonexistentEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DirectedGraphTest.RemoveNonexistentEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DirectedGraphTest.RemoveNonexistentEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DirectedGraphTest
+[ RUN      ] DirectedGraphTest.RemoveNonexistentEdge
+[       OK ] DirectedGraphTest.RemoveNonexistentEdge (0 ms)
+[----------] 1 test from DirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"DirectedGraphTest.RemoveNonexistentEdge" end time: Mar 03 06:13 MSK
+"DirectedGraphTest.RemoveNonexistentEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+77/126 Testing: DirectedGraphTest.AddDuplicateVertex
+77/126 Test: DirectedGraphTest.AddDuplicateVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DirectedGraphTest.AddDuplicateVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DirectedGraphTest.AddDuplicateVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DirectedGraphTest.AddDuplicateVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DirectedGraphTest
+[ RUN      ] DirectedGraphTest.AddDuplicateVertex
+[       OK ] DirectedGraphTest.AddDuplicateVertex (0 ms)
+[----------] 1 test from DirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"DirectedGraphTest.AddDuplicateVertex" end time: Mar 03 06:13 MSK
+"DirectedGraphTest.AddDuplicateVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+78/126 Testing: DirectedGraphTest.AddDuplicateEdge
+78/126 Test: DirectedGraphTest.AddDuplicateEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DirectedGraphTest.AddDuplicateEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DirectedGraphTest.AddDuplicateEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DirectedGraphTest.AddDuplicateEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DirectedGraphTest
+[ RUN      ] DirectedGraphTest.AddDuplicateEdge
+[       OK ] DirectedGraphTest.AddDuplicateEdge (0 ms)
+[----------] 1 test from DirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"DirectedGraphTest.AddDuplicateEdge" end time: Mar 03 06:13 MSK
+"DirectedGraphTest.AddDuplicateEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+79/126 Testing: DirectedGraphTest.GetNeighborsOfNonexistentVertex
+79/126 Test: DirectedGraphTest.GetNeighborsOfNonexistentVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DirectedGraphTest.GetNeighborsOfNonexistentVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DirectedGraphTest.GetNeighborsOfNonexistentVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DirectedGraphTest.GetNeighborsOfNonexistentVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DirectedGraphTest
+[ RUN      ] DirectedGraphTest.GetNeighborsOfNonexistentVertex
+[       OK ] DirectedGraphTest.GetNeighborsOfNonexistentVertex (0 ms)
+[----------] 1 test from DirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"DirectedGraphTest.GetNeighborsOfNonexistentVertex" end time: Mar 03 06:13 MSK
+"DirectedGraphTest.GetNeighborsOfNonexistentVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+80/126 Testing: DirectedGraphTest.LargeGraph
+80/126 Test: DirectedGraphTest.LargeGraph
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=DirectedGraphTest.LargeGraph" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"DirectedGraphTest.LargeGraph" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = DirectedGraphTest.LargeGraph
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DirectedGraphTest
+[ RUN      ] DirectedGraphTest.LargeGraph
+[       OK ] DirectedGraphTest.LargeGraph (1 ms)
+[----------] 1 test from DirectedGraphTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"DirectedGraphTest.LargeGraph" end time: Mar 03 06:13 MSK
+"DirectedGraphTest.LargeGraph" time elapsed: 00:00:00
+----------------------------------------------------------
+
+81/126 Testing: EdgeListGraphTest.AddVertex
+81/126 Test: EdgeListGraphTest.AddVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=EdgeListGraphTest.AddVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"EdgeListGraphTest.AddVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = EdgeListGraphTest.AddVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EdgeListGraphTest
+[ RUN      ] EdgeListGraphTest.AddVertex
+[       OK ] EdgeListGraphTest.AddVertex (0 ms)
+[----------] 1 test from EdgeListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"EdgeListGraphTest.AddVertex" end time: Mar 03 06:13 MSK
+"EdgeListGraphTest.AddVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+82/126 Testing: EdgeListGraphTest.RemoveVertex
+82/126 Test: EdgeListGraphTest.RemoveVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=EdgeListGraphTest.RemoveVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"EdgeListGraphTest.RemoveVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = EdgeListGraphTest.RemoveVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EdgeListGraphTest
+[ RUN      ] EdgeListGraphTest.RemoveVertex
+[       OK ] EdgeListGraphTest.RemoveVertex (0 ms)
+[----------] 1 test from EdgeListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"EdgeListGraphTest.RemoveVertex" end time: Mar 03 06:13 MSK
+"EdgeListGraphTest.RemoveVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+83/126 Testing: EdgeListGraphTest.AddEdge
+83/126 Test: EdgeListGraphTest.AddEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=EdgeListGraphTest.AddEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"EdgeListGraphTest.AddEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = EdgeListGraphTest.AddEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EdgeListGraphTest
+[ RUN      ] EdgeListGraphTest.AddEdge
+[       OK ] EdgeListGraphTest.AddEdge (0 ms)
+[----------] 1 test from EdgeListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"EdgeListGraphTest.AddEdge" end time: Mar 03 06:13 MSK
+"EdgeListGraphTest.AddEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+84/126 Testing: EdgeListGraphTest.RemoveEdge
+84/126 Test: EdgeListGraphTest.RemoveEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=EdgeListGraphTest.RemoveEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"EdgeListGraphTest.RemoveEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = EdgeListGraphTest.RemoveEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EdgeListGraphTest
+[ RUN      ] EdgeListGraphTest.RemoveEdge
+[       OK ] EdgeListGraphTest.RemoveEdge (0 ms)
+[----------] 1 test from EdgeListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"EdgeListGraphTest.RemoveEdge" end time: Mar 03 06:13 MSK
+"EdgeListGraphTest.RemoveEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+85/126 Testing: EdgeListGraphTest.HasVertex
+85/126 Test: EdgeListGraphTest.HasVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=EdgeListGraphTest.HasVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"EdgeListGraphTest.HasVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = EdgeListGraphTest.HasVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EdgeListGraphTest
+[ RUN      ] EdgeListGraphTest.HasVertex
+[       OK ] EdgeListGraphTest.HasVertex (0 ms)
+[----------] 1 test from EdgeListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"EdgeListGraphTest.HasVertex" end time: Mar 03 06:13 MSK
+"EdgeListGraphTest.HasVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+86/126 Testing: EdgeListGraphTest.HasEdge
+86/126 Test: EdgeListGraphTest.HasEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=EdgeListGraphTest.HasEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"EdgeListGraphTest.HasEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = EdgeListGraphTest.HasEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EdgeListGraphTest
+[ RUN      ] EdgeListGraphTest.HasEdge
+[       OK ] EdgeListGraphTest.HasEdge (0 ms)
+[----------] 1 test from EdgeListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"EdgeListGraphTest.HasEdge" end time: Mar 03 06:13 MSK
+"EdgeListGraphTest.HasEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+87/126 Testing: EdgeListGraphTest.RemoveNonexistentVertex
+87/126 Test: EdgeListGraphTest.RemoveNonexistentVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=EdgeListGraphTest.RemoveNonexistentVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"EdgeListGraphTest.RemoveNonexistentVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = EdgeListGraphTest.RemoveNonexistentVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EdgeListGraphTest
+[ RUN      ] EdgeListGraphTest.RemoveNonexistentVertex
+[       OK ] EdgeListGraphTest.RemoveNonexistentVertex (0 ms)
+[----------] 1 test from EdgeListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"EdgeListGraphTest.RemoveNonexistentVertex" end time: Mar 03 06:13 MSK
+"EdgeListGraphTest.RemoveNonexistentVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+88/126 Testing: EdgeListGraphTest.RemoveNonexistentEdge
+88/126 Test: EdgeListGraphTest.RemoveNonexistentEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=EdgeListGraphTest.RemoveNonexistentEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"EdgeListGraphTest.RemoveNonexistentEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = EdgeListGraphTest.RemoveNonexistentEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EdgeListGraphTest
+[ RUN      ] EdgeListGraphTest.RemoveNonexistentEdge
+[       OK ] EdgeListGraphTest.RemoveNonexistentEdge (0 ms)
+[----------] 1 test from EdgeListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"EdgeListGraphTest.RemoveNonexistentEdge" end time: Mar 03 06:13 MSK
+"EdgeListGraphTest.RemoveNonexistentEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+89/126 Testing: EdgeListGraphTest.AddDuplicateVertex
+89/126 Test: EdgeListGraphTest.AddDuplicateVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=EdgeListGraphTest.AddDuplicateVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"EdgeListGraphTest.AddDuplicateVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = EdgeListGraphTest.AddDuplicateVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EdgeListGraphTest
+[ RUN      ] EdgeListGraphTest.AddDuplicateVertex
+[       OK ] EdgeListGraphTest.AddDuplicateVertex (0 ms)
+[----------] 1 test from EdgeListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"EdgeListGraphTest.AddDuplicateVertex" end time: Mar 03 06:13 MSK
+"EdgeListGraphTest.AddDuplicateVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+90/126 Testing: EdgeListGraphTest.AddDuplicateEdge
+90/126 Test: EdgeListGraphTest.AddDuplicateEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=EdgeListGraphTest.AddDuplicateEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"EdgeListGraphTest.AddDuplicateEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = EdgeListGraphTest.AddDuplicateEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EdgeListGraphTest
+[ RUN      ] EdgeListGraphTest.AddDuplicateEdge
+[       OK ] EdgeListGraphTest.AddDuplicateEdge (0 ms)
+[----------] 1 test from EdgeListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"EdgeListGraphTest.AddDuplicateEdge" end time: Mar 03 06:13 MSK
+"EdgeListGraphTest.AddDuplicateEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+91/126 Testing: EdgeListGraphTest.GetNeighborsOfNonexistentVertex
+91/126 Test: EdgeListGraphTest.GetNeighborsOfNonexistentVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=EdgeListGraphTest.GetNeighborsOfNonexistentVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"EdgeListGraphTest.GetNeighborsOfNonexistentVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = EdgeListGraphTest.GetNeighborsOfNonexistentVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EdgeListGraphTest
+[ RUN      ] EdgeListGraphTest.GetNeighborsOfNonexistentVertex
+[       OK ] EdgeListGraphTest.GetNeighborsOfNonexistentVertex (0 ms)
+[----------] 1 test from EdgeListGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"EdgeListGraphTest.GetNeighborsOfNonexistentVertex" end time: Mar 03 06:13 MSK
+"EdgeListGraphTest.GetNeighborsOfNonexistentVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+92/126 Testing: EdgeListGraphTest.LargeGraph
+92/126 Test: EdgeListGraphTest.LargeGraph
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=EdgeListGraphTest.LargeGraph" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"EdgeListGraphTest.LargeGraph" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = EdgeListGraphTest.LargeGraph
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EdgeListGraphTest
+[ RUN      ] EdgeListGraphTest.LargeGraph
+[       OK ] EdgeListGraphTest.LargeGraph (1 ms)
+[----------] 1 test from EdgeListGraphTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"EdgeListGraphTest.LargeGraph" end time: Mar 03 06:13 MSK
+"EdgeListGraphTest.LargeGraph" time elapsed: 00:00:00
+----------------------------------------------------------
+
+93/126 Testing: FloydWarshallTest.SingleNodeGraph
+93/126 Test: FloydWarshallTest.SingleNodeGraph
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=FloydWarshallTest.SingleNodeGraph" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"FloydWarshallTest.SingleNodeGraph" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = FloydWarshallTest.SingleNodeGraph
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FloydWarshallTest
+[ RUN      ] FloydWarshallTest.SingleNodeGraph
+[       OK ] FloydWarshallTest.SingleNodeGraph (0 ms)
+[----------] 1 test from FloydWarshallTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"FloydWarshallTest.SingleNodeGraph" end time: Mar 03 06:13 MSK
+"FloydWarshallTest.SingleNodeGraph" time elapsed: 00:00:00
+----------------------------------------------------------
+
+94/126 Testing: FloydWarshallTest.ZeroWeightEdges
+94/126 Test: FloydWarshallTest.ZeroWeightEdges
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=FloydWarshallTest.ZeroWeightEdges" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"FloydWarshallTest.ZeroWeightEdges" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = FloydWarshallTest.ZeroWeightEdges
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FloydWarshallTest
+[ RUN      ] FloydWarshallTest.ZeroWeightEdges
+[       OK ] FloydWarshallTest.ZeroWeightEdges (0 ms)
+[----------] 1 test from FloydWarshallTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"FloydWarshallTest.ZeroWeightEdges" end time: Mar 03 06:13 MSK
+"FloydWarshallTest.ZeroWeightEdges" time elapsed: 00:00:00
+----------------------------------------------------------
+
+95/126 Testing: FloydWarshallTest.LargeGraph
+95/126 Test: FloydWarshallTest.LargeGraph
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=FloydWarshallTest.LargeGraph" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"FloydWarshallTest.LargeGraph" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = FloydWarshallTest.LargeGraph
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FloydWarshallTest
+[ RUN      ] FloydWarshallTest.LargeGraph
+[       OK ] FloydWarshallTest.LargeGraph (0 ms)
+[----------] 1 test from FloydWarshallTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"FloydWarshallTest.LargeGraph" end time: Mar 03 06:13 MSK
+"FloydWarshallTest.LargeGraph" time elapsed: 00:00:00
+----------------------------------------------------------
+
+96/126 Testing: FloydWarshallTest.NegativeWeightsNoCycle
+96/126 Test: FloydWarshallTest.NegativeWeightsNoCycle
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=FloydWarshallTest.NegativeWeightsNoCycle" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"FloydWarshallTest.NegativeWeightsNoCycle" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = FloydWarshallTest.NegativeWeightsNoCycle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FloydWarshallTest
+[ RUN      ] FloydWarshallTest.NegativeWeightsNoCycle
+[       OK ] FloydWarshallTest.NegativeWeightsNoCycle (0 ms)
+[----------] 1 test from FloydWarshallTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"FloydWarshallTest.NegativeWeightsNoCycle" end time: Mar 03 06:13 MSK
+"FloydWarshallTest.NegativeWeightsNoCycle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+97/126 Testing: FloydWarshallTest.AllPairsDisconnected
+97/126 Test: FloydWarshallTest.AllPairsDisconnected
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=FloydWarshallTest.AllPairsDisconnected" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"FloydWarshallTest.AllPairsDisconnected" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = FloydWarshallTest.AllPairsDisconnected
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FloydWarshallTest
+[ RUN      ] FloydWarshallTest.AllPairsDisconnected
+[       OK ] FloydWarshallTest.AllPairsDisconnected (0 ms)
+[----------] 1 test from FloydWarshallTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"FloydWarshallTest.AllPairsDisconnected" end time: Mar 03 06:13 MSK
+"FloydWarshallTest.AllPairsDisconnected" time elapsed: 00:00:00
+----------------------------------------------------------
+
+98/126 Testing: FloydWarshallTest.MixedWeights
+98/126 Test: FloydWarshallTest.MixedWeights
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=FloydWarshallTest.MixedWeights" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"FloydWarshallTest.MixedWeights" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = FloydWarshallTest.MixedWeights
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FloydWarshallTest
+[ RUN      ] FloydWarshallTest.MixedWeights
+[       OK ] FloydWarshallTest.MixedWeights (0 ms)
+[----------] 1 test from FloydWarshallTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"FloydWarshallTest.MixedWeights" end time: Mar 03 06:13 MSK
+"FloydWarshallTest.MixedWeights" time elapsed: 00:00:00
+----------------------------------------------------------
+
+99/126 Testing: FloydWarshallTest.LargeNegativeWeights
+99/126 Test: FloydWarshallTest.LargeNegativeWeights
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=FloydWarshallTest.LargeNegativeWeights" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"FloydWarshallTest.LargeNegativeWeights" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = FloydWarshallTest.LargeNegativeWeights
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FloydWarshallTest
+[ RUN      ] FloydWarshallTest.LargeNegativeWeights
+[       OK ] FloydWarshallTest.LargeNegativeWeights (0 ms)
+[----------] 1 test from FloydWarshallTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"FloydWarshallTest.LargeNegativeWeights" end time: Mar 03 06:13 MSK
+"FloydWarshallTest.LargeNegativeWeights" time elapsed: 00:00:00
+----------------------------------------------------------
+
+100/126 Testing: FloydWarshallTest.MultiplePaths
+100/126 Test: FloydWarshallTest.MultiplePaths
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=FloydWarshallTest.MultiplePaths" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"FloydWarshallTest.MultiplePaths" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = FloydWarshallTest.MultiplePaths
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FloydWarshallTest
+[ RUN      ] FloydWarshallTest.MultiplePaths
+[       OK ] FloydWarshallTest.MultiplePaths (0 ms)
+[----------] 1 test from FloydWarshallTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"FloydWarshallTest.MultiplePaths" end time: Mar 03 06:13 MSK
+"FloydWarshallTest.MultiplePaths" time elapsed: 00:00:00
+----------------------------------------------------------
+
+101/126 Testing: FloydWarshallTest.NoEdges
+101/126 Test: FloydWarshallTest.NoEdges
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=FloydWarshallTest.NoEdges" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"FloydWarshallTest.NoEdges" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = FloydWarshallTest.NoEdges
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FloydWarshallTest
+[ RUN      ] FloydWarshallTest.NoEdges
+[       OK ] FloydWarshallTest.NoEdges (0 ms)
+[----------] 1 test from FloydWarshallTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"FloydWarshallTest.NoEdges" end time: Mar 03 06:13 MSK
+"FloydWarshallTest.NoEdges" time elapsed: 00:00:00
+----------------------------------------------------------
+
+102/126 Testing: FloydWarshallTest.LargeGraphWithNegativeWeights
+102/126 Test: FloydWarshallTest.LargeGraphWithNegativeWeights
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=FloydWarshallTest.LargeGraphWithNegativeWeights" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"FloydWarshallTest.LargeGraphWithNegativeWeights" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = FloydWarshallTest.LargeGraphWithNegativeWeights
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FloydWarshallTest
+[ RUN      ] FloydWarshallTest.LargeGraphWithNegativeWeights
+[       OK ] FloydWarshallTest.LargeGraphWithNegativeWeights (0 ms)
+[----------] 1 test from FloydWarshallTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"FloydWarshallTest.LargeGraphWithNegativeWeights" end time: Mar 03 06:13 MSK
+"FloydWarshallTest.LargeGraphWithNegativeWeights" time elapsed: 00:00:00
+----------------------------------------------------------
+
+103/126 Testing: FloydWarshallTest.ComplexGraph
+103/126 Test: FloydWarshallTest.ComplexGraph
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=FloydWarshallTest.ComplexGraph" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"FloydWarshallTest.ComplexGraph" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = FloydWarshallTest.ComplexGraph
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FloydWarshallTest
+[ RUN      ] FloydWarshallTest.ComplexGraph
+[       OK ] FloydWarshallTest.ComplexGraph (1 ms)
+[----------] 1 test from FloydWarshallTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"FloydWarshallTest.ComplexGraph" end time: Mar 03 06:13 MSK
+"FloydWarshallTest.ComplexGraph" time elapsed: 00:00:00
+----------------------------------------------------------
+
+104/126 Testing: UndirectedGraphTest.AddVertex
+104/126 Test: UndirectedGraphTest.AddVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=UndirectedGraphTest.AddVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"UndirectedGraphTest.AddVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = UndirectedGraphTest.AddVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from UndirectedGraphTest
+[ RUN      ] UndirectedGraphTest.AddVertex
+[       OK ] UndirectedGraphTest.AddVertex (0 ms)
+[----------] 1 test from UndirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"UndirectedGraphTest.AddVertex" end time: Mar 03 06:13 MSK
+"UndirectedGraphTest.AddVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+105/126 Testing: UndirectedGraphTest.RemoveVertex
+105/126 Test: UndirectedGraphTest.RemoveVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=UndirectedGraphTest.RemoveVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"UndirectedGraphTest.RemoveVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = UndirectedGraphTest.RemoveVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from UndirectedGraphTest
+[ RUN      ] UndirectedGraphTest.RemoveVertex
+[       OK ] UndirectedGraphTest.RemoveVertex (0 ms)
+[----------] 1 test from UndirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"UndirectedGraphTest.RemoveVertex" end time: Mar 03 06:13 MSK
+"UndirectedGraphTest.RemoveVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+106/126 Testing: UndirectedGraphTest.AddEdge
+106/126 Test: UndirectedGraphTest.AddEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=UndirectedGraphTest.AddEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"UndirectedGraphTest.AddEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = UndirectedGraphTest.AddEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from UndirectedGraphTest
+[ RUN      ] UndirectedGraphTest.AddEdge
+[       OK ] UndirectedGraphTest.AddEdge (0 ms)
+[----------] 1 test from UndirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"UndirectedGraphTest.AddEdge" end time: Mar 03 06:13 MSK
+"UndirectedGraphTest.AddEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+107/126 Testing: UndirectedGraphTest.RemoveEdge
+107/126 Test: UndirectedGraphTest.RemoveEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=UndirectedGraphTest.RemoveEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"UndirectedGraphTest.RemoveEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = UndirectedGraphTest.RemoveEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from UndirectedGraphTest
+[ RUN      ] UndirectedGraphTest.RemoveEdge
+[       OK ] UndirectedGraphTest.RemoveEdge (0 ms)
+[----------] 1 test from UndirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"UndirectedGraphTest.RemoveEdge" end time: Mar 03 06:13 MSK
+"UndirectedGraphTest.RemoveEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+108/126 Testing: UndirectedGraphTest.HasVertex
+108/126 Test: UndirectedGraphTest.HasVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=UndirectedGraphTest.HasVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"UndirectedGraphTest.HasVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = UndirectedGraphTest.HasVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from UndirectedGraphTest
+[ RUN      ] UndirectedGraphTest.HasVertex
+[       OK ] UndirectedGraphTest.HasVertex (0 ms)
+[----------] 1 test from UndirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"UndirectedGraphTest.HasVertex" end time: Mar 03 06:13 MSK
+"UndirectedGraphTest.HasVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+109/126 Testing: UndirectedGraphTest.HasEdge
+109/126 Test: UndirectedGraphTest.HasEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=UndirectedGraphTest.HasEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"UndirectedGraphTest.HasEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = UndirectedGraphTest.HasEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from UndirectedGraphTest
+[ RUN      ] UndirectedGraphTest.HasEdge
+[       OK ] UndirectedGraphTest.HasEdge (0 ms)
+[----------] 1 test from UndirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"UndirectedGraphTest.HasEdge" end time: Mar 03 06:13 MSK
+"UndirectedGraphTest.HasEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+110/126 Testing: UndirectedGraphTest.RemoveNonexistentVertex
+110/126 Test: UndirectedGraphTest.RemoveNonexistentVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=UndirectedGraphTest.RemoveNonexistentVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"UndirectedGraphTest.RemoveNonexistentVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = UndirectedGraphTest.RemoveNonexistentVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from UndirectedGraphTest
+[ RUN      ] UndirectedGraphTest.RemoveNonexistentVertex
+[       OK ] UndirectedGraphTest.RemoveNonexistentVertex (0 ms)
+[----------] 1 test from UndirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"UndirectedGraphTest.RemoveNonexistentVertex" end time: Mar 03 06:13 MSK
+"UndirectedGraphTest.RemoveNonexistentVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+111/126 Testing: UndirectedGraphTest.RemoveNonexistentEdge
+111/126 Test: UndirectedGraphTest.RemoveNonexistentEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=UndirectedGraphTest.RemoveNonexistentEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"UndirectedGraphTest.RemoveNonexistentEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = UndirectedGraphTest.RemoveNonexistentEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from UndirectedGraphTest
+[ RUN      ] UndirectedGraphTest.RemoveNonexistentEdge
+[       OK ] UndirectedGraphTest.RemoveNonexistentEdge (0 ms)
+[----------] 1 test from UndirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"UndirectedGraphTest.RemoveNonexistentEdge" end time: Mar 03 06:13 MSK
+"UndirectedGraphTest.RemoveNonexistentEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+112/126 Testing: UndirectedGraphTest.AddDuplicateVertex
+112/126 Test: UndirectedGraphTest.AddDuplicateVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=UndirectedGraphTest.AddDuplicateVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"UndirectedGraphTest.AddDuplicateVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = UndirectedGraphTest.AddDuplicateVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from UndirectedGraphTest
+[ RUN      ] UndirectedGraphTest.AddDuplicateVertex
+[       OK ] UndirectedGraphTest.AddDuplicateVertex (0 ms)
+[----------] 1 test from UndirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"UndirectedGraphTest.AddDuplicateVertex" end time: Mar 03 06:13 MSK
+"UndirectedGraphTest.AddDuplicateVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+113/126 Testing: UndirectedGraphTest.AddDuplicateEdge
+113/126 Test: UndirectedGraphTest.AddDuplicateEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=UndirectedGraphTest.AddDuplicateEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"UndirectedGraphTest.AddDuplicateEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = UndirectedGraphTest.AddDuplicateEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from UndirectedGraphTest
+[ RUN      ] UndirectedGraphTest.AddDuplicateEdge
+[       OK ] UndirectedGraphTest.AddDuplicateEdge (0 ms)
+[----------] 1 test from UndirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"UndirectedGraphTest.AddDuplicateEdge" end time: Mar 03 06:13 MSK
+"UndirectedGraphTest.AddDuplicateEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+114/126 Testing: UndirectedGraphTest.GetNeighborsOfNonexistentVertex
+114/126 Test: UndirectedGraphTest.GetNeighborsOfNonexistentVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=UndirectedGraphTest.GetNeighborsOfNonexistentVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"UndirectedGraphTest.GetNeighborsOfNonexistentVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = UndirectedGraphTest.GetNeighborsOfNonexistentVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from UndirectedGraphTest
+[ RUN      ] UndirectedGraphTest.GetNeighborsOfNonexistentVertex
+[       OK ] UndirectedGraphTest.GetNeighborsOfNonexistentVertex (0 ms)
+[----------] 1 test from UndirectedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"UndirectedGraphTest.GetNeighborsOfNonexistentVertex" end time: Mar 03 06:13 MSK
+"UndirectedGraphTest.GetNeighborsOfNonexistentVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+115/126 Testing: UndirectedGraphTest.LargeGraph
+115/126 Test: UndirectedGraphTest.LargeGraph
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=UndirectedGraphTest.LargeGraph" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"UndirectedGraphTest.LargeGraph" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = UndirectedGraphTest.LargeGraph
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from UndirectedGraphTest
+[ RUN      ] UndirectedGraphTest.LargeGraph
+[       OK ] UndirectedGraphTest.LargeGraph (1 ms)
+[----------] 1 test from UndirectedGraphTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"UndirectedGraphTest.LargeGraph" end time: Mar 03 06:13 MSK
+"UndirectedGraphTest.LargeGraph" time elapsed: 00:00:00
+----------------------------------------------------------
+
+116/126 Testing: WeightedGraphTest.AddVertex
+116/126 Test: WeightedGraphTest.AddVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=WeightedGraphTest.AddVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"WeightedGraphTest.AddVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = WeightedGraphTest.AddVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from WeightedGraphTest
+[ RUN      ] WeightedGraphTest.AddVertex
+[       OK ] WeightedGraphTest.AddVertex (0 ms)
+[----------] 1 test from WeightedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"WeightedGraphTest.AddVertex" end time: Mar 03 06:13 MSK
+"WeightedGraphTest.AddVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+117/126 Testing: WeightedGraphTest.RemoveVertex
+117/126 Test: WeightedGraphTest.RemoveVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=WeightedGraphTest.RemoveVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"WeightedGraphTest.RemoveVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = WeightedGraphTest.RemoveVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from WeightedGraphTest
+[ RUN      ] WeightedGraphTest.RemoveVertex
+[       OK ] WeightedGraphTest.RemoveVertex (0 ms)
+[----------] 1 test from WeightedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"WeightedGraphTest.RemoveVertex" end time: Mar 03 06:13 MSK
+"WeightedGraphTest.RemoveVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+118/126 Testing: WeightedGraphTest.AddEdge
+118/126 Test: WeightedGraphTest.AddEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=WeightedGraphTest.AddEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"WeightedGraphTest.AddEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = WeightedGraphTest.AddEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from WeightedGraphTest
+[ RUN      ] WeightedGraphTest.AddEdge
+[       OK ] WeightedGraphTest.AddEdge (0 ms)
+[----------] 1 test from WeightedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"WeightedGraphTest.AddEdge" end time: Mar 03 06:13 MSK
+"WeightedGraphTest.AddEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+119/126 Testing: WeightedGraphTest.RemoveEdge
+119/126 Test: WeightedGraphTest.RemoveEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=WeightedGraphTest.RemoveEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"WeightedGraphTest.RemoveEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = WeightedGraphTest.RemoveEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from WeightedGraphTest
+[ RUN      ] WeightedGraphTest.RemoveEdge
+[       OK ] WeightedGraphTest.RemoveEdge (0 ms)
+[----------] 1 test from WeightedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"WeightedGraphTest.RemoveEdge" end time: Mar 03 06:13 MSK
+"WeightedGraphTest.RemoveEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+120/126 Testing: WeightedGraphTest.HasVertex
+120/126 Test: WeightedGraphTest.HasVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=WeightedGraphTest.HasVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"WeightedGraphTest.HasVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = WeightedGraphTest.HasVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from WeightedGraphTest
+[ RUN      ] WeightedGraphTest.HasVertex
+[       OK ] WeightedGraphTest.HasVertex (0 ms)
+[----------] 1 test from WeightedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"WeightedGraphTest.HasVertex" end time: Mar 03 06:13 MSK
+"WeightedGraphTest.HasVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+121/126 Testing: WeightedGraphTest.HasEdge
+121/126 Test: WeightedGraphTest.HasEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=WeightedGraphTest.HasEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"WeightedGraphTest.HasEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = WeightedGraphTest.HasEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from WeightedGraphTest
+[ RUN      ] WeightedGraphTest.HasEdge
+[       OK ] WeightedGraphTest.HasEdge (0 ms)
+[----------] 1 test from WeightedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"WeightedGraphTest.HasEdge" end time: Mar 03 06:13 MSK
+"WeightedGraphTest.HasEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+122/126 Testing: WeightedGraphTest.RemoveNonexistentVertex
+122/126 Test: WeightedGraphTest.RemoveNonexistentVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=WeightedGraphTest.RemoveNonexistentVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"WeightedGraphTest.RemoveNonexistentVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = WeightedGraphTest.RemoveNonexistentVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from WeightedGraphTest
+[ RUN      ] WeightedGraphTest.RemoveNonexistentVertex
+[       OK ] WeightedGraphTest.RemoveNonexistentVertex (0 ms)
+[----------] 1 test from WeightedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"WeightedGraphTest.RemoveNonexistentVertex" end time: Mar 03 06:13 MSK
+"WeightedGraphTest.RemoveNonexistentVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+123/126 Testing: WeightedGraphTest.RemoveNonexistentEdge
+123/126 Test: WeightedGraphTest.RemoveNonexistentEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=WeightedGraphTest.RemoveNonexistentEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"WeightedGraphTest.RemoveNonexistentEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = WeightedGraphTest.RemoveNonexistentEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from WeightedGraphTest
+[ RUN      ] WeightedGraphTest.RemoveNonexistentEdge
+[       OK ] WeightedGraphTest.RemoveNonexistentEdge (0 ms)
+[----------] 1 test from WeightedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"WeightedGraphTest.RemoveNonexistentEdge" end time: Mar 03 06:13 MSK
+"WeightedGraphTest.RemoveNonexistentEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+124/126 Testing: WeightedGraphTest.AddDuplicateVertex
+124/126 Test: WeightedGraphTest.AddDuplicateVertex
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=WeightedGraphTest.AddDuplicateVertex" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"WeightedGraphTest.AddDuplicateVertex" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = WeightedGraphTest.AddDuplicateVertex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from WeightedGraphTest
+[ RUN      ] WeightedGraphTest.AddDuplicateVertex
+[       OK ] WeightedGraphTest.AddDuplicateVertex (0 ms)
+[----------] 1 test from WeightedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"WeightedGraphTest.AddDuplicateVertex" end time: Mar 03 06:13 MSK
+"WeightedGraphTest.AddDuplicateVertex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+125/126 Testing: WeightedGraphTest.AddDuplicateEdge
+125/126 Test: WeightedGraphTest.AddDuplicateEdge
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=WeightedGraphTest.AddDuplicateEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"WeightedGraphTest.AddDuplicateEdge" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = WeightedGraphTest.AddDuplicateEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from WeightedGraphTest
+[ RUN      ] WeightedGraphTest.AddDuplicateEdge
+[       OK ] WeightedGraphTest.AddDuplicateEdge (0 ms)
+[----------] 1 test from WeightedGraphTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"WeightedGraphTest.AddDuplicateEdge" end time: Mar 03 06:13 MSK
+"WeightedGraphTest.AddDuplicateEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+126/126 Testing: WeightedGraphTest.LargeGraph
+126/126 Test: WeightedGraphTest.LargeGraph
+Command: "/home/anxx/prog/project_of_algoritms/Graph_library/build/tests/GraphTests" "--gtest_filter=WeightedGraphTest.LargeGraph" "--gtest_also_run_disabled_tests"
+Directory: /home/anxx/prog/project_of_algoritms/Graph_library/build/tests
+"WeightedGraphTest.LargeGraph" start time: Mar 03 06:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = WeightedGraphTest.LargeGraph
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from WeightedGraphTest
+[ RUN      ] WeightedGraphTest.LargeGraph
+[       OK ] WeightedGraphTest.LargeGraph (1 ms)
+[----------] 1 test from WeightedGraphTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"WeightedGraphTest.LargeGraph" end time: Mar 03 06:13 MSK
+"WeightedGraphTest.LargeGraph" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 03 06:13 MSK
